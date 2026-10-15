@@ -59,8 +59,8 @@ class Choice(models.Model):
 
 
 class Attempt(models.Model):
-    user = models.ForeignKey(settings.Auth_USER_MODEL, on_delete=models.CASCADE,related_name='attempts')
-    quit = models.ForeignKey(Quiz,on_delete=models.CASCADE,related_name='attempts')
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE,related_name='attempts')
+    quiz = models.ForeignKey(Quiz,on_delete=models.CASCADE,related_name='attempts')
     start_at= models.DateTimeField(auto_now_add=True)
     finished_at = models.DateTimeField(null=True,blank=True)
     score = models.PositiveIntegerField(default=0)

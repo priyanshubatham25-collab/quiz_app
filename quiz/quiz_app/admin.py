@@ -36,13 +36,13 @@ class QuestionInline(admin.TabularInline):
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
-    list_display = ('name')
+    list_display = ['name']
 
 @admin.register(Quiz)
 class QuizAdmin(admin.ModelAdmin):
     list_display=('title','category', 'time_limit_minutes', 'pass_percentage', 'is_published')
     list_filter = ('category', 'is_published')
-    search_fields = ('title')
+    search_fields = ['title']
     inlines = [QuestionInline]
 
 @admin.register(Question)
@@ -53,5 +53,5 @@ class QuestionAdmnin(admin.ModelAdmin):
 
 @admin.register(Attempt)
 class AttemptAdmin(admin.ModelAdmin):
-    list_display = ('user', 'quiz', 'score', 'total', 'started_at', 'finished_at')
+    list_display = ('user', 'quiz', 'score', 'total', 'start_at', 'finished_at')
     list_filter = ('quiz',)
