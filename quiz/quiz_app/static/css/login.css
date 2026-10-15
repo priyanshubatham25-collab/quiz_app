@@ -1,0 +1,168 @@
+
+/* Main login background */
+.login-container {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    /* background: linear-gradient(135deg, #fff0f6, #f3e8ff); */
+    box-sizing: border-box;
+}
+
+/* Login card */
+.login-card {
+    width: 100%;
+    max-width: 440px;
+    padding: 38px;
+    background: #ffffff;
+    border-radius: 22px;
+    box-shadow: 0 12px 35px rgba(126, 34, 206, 0.15);
+    box-sizing: border-box;
+}
+
+/* Header */
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-icon {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 18px;
+    background: #fae8ff;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.login-header h1 {
+    margin: 0 0 10px;
+    color: #86198f;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.login-header p {
+    margin: 0;
+    color: #777;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Form spacing */
+.login-form p {
+    margin-bottom: 22px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #4a044e;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Input fields */
+.login-form input,
+.login-form select,
+.login-form textarea {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #e9d5ff;
+    border-radius: 10px;
+    background: #fdfaff;
+    color: #333;
+    font-size: 15px;
+    font-family: inherit;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+/* Input focus effect */
+.login-form input:focus,
+.login-form select:focus,
+.login-form textarea:focus {
+    border-color: #c026d3;
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(192, 38, 211, 0.12);
+}
+
+/* Error messages */
+.login-form .errorlist {
+    padding-left: 20px;
+    color: #dc2626;
+    font-size: 13px;
+}
+
+.login-message {
+    margin-bottom: 20px;
+    padding: 12px 14px;
+    border: 1px solid #fecaca;
+    border-radius: 9px;
+    background: #fef2f2;
+    color: #b91c1c;
+    font-size: 14px;
+}
+
+/* Login button */
+.login-btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    margin-top: 28px;
+    border: none;
+    border-radius: 11px;
+    background: linear-gradient(135deg, #c026d3, #7e22ce);
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(126, 34, 206, 0.25);
+}
+
+/* Register link */
+.login-footer {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.login-footer p {
+    color: #777;
+    font-size: 14px;
+}
+
+.login-footer a {
+    color: #a21caf;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 500px) {
+    .login-container {
+        padding: 25px 14px;
+    }
+
+    .login-card {
+        padding: 25px 20px;
+    }
+
+    .login-header h1 {
+        font-size: 25px;
+    }
+}

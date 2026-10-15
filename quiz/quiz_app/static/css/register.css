@@ -1,0 +1,160 @@
+
+/* Registration page background */
+.register-container {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    /* background: rgb(45, 44, 44); */
+    box-sizing: border-box;
+}
+
+/* Registration card */
+.register-card {
+    width: 100%;
+    color: rgb(82, 82, 82);
+    max-width: 480px;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 22px;
+    box-shadow: 0 12px 35px rgba(126, 34, 206, 0.14);
+    box-sizing: border-box;
+}
+
+/* Heading */
+.register-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.register-header h1 {
+    color: #86198f;
+    font-size: 30px;
+    font-weight: 800;
+    margin: 0 0 10px;
+}
+
+.register-header p {
+    color: #777;
+    font-size: 15px;
+    margin: 0;
+}
+
+/* Django form fields */
+.register-form p {
+    margin-bottom: 20px;
+}
+
+.register-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #4a044e;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Text, email, password and number inputs */
+.register-form input,
+.register-form select,
+.register-form textarea {
+    display: block;
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #e9d5ff;
+    border-radius: 10px;
+    background: #fdfaff;
+    color: #333;
+    font-size: 15px;
+    font-family: inherit;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Focus effect */
+.register-form input:focus,
+.register-form select:focus,
+.register-form textarea:focus {
+    border-color: #c026d3;
+    box-shadow: 0 0 0 4px rgba(192, 38, 211, 0.12);
+    background: #fff;
+}
+
+/* Checkbox fields */
+.register-form input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    margin-right: 8px;
+    accent-color: #a21caf;
+}
+
+/* Help text */
+.register-form .helptext {
+    display: block;
+    margin-top: 6px;
+    color: #888;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* Validation errors */
+.register-form .errorlist {
+    color: #dc2626;
+    font-size: 13px;
+    padding-left: 20px;
+}
+
+/* Register button */
+.register-btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 11px;
+    background: linear-gradient(135deg, #c026d3, #7e22ce);
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.register-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(126, 34, 206, 0.25);
+}
+
+/* Login link */
+.login-link {
+    text-align: center;
+    margin: 25px 0 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #a21caf;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile responsive */
+@media (max-width: 500px) {
+    .register-container {
+        padding: 25px 14px;
+    }
+
+    .register-card {
+        padding: 25px 20px;
+    }
+
+    .register-header h1 {
+        font-size: 25px;
+    }
+}
