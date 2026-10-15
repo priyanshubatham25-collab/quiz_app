@@ -1,0 +1,46 @@
+
+{% extends "index.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="login-container">
+
+    <div class="login-card">
+
+        <div class="login-header">
+            <div class="login-icon">🔐</div>
+            <h1>Welcome Back!</h1>
+            <p>Please login to continue to your account.</p>
+        </div>
+
+        <!-- Display Django messages -->
+        {% if messages %}
+            {% for message in messages %}
+                <div class="login-message">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+
+        <form method="POST" class="login-form">
+            {% csrf_token %}
+
+            {{ form.as_p }}
+
+            <button type="{% url 'dashboard' %}" class="login-btn">
+                Login Now →
+            </button>
+        </form>
+
+        <div class="login-footer">
+            <p>Don't have an account?
+                <a href="{% url 'register' %}">Create Account</a>
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,33 @@
+
+{% extends "index.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="register-container">
+    <div class="register-card">
+
+        <div class="register-header">
+            <h1>Create Account</h1>
+            <p>Register now and get started!</p>
+        </div>
+
+        <form method="POST" class="register-form">
+            {% csrf_token %}
+
+            {{ form.as_p }}
+
+            <button type="submit" class="register-btn">
+                Register Now
+            </button>
+        </form>
+
+        <p class="login-link">
+            Already have an account?
+            <a href="{% url 'login' %}">Login here</a>
+        </p>
+
+    </div>
+</div>
+
+{% endblock %}
