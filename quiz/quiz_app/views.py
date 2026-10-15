@@ -45,4 +45,4 @@ def login(request):
      return render(request,'login_form.html',{'form': form})    
                 
 def dashboard(request):
-    return render('dashboard.html')
+    return render(request,'dashboard.html')
