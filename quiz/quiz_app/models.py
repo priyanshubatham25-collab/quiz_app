@@ -13,6 +13,7 @@ class Category(models.Model):
 
     def __str__(self):
         return self.name
+        # @priyanshubatham25-collab change this model to include a description field and an image field for the category. The description field should be a TextField and the image field should be an ImageField that allows null and blank values.
 
 class Quiz(models.Model):
     title = models.CharField(max_length=150)

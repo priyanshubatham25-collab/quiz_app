@@ -8,6 +8,7 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/register.css' %}">
     <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" href="{% static 'css/dashboard' %}">
   </head>
   <body class="min-h-screen bg-gray-950 text-gray-200 ">
     <nav class="border-b border-gray-800 bg-gray-950 shadow-sm">
@@ -17,7 +18,8 @@
         <h1 class="text-2xl font-bold text-purple-600">Quiz Game</h1>
 
         
-   <div class="text-sm ">
+   <div class="text-sm "> 
+    
           {% if messages %}
           <ul class="mb-2">
             {% for m in messages %}
