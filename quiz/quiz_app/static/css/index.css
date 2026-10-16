@@ -1,0 +1,25 @@
+.quiz-navbar {
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(12, 3, 30, 0.88);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(168, 85, 247, 0.35);
+}
+
+.quiz-logo {
+  color: #c084fc;
+  text-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
+}
+
+.quiz-button {
+  transition: all 0.3s ease;
+}
+
+.quiz-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 18px rgba(168, 85, 247, 0.5);
+}
