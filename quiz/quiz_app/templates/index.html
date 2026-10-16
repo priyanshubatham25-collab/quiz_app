@@ -8,7 +8,7 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/register.css' %}">
     <link rel="stylesheet" href="{% static 'css/login.css' %}">
-    <link rel="stylesheet" href="{% static 'css/dashboard' %}">
+    <!-- <link rel="stylesheet" href="{% static 'css/dashboard' %}"> -->
   </head>
   <body class="min-h-screen bg-gray-950 text-gray-200 ">
     <nav class="border-b border-gray-800 bg-gray-950 shadow-sm">
@@ -36,7 +36,7 @@
           <span class="mx-2 text-gray-400">|</span>
 
           <a
-            href=""
+            href="{% url 'login' %}"
             class=" font-bold text-xl text-purple-600 hover:text-purple-500"
           >
             Logout
