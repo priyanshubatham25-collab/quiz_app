@@ -1,73 +1,119 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>quiz</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
+
     {% load static %}
+
     <link rel="stylesheet" href="{% static 'css/register.css' %}">
     <link rel="stylesheet" href="{% static 'css/login.css' %}">
-    <!-- <link rel="stylesheet" href="{% static 'css/dashboard' %}"> -->
-  </head>
-  <body class="min-h-screen bg-gray-950 text-gray-200 ">
-    <nav class="border-b border-gray-800 bg-gray-950 shadow-sm">
-      <div
-        class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4"
-      >
-        <h1 class="text-2xl font-bold text-purple-600">Quiz Game</h1>
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
 
-        
-   <div class="text-sm "> 
-    
-          {% if messages %}
-          <ul class="mb-2">
-            {% for m in messages %}
-            <li class="rounded-lg bg-purple-100 px-4 py-2 text-green-700">
-              {{m}}
-            </li>
-            {% endfor %}
-          </ul>
-          {% endif %} {% if user.is_authenticated %}
-          <span class="font-medium text-gray-700">
-            Hello 👋 {{user.username}}
-          </span>
+    <style>
+       
+        .quiz-navbar {
+            background: rgba(12, 3, 30, 0.88);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(168, 85, 247, 0.35);
+        }
 
-          <span class="mx-2 text-gray-400">|</span>
+        .quiz-logo {
+            color: #c084fc;
+            text-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
+        }
 
-          <a
-            href="{% url 'login' %}"
-            class=" font-bold text-xl text-purple-600 hover:text-purple-500"
-          >
-            Logout
-          </a>
+        .quiz-button {
+            transition: all 0.3s ease;
+        }
 
-          {% else %}
+        .quiz-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 18px rgba(168, 85, 247, 0.5);
+        }
+    </style>
+</head>
 
-          <a
-            href="{% url 'login' %}"
-            class="font-medium text-xl text-purple-600 hover:text-purple-400"
-          >
-            Login
-          </a>
-          
+<body style="background-image: linear-gradient(rgba(25,5,55,0.5), rgba(15,3,35,0.7)), url('https://images.unsplash.com/photo-1511512578047-dfb367046420'); background-size: cover; background-position: center; background-attachment: fixed;">
 
-          <span class="mx-2 text-gray-400">|</span>
+    <!-- Navbar -->
+    <nav class="quiz-navbar">
+        <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
 
-          <a
-            href="{% url 'register' %}"
-            class="font-medium  text-xl text-purple-600 hover:text-purple-400"
-          >
-            register
-          </a>
+            <!-- Logo -->
+            <a href="/" class="flex items-center gap-2">
+                <span class="text-3xl">🎯</span>
+                <span class="quiz-logo text-2xl font-bold">
+                    Quiz Game
+                </span>
+            </a>
 
-          {% endif %}
+            <!-- Navigation -->
+            <div class="flex items-center gap-3 sm:gap-4">
+
+                {% if user.is_authenticated %}
+
+                    <!-- Welcome User -->
+                    <span class="text-sm font-medium text-purple-100 sm:text-base">
+                        Welcome, {{ user.username }} 👋
+                    </span>
+
+                    <!-- Logout -->
+                    <form method="POST" action="{% url 'logout' %}">
+                        {% csrf_token %}
+
+                        <button
+                            type="submit"
+                            class="quiz-button rounded-lg bg-purple-600 px-4 py-2 font-semibold text-white hover:bg-purple-500"
+                        >
+                            Logout
+                        </button>
+                    </form>
+
+                {% else %}
+
+                    <!-- Login -->
+                    <a
+                        href="{% url 'login' %}"
+                        class="quiz-button rounded-lg border border-purple-500 px-4 py-2 font-semibold text-purple-300 hover:bg-purple-600 hover:text-white"
+                    >
+                        Login
+                    </a>
+
+                    <!-- Register -->
+                    <a
+                        href="{% url 'register' %}"
+                        class="quiz-button rounded-lg bg-purple-600 px-4 py-2 font-semibold text-white hover:bg-purple-500"
+                    >
+                        Register
+                    </a>
+
+                {% endif %}
+
+            </div>
         </div>
-      </div>
     </nav>
 
+    <!-- Django Messages -->
+    <div class="mx-auto max-w-7xl px-6 pt-4">
+        {% if messages %}
+            {% for message in messages %}
+                <div class="mb-3 rounded-lg border border-purple-500/30 bg-purple-950/80 px-4 py-3 text-purple-200">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+
+    <!-- Page Content -->
     <main class="mx-auto max-w-7xl px-6 py-10">
-      {% block content %} {% endblock %}
+        {% block content %}
+        {% endblock %}
     </main>
-  </body>
+
+</body>
 </html>
