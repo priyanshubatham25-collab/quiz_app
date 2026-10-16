@@ -7,6 +7,22 @@
 <div class="register-container">
     <div class="register-card">
 
+        <div class="avatar-circle">
+            <svg viewBox="0 0 120 120" class="avatar-svg"
+                 xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="60" r="60" fill="#ede9fe"/>
+                <path d="M15 120 Q18 78 45 77 L75 77 Q102 78 105 120"
+                      fill="#8b5cf6"/>
+                <circle cx="60" cy="48" r="24" fill="#ffd2b5"/>
+                <path d="M36 45 Q25 22 45 15 Q65 0 85 25 L82 47
+                         L77 34 Q60 40 45 29 Z" fill="#31205f"/>
+                <circle cx="49" cy="49" r="2.5" fill="#31205f"/>
+                <circle cx="70" cy="49" r="2.5" fill="#31205f"/>
+                <path d="M51 61 Q60 69 69 61" fill="none"
+                      stroke="#a64b55" stroke-width="2.5"/>
+            </svg>
+        </div>
+
         <div class="register-header">
             <h1>Create Account</h1>
             <p>Register now and get started!</p>
@@ -14,11 +30,10 @@
 
         <form method="POST" class="register-form">
             {% csrf_token %}
-
             {{ form.as_p }}
 
             <button type="submit" class="register-btn">
-                Register Now
+                Register Now →
             </button>
         </form>
 

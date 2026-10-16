@@ -1,11 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Let's play</h1>
-</body>
-</html>
+{% extends "index.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="dashboard">
+
+    <nav class="dashboard-nav">
+        <div class="nav-item active">Dashboard</div>
+        <div class="nav-item">Quizzes</div>
+        <div class="nav-item">Categories</div>
+        <div class="nav-item">Attempts</div>
+    </nav>
+
+    <div class="welcome">
+        <h1>Welcome <span class="text-purple-400">{{user.username}}</span>! 👋</h1>
+        <h3>Ready to learn something new today?</h3>
+    </div>
+
+    <div class="stats-grid">
+
+        <div class="stat-card">
+            <div class="stat-icon purple-icon">📖</div>
+            <p class="stat-label">Available quizzes</p>
+            <h2 class="stat-number">24</h2>
+            <p class="stat-description">Explore new topics and skills</p>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon green-icon">✔️</div>
+            <p class="stat-label">Quizzes completed</p>
+            <h2 class="stat-number">12</h2>
+            <p class="stat-description">Keep up your learning streak</p>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon amber-icon">🎯</div>
+            <p class="stat-label">Average score</p>
+            <h2 class="stat-number">85%</h2>
+            <p class="stat-description">You're making great progress</p>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon violet-icon">🕒</div>
+            <p class="stat-label">Learning time</p>
+            <h2 class="stat-number">8.5 hrs</h2>
+            <p class="stat-description">Time invested in your growth</p>
+        </div>
+
+    </div>
+
+    <section>
+        <div class="section-header">
+            <div>
+                <h2>Popular quizzes</h2>
+                <p>Pick a quiz and test your knowledge.</p>
+            </div>
+
+           
+        </div>
+
+        <div class="quiz-grid">
+
+            <div class="quiz-card">
+                <div class="quiz-icon orange-icon">🌐</div>
+                <h3>HTML</h3>
+                <p class="quiz-description">
+                    Web development · 10 questions
+                </p>
+
+                <div class="quiz-meta">
+                    <span class="level">Beginner</span>
+                    <span>⏱ 10 min</span>
+                </div>
+
+                <a href="#" class="btn quiz-btn">
+                    Start quiz →
+                </a>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-icon cyan-icon">⚛️</div>
+                <h3>Reactjs</h3>
+                <p class="quiz-description">
+                    Web frameworks · 10 questions
+                </p>
+
+                <div class="quiz-meta">
+                    <span class="level level-cyan">Intermediate</span>
+                    <span>⏱ 10 min</span>
+                </div>
+
+                <a href="#" class="btn quiz-btn">
+                    Start quiz →
+                </a>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-icon yellow-icon">🐍</div>
+                <h3>Python</h3>
+                <p class="quiz-description">
+                    Programming · 10 questions
+                </p>
+
+                <div class="quiz-meta">
+                    <span class="level level-yellow">Beginner</span>
+                    <span>⏱ 10 min</span>
+                </div>
+
+                <a href="#" class="btn quiz-btn">
+                    Start quiz →
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+</div>
+
+{% endblock %}

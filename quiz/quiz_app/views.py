@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect,get_object_or_404
-from django.contrib.auth import login as auth_login
+from django.contrib.auth import logout,login as auth_login
 from .forms import  RegistrationForm
 from django.contrib import messages
 from .forms import LoginForm
@@ -41,6 +41,11 @@ def login(request):
     return render(request, 'login_form.html', {'form': form})
 
               
-     
+def logout_user(request):
+        logout(request)
+        messages.success(request,"you have been logged out")
+        return redirect('login')
+
+
 def dashboard(request):
     return render(request,'dashboard.html')
