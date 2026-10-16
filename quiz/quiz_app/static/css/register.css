@@ -43,12 +43,12 @@
 
 /* Django form fields */
 .register-form p {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .register-form label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
     color: #4a044e;
     font-size: 14px;
     font-weight: 600;
@@ -110,7 +110,7 @@
     display: block;
     width: 100%;
     padding: 14px;
-    margin-top: 25px;
+    margin-top: 20px;
     border: none;
     border-radius: 11px;
     background: linear-gradient(135deg, #c026d3, #7e22ce);
