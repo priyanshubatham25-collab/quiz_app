@@ -1,11 +1,197 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Let's play</h1>
-</body>
-</html>
+{% extends "index.html" %} {% load static %} {% block content %}
+
+<div class="dashboard">
+
+    <nav class="dashboard-nav">
+        <div class="nav-item active">Dashboard</div>
+        <div class="nav-item">Quizzes</div>
+        <div class="nav-item">Categories</div>
+        <div class="nav-item">Attempts</div>
+    </nav>
+
+    <div class="welcome">
+        <h1>Welcome <span class="text-purple-400">{{user.username}}</span>! 👋</h1>
+        <h3>Ready to learn something new today?</h3>
+    </div>
+
+    <div class="stats-grid">
+
+        <div class="stat-card">
+            <div class="stat-icon purple-icon">📖</div>
+            <p class="stat-label">Available quizzes</p>
+            <h2 class="stat-number">24</h2>
+            <p class="stat-description">Explore new topics and skills</p>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon green-icon">✔️</div>
+            <p class="stat-label">Quizzes completed</p>
+            <h2 class="stat-number">12</h2>
+            <p class="stat-description">Keep up your learning streak</p>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon amber-icon">🎯</div>
+            <p class="stat-label">Average score</p>
+            <h2 class="stat-number">85%</h2>
+            <p class="stat-description">You're making great progress</p>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon violet-icon">🕒</div>
+            <p class="stat-label">Learning time</p>
+            <h2 class="stat-number">8.5 hrs</h2>
+            <p class="stat-description">Time invested in your growth</p>
+        </div>
+        <!-- <button
+          class="w-full rounded-xl bg-purple-600 px-4 py-3 font-semibold text-white shadow-sm transition hover:bg-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-gray-950 active:scale-[0.98]"
+        >
+          Start quiz <span class="ml-1">→</span>
+        </button> -->
+      </div>
+
+           <div
+        class="group rounded-2xl border border-gray-800 bg-gray-900 p-6 m-2 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-purple-700 hover:shadow-xl"
+      >
+        <div
+          class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-cyan-950 text-3xl"
+        >
+          ⚛️
+        </div>
+        <h2 class="mb-2 text-xl font-bold text-gray-100">Html</h2>
+        <p class="mb-5 text-sm text-gray-400">Web devloper · 10 questions</p>
+        <div
+          class="mb-5 flex items-center gap-2 text-xs font-medium text-gray-400"
+        >
+          <span class="rounded-full bg-cyan-950 px-3 py-1.5 text-cyan-300"
+            >Intermediate</span
+          >
+          <span>⏱ 10 min</span>
+        </div>
+        <button
+          class="w-full rounded-xl bg-purple-600 px-4 py-3 font-semibold text-white shadow-sm transition hover:bg-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-gray-950 active:scale-[0.98]"
+        >
+          Start quiz <span class="ml-1">→</span>
+        </button>
+      </div>
+
+      <div
+        class="group rounded-2xl border border-gray-800 bg-gray-900 p-6 m-2 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-purple-700 hover:shadow-xl"
+      >
+        <div
+          class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-cyan-950 text-3xl"
+        >
+          ⚛️
+        </div>
+        <h2 class="mb-2 text-xl font-bold text-gray-100">Reactjs</h2>
+        <p class="mb-5 text-sm text-gray-400">Web frameworks · 10 questions</p>
+        <div
+          class="mb-5 flex items-center gap-2 text-xs font-medium text-gray-400"
+        >
+          <span class="rounded-full bg-cyan-950 px-3 py-1.5 text-cyan-300"
+            >Intermediate</span
+          >
+          <span>⏱ 10 min</span>
+        </div>
+        <button
+          class="w-full rounded-xl bg-purple-600 px-4 py-3 font-semibold text-white shadow-sm transition hover:bg-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-gray-950 active:scale-[0.98]"
+        >
+          Start quiz <span class="ml-1">→</span>
+        </button>
+      </div>
+
+      <div
+        class="group rounded-2xl border border-gray-800 bg-gray-900 p-6 m-2 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-purple-700 hover:shadow-xl"
+      >
+        <div
+          class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-yellow-950 text-3xl"
+        >
+          🐍
+        </div>
+        <h2 class="mb-2 text-xl font-bold text-gray-100">Python</h2>
+        <p class="mb-5 text-sm text-gray-400">Programming · 10 questions</p>
+        <div
+          class="mb-5 flex items-center gap-2 text-xs font-medium text-gray-400"
+        >
+          <span class="rounded-full bg-yellow-950 px-3 py-1.5 text-yellow-300"
+            >Beginner</span
+          >
+          <span>⏱ 10 min</span>
+        </div>
+        <button
+          class="w-full rounded-xl bg-purple-600 px-4 py-3 font-semibold text-white shadow-sm transition hover:bg-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-gray-950 active:scale-[0.98]"
+        >
+          Start quiz <span class="ml-1">→</span>
+        </button>
+      </div>
+    </div>
+
+    <section>
+        <div class="section-header">
+            <div>
+                <h2>Popular quizzes</h2>
+                <p>Pick a quiz and test your knowledge.</p>
+            </div>
+
+           
+        </div>
+
+        <div class="quiz-grid">
+
+            <div class="quiz-card">
+                <div class="quiz-icon orange-icon">🌐</div>
+                <h3>HTML</h3>
+                <p class="quiz-description">
+                    Web development · 10 questions
+                </p>
+
+                <div class="quiz-meta">
+                    <span class="level">Beginner</span>
+                    <span>⏱ 10 min</span>
+                </div>
+
+                <a href="#" class="btn quiz-btn">
+                    Start quiz →
+                </a>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-icon cyan-icon">⚛️</div>
+                <h3>Reactjs</h3>
+                <p class="quiz-description">
+                    Web frameworks · 10 questions
+                </p>
+
+                <div class="quiz-meta">
+                    <span class="level level-cyan">Intermediate</span>
+                    <span>⏱ 10 min</span>
+                </div>
+
+                <a href="#" class="btn quiz-btn">
+                    Start quiz →
+                </a>
+            </div>
+
+            <div class="quiz-card">
+                <div class="quiz-icon yellow-icon">🐍</div>
+                <h3>Python</h3>
+                <p class="quiz-description">
+                    Programming · 10 questions
+                </p>
+
+                <div class="quiz-meta">
+                    <span class="level level-yellow">Beginner</span>
+                    <span>⏱ 10 min</span>
+                </div>
+
+                <a href="#" class="btn quiz-btn">
+                    Start quiz →
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+</div>
+
+{% endblock %}

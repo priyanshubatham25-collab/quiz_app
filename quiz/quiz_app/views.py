@@ -1,8 +1,12 @@
 from django.shortcuts import render,redirect,get_object_or_404
-from django.contrib.auth import login,authenticate
+from django.contrib.auth import logout,login as auth_login
 from .forms import  RegistrationForm
 from django.contrib import messages
 from .forms import LoginForm
+from django.contrib.auth.decorators import login_required
+from .models import Attempt, AttemptAnswer, Category, Quiz  
+from django.db.models import Count, Q
+from django.views.decorators.http import require_POST
 
 
 def register(request):
@@ -23,26 +27,29 @@ def register(request):
     
        
             
-
 def login(request):
-     if request.method == "POST":
-          form = LoginForm(request, data=request.POST)
+    if request.method == "POST":
+        form = LoginForm(request, data=request.POST)
 
-          if form.is_valid():
-            form.get_user()
-            login(request)
-            messages.success(request,"login sucessfully")
+        if form.is_valid():
+            user = form.get_user()
+            auth_login(request, user)
+            messages.success(request, "Login successfully!")
             return redirect('dashboard')
-          else:
-            form =LoginForm()
-            messages.error(request,"Invalid username or password!")
+        else:
+            messages.error(request, "Invalid username or password!")
+
+    else:
+        form = LoginForm()
+
+    return render(request, 'login_form.html', {'form': form})
+
               
-              
-     else:
-        form =LoginForm()
-        messages.error(request,"Invalid username or password!")
-          
-     return render(request,'login_form.html',{'form': form})    
-                
+def logout_user(request):
+        logout(request)
+        messages.success(request,"you have been logged out")
+        return redirect('login')
+
+
 def dashboard(request):
     return render(request,'dashboard.html')

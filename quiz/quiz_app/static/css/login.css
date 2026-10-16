@@ -13,18 +13,23 @@
 /* Login card */
 .login-card {
     width: 100%;
-    max-width: 440px;
-    padding: 38px;
-    background: #ffffff;
-    border-radius: 22px;
-    box-shadow: 0 12px 35px rgba(126, 34, 206, 0.15);
+    max-width: 430px;
+    padding: 32px;
     box-sizing: border-box;
+    color: #dfdee2;
+    background: rgba(15, 12, 30, 0.88);
+    border: 1px solid rgba(192, 132, 252, 0.4);
+    border-radius: 22px;
+
+    box-shadow: 0 20px 70px rgba(139, 92, 246, 0.2);
+    backdrop-filter: blur(18px);
 }
 
 /* Header */
 .login-header {
     text-align: center;
     margin-bottom: 30px;
+    
 }
 
 .login-icon {
@@ -41,14 +46,14 @@
 
 .login-header h1 {
     margin: 0 0 10px;
-    color: #86198f;
+    color: #f29ffa;
     font-size: 30px;
     font-weight: 800;
 }
 
 .login-header p {
     margin: 0;
-    color: #777;
+    color: #f5f0f0;
     font-size: 14px;
     line-height: 1.6;
 }
@@ -61,7 +66,7 @@
 .login-form label {
     display: block;
     margin-bottom: 8px;
-    color: #4a044e;
+    color: #f29ffa;
     font-size: 14px;
     font-weight: 600;
 }
@@ -72,16 +77,14 @@
 .login-form textarea {
     display: block;
     width: 100%;
-    padding: 14px;
-    border: 1px solid #e9d5ff;
-    border-radius: 10px;
-    background: #fdfaff;
-    color: #333;
-    font-size: 15px;
-    font-family: inherit;
+    padding: 12px;
     box-sizing: border-box;
+
+    color: white;
+    background: #171329;
+    border: 1px solid #494064;
+    border-radius: 9px;
     outline: none;
-    transition: 0.3s ease;
 }
 
 /* Input focus effect */
@@ -143,7 +146,7 @@
 }
 
 .login-footer a {
-    color: #a21caf;
+    color: #f29ffa;
     font-weight: 700;
     text-decoration: none;
 }
