@@ -79,8 +79,7 @@
     width: 100%;
     padding: 12px;
     box-sizing: border-box;
-
-    color: black;
+    color: white;
     background: #171329;
     border: 1px solid #494064;
     border-radius: 9px;
@@ -92,7 +91,7 @@
 .login-form select:focus,
 .login-form textarea:focus {
     border-color: #c026d3;
-    background: #fff;
+    background: #171329;
     box-shadow: 0 0 0 4px rgba(192, 38, 211, 0.12);
 }
 
