@@ -50,6 +50,10 @@ def logout_user(request):
         messages.success(request,"you have been logged out")
         return redirect('login')
 
-
+@login_required(login_url='login') 
 def dashboard(request):
-    return render(request,'dashboard.html')
+         return render(request, 'dashboard.html')
+        
+
+def categories(request):
+     return render(request,'categories.html')
