@@ -3,10 +3,11 @@
 <div class="dashboard">
 
     <nav class="dashboard-nav">
-        <div class="nav-item active">Dashboard</div>
-        <div class="nav-item">Quizzes</div>
-        <div class="nav-item">Categories</div>
-        <div class="nav-item">Attempts</div>
+        <div class="nav-item active" ><a href="{% url 'dashboard' %}">Dashboard</a></div>
+        <div class="nav-item"><a href="{% url 'quiz_list' %}">Quizzes</a></div>
+        <div class="nav-item"><a href="{ url 'categories' %}">Categories</a></div>
+        <div class="nav-item"><a>Attempts</a></div>
+        
     </nav>
 
     <div class="welcome">
@@ -59,7 +60,7 @@
           ⚛️
         </div>
         <h2 class="mb-2 text-xl font-bold text-gray-100">Html</h2>
-        <p class="mb-5 text-sm text-gray-400">Web devloper · 10 questions</p>
+        <p class="mb-5 text-sm text-gray-400">Web devlopment · 10 questions</p>
         <div
           class="mb-5 flex items-center gap-2 text-xs font-medium text-gray-400"
         >
@@ -140,9 +141,9 @@
 
             <div class="quiz-card">
                 <div class="quiz-icon orange-icon">🌐</div>
-                <h3>HTML</h3>
+                <h3>Django</h3>
                 <p class="quiz-description">
-                    Web development · 10 questions
+                    Web frameworks· 10 questions
                 </p>
 
                 <div class="quiz-meta">
