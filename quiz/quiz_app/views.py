@@ -53,3 +53,9 @@ def logout_user(request):
 
 def dashboard(request):
     return render(request,'dashboard.html')
+
+def quiz_list(request):
+    return render(request,"quiz_list.html")
+
+def quiz_details(request):
+    return render(request,"quiz_details.html")
