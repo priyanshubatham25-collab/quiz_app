@@ -5,3 +5,5 @@
     3. app navbar logo was redirecting to login page
     4. some minor css changes
 }
+
+check-4 admin panel
