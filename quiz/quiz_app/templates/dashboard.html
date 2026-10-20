@@ -3,7 +3,7 @@
 {% load static %}
 
 {% block content %}
-<link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+
 
 <div class="dashboard">
 
@@ -29,14 +29,14 @@
         <div class="stat-card">
             <div class="stat-icon purple-icon">📖</div>
             <p class="stat-label">Available quizzes</p>
-            <h2 class="stat-number">10</h2>
+            <h2 class="stat-number">{{ quizzes.count }}</h2>
             <p class="stat-description">Explore new topics and skills</p>
         </div>
 
         <div class="stat-card">
             <div class="stat-icon green-icon">✔️</div>
             <p class="stat-label">Quizzes completed</p>
-            <h2 class="stat-number">0</h2>
+            <h2 class="stat-number">{{quiz.completed}}</h2>
             <p class="stat-description">Keep up your learning streak</p>
         </div>
 
@@ -84,7 +84,7 @@
             <span>⏱ 10 min</span>
         </div>
 
-        <a href="{% url 'quiz_details' quiz.id %}" class="btn quiz-btn">Start quiz →</a>
+        <a href="{% url 'quiz_start' 1 %}" class="btn quiz-btn">Start quiz →</a>
     </div>
 
 
@@ -105,7 +105,7 @@
             <span>⏱ 10 min</span>
         </div>
 
-        <a href="{% url 'quiz_details' quiz.id %}" class="btn quiz-btn">Start quiz →</a>
+        <a href="{% url 'quiz_start' 2 %}" class="btn quiz-btn">Start quiz →</a>
     </div>
 
 
@@ -116,7 +116,7 @@
                  alt="JavaScript Logo">
         </div>
 
-        <h3>JavaScript</h3>
+        <h3>JavaScript</h3> 
         <p class="quiz-description">
             Programming · 10 questions
         </p>
@@ -126,7 +126,7 @@
             <span>⏱ 10 min</span>
         </div>
 
-        <a href="{% url 'quiz_details' quiz.id %}" class="btn quiz-btn">Start quiz →</a>
+        <a href="{% url 'quiz_start' 3 %}" class="btn quiz-btn">Start quiz →</a>
     </div>
 
 </div>
@@ -140,7 +140,7 @@
                 <p>Pick a quiz and test your knowledge.</p>
             </div>
 
-            <a href="{% url 'quiz_list' quiz.id  %}" class="view-all">
+            <a href="{% url 'quiz_list'  %}" class="view-all">
                 View all →
             </a>
         </div>
@@ -157,7 +157,7 @@
                     <span>⏱ 10 min</span>
                 </div>
 
-                <a href="{% url 'quiz_details' quiz.id  %}" class="quiz-btn">
+                <a href="{% url 'quiz_start' 5 %}" class="quiz-btn">
                     Start quiz →
                 </a>
             </div>
@@ -172,7 +172,7 @@
                     <span>⏱ 10 min</span>
                 </div>
 
-                <a href="{% url 'quiz_details' quiz.id %}" class="quiz-btn">
+                <a href="{% url 'quiz_start'  6 %}" class="quiz-btn">
                     Start quiz →
                 </a>
             </div>
@@ -187,7 +187,7 @@
                     <span>⏱ 10 min</span>
                 </div>
 
-                <a href="{% url 'quiz_details' quiz.id  %}" class="quiz-btn">
+                <a href="{% url 'quiz_start' 7  %}" class="quiz-btn">
                     Start quiz →
                 </a>
             </div>
@@ -196,4 +196,5 @@
     </section>
 
 </div>
-{% endblock %}
+{% endblock %} 
+

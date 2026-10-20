@@ -1,0 +1,94 @@
+
+{% extends "index.html" %}
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/result.css' %}">
+
+<div class="quiz-result-page">
+
+    <div class="result-heading">
+        <div class="result-avatar">🎯</div>
+        <h1>Quiz <span>Result</span></h1>
+        <p>Your challenge is complete. Let's see how you did!</p>
+    </div>
+
+    <div class="result-wrapper">
+
+        <div class="result-quiz-info">
+            <div class="result-quiz-icon">📝</div>
+            <div>
+                <h2>{{ quiz.title|upper }}</h2>
+                <p>YOUR QUIZ SUMMARY</p>
+            </div>
+        </div>
+
+        <div class="result-status">
+
+            {% if passed %}
+                <div class="result-trophy">🏆</div>
+                <h2 class="passed-title">Amazing Work!</h2>
+                <p class="result-subtitle">
+                    Congratulations! You passed the quiz.
+                </p>
+            {% else %}
+                <div class="result-trophy">💪</div>
+                <h2 class="failed-title">Keep Going!</h2>
+                <p class="result-subtitle">
+                    Practice makes progress. Try again!
+                </p>
+            {% endif %}
+
+        </div>
+
+        <div class="result-stats">
+
+            <div class="stat-card correct-card">
+                <div class="stat-icon">✓</div>
+                <p>Correct Score</p>
+                <h3>{{ score }}<span> / {{ total }}</span></h3>
+            </div>
+
+            <div class="stat-card percentage-card">
+                <div class="stat-icon">%</div>
+                <p>Your Percentage</p>
+                <h3>{{ percentage }}%</h3>
+            </div>
+
+            <div class="stat-card passing-card">
+                <div class="stat-icon">🎯</div>
+                <p>Passing Mark</p>
+                <h3>{{ quiz.pass_percentage }}%</h3>
+            </div>
+
+        </div>
+
+
+        {% if passed %}
+            <div class="result-feedback feedback-success">
+                <span>✓</span>
+                Great job! You achieved the required passing score.
+            </div>
+        {% else %}
+            <div class="result-feedback feedback-failed">
+                <span>↗</span>
+                Don't give up! Review your topics and try again.
+            </div>
+        {% endif %}
+
+        <div class="result-footer">
+            <a href="{% url 'quiz_list' %}" class="result-back-btn">
+                <span>←</span> Back to Quizzes
+            </a>
+        </div>
+
+    </div>
+
+    <p class="result-bottom-text">
+        KEEP LEARNING · KEEP GROWING · KEEP WINNING
+    </p>
+
+</div>
+
+{% endblock %}

@@ -1,9 +1,110 @@
-<h1>{{ quiz.title }}</h1>
 
-{% for question in questions %}
-    <div>
-        <h3>{{ forloop.counter }}. {{ question.text }}</h3>
+{% extends "index.html" %}
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/quiz_details.css' %}">
+
+<div class="quiz-details">
+
+    <!-- Page Header -->
+    <div class="quiz-header">
+        <div class="quiz-icon">🎯</div>
+        <h1>Quiz Challenge</h1>
+        <p>Test your knowledge and choose the correct answers!</p>
     </div>
-{% empty %}
-    <p>No questions available.</p>
-{% endfor %}
+
+    <!-- Quiz Information -->
+    <div class="quiz-info">
+        <div class="info-item">
+            <span class="info-icon">📝</span>
+            <div>
+                <h3>{{ quiz.title }}</h3>
+                <p>Quiz Title</p>
+            </div>
+        </div>
+
+        <div class="info-item">
+            <span class="info-icon">⏱️</span>
+            <div>
+                <h3>{{ quiz.time_limit_minutes }} Minutes</h3>
+                <p>Time Limit</p>
+            </div>
+        </div>
+
+        <div class="info-item">
+            <span class="info-icon">❓</span>
+            <div>
+                <h3>{{ questions|length }}</h3>
+                <p>Total Questions</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quiz Form -->
+    <form method="POST"  action="{% url 'quiz_result' quiz.id %}" class="quiz-form" id="quiz-form">
+        {% csrf_token %}
+
+        <div class="section-heading">
+            <h2>🚀 Let's Begin!</h2>
+            <p>Read each question carefully and select one answer.</p>
+        </div>
+
+        {% for question in questions %}
+            <div class="question-card">
+
+                <div class="question-number">
+                    Question {{ forloop.counter }}
+                </div>
+
+                <h3>{{ question.text }}</h3>
+
+                <div class="choices-list">
+                    {% for choice in question.choices.all %}
+                        <label class="choice-option">
+                            <input
+                                type="radio"
+                                name="question_{{ question.id }}"
+                                value="{{ choice.id }}"
+                            >
+                            <span class="custom-radio"></span>
+                            <span class="choice-text">{{ choice.text }}</span>
+                        </label>
+                    {% empty %}
+                        <p class="empty-message">
+                            No options added for this question yet.
+                        </p>
+                    {% endfor %}
+                </div>
+
+            </div>
+        {% empty %}
+            <div class="empty-quiz">
+                <span>📚</span>
+                <h3>No Questions Available</h3>
+                <p>Please add questions to this quiz through the Django admin panel.</p>
+            </div>
+        {% endfor %}
+
+        {% if questions %}
+            <div class="quiz-actions">
+                <a href="{% url 'quiz_list' %}" class="back-btn">
+                    ← Back to Quizzes
+                </a>
+
+                <button type="button" class="resume-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                    ↑ Back to Top
+                </button>
+
+                <button type="submit" class="submit-btn">
+                    Submit Quiz <span>→</span>
+                </button>
+            </div>
+        {% endif %}
+
+    </form>
+
+</div>
+
+{% endblock %}
