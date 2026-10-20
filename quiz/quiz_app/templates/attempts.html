@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+{% block content %}
+{% load static %}
+ <nav class="dashboard-nav">
+       
+        <div class="nav-item" ><a href="{% url 'dashboard' %}">Dashboard</a></div>
+        <div class="nav-item"><a href="{% url 'quiz_list' %}">Quizzes</a></div>
+        <div class="nav-item"><a href="{% url 'categories' %}">Categories</a></div>
+        <div class="nav-item active"><a href="{% url 'attempts' %}">Attempts</a></div>
+        
+    </nav>
+
+{% endblock%}

@@ -1,6 +1,9 @@
-{% extends 'index.html' %}
-{% block content %}
+<h1>{{ quiz.title }}</h1>
 
-<h1>Start your quiz</h1>
-
-{% endblock %}
+{% for question in questions %}
+    <div>
+        <h3>{{ forloop.counter }}. {{ question.text }}</h3>
+    </div>
+{% empty %}
+    <p>No questions available.</p>
+{% endfor %}

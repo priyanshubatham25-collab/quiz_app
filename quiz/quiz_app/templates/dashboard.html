@@ -12,8 +12,8 @@
        
         <div class="nav-item active" ><a href="{% url 'dashboard' %}">Dashboard</a></div>
         <div class="nav-item"><a href="{% url 'quiz_list' %}">Quizzes</a></div>
-        <div class="nav-item"><a href="{ url 'categories' %}">Categories</a></div>
-        <div class="nav-item"><a>Attempts</a></div>
+        <div class="nav-item"><a href="{% url 'categories' %}">Categories</a></div>
+        <div class="nav-item"><a href="{% url 'attempts' %}">Attempts</a></div>
         
     </nav>
 
@@ -29,28 +29,28 @@
         <div class="stat-card">
             <div class="stat-icon purple-icon">📖</div>
             <p class="stat-label">Available quizzes</p>
-            <h2 class="stat-number">24</h2>
+            <h2 class="stat-number">10</h2>
             <p class="stat-description">Explore new topics and skills</p>
         </div>
 
         <div class="stat-card">
             <div class="stat-icon green-icon">✔️</div>
             <p class="stat-label">Quizzes completed</p>
-            <h2 class="stat-number">12</h2>
+            <h2 class="stat-number">0</h2>
             <p class="stat-description">Keep up your learning streak</p>
         </div>
 
         <div class="stat-card">
             <div class="stat-icon amber-icon">🎯</div>
             <p class="stat-label">Average score</p>
-            <h2 class="stat-number">85%</h2>
+            <h2 class="stat-number">0%</h2>
             <p class="stat-description">You're making great progress</p>
         </div>
 
         <div class="stat-card">
             <div class="stat-icon violet-icon">🕒</div>
             <p class="stat-label">Learning time</p>
-            <h2 class="stat-number">8.5 hrs</h2>
+            <h2 class="stat-number">00 hrs</h2>
             <p class="stat-description">Time invested in your growth</p>
         </div>
 
@@ -84,7 +84,7 @@
             <span>⏱ 10 min</span>
         </div>
 
-        <a href="{% url 'quiz_details' %}" class="btn quiz-btn">Start quiz →</a>
+        <a href="{% url 'quiz_details' quiz.id %}" class="btn quiz-btn">Start quiz →</a>
     </div>
 
 
@@ -105,7 +105,7 @@
             <span>⏱ 10 min</span>
         </div>
 
-        <a href="{% url 'quiz_details' %}" class="btn quiz-btn">Start quiz →</a>
+        <a href="{% url 'quiz_details' quiz.id %}" class="btn quiz-btn">Start quiz →</a>
     </div>
 
 
@@ -126,7 +126,7 @@
             <span>⏱ 10 min</span>
         </div>
 
-        <a href="{% url 'quiz_details' %}" class="btn quiz-btn">Start quiz →</a>
+        <a href="{% url 'quiz_details' quiz.id %}" class="btn quiz-btn">Start quiz →</a>
     </div>
 
 </div>
@@ -140,7 +140,7 @@
                 <p>Pick a quiz and test your knowledge.</p>
             </div>
 
-            <a href="{% url 'quiz_list' %}" class="view-all">
+            <a href="{% url 'quiz_list' quiz.id  %}" class="view-all">
                 View all →
             </a>
         </div>
@@ -157,7 +157,7 @@
                     <span>⏱ 10 min</span>
                 </div>
 
-                <a href="{% url 'quiz_details' %}" class="quiz-btn">
+                <a href="{% url 'quiz_details' quiz.id  %}" class="quiz-btn">
                     Start quiz →
                 </a>
             </div>
@@ -172,7 +172,7 @@
                     <span>⏱ 10 min</span>
                 </div>
 
-                <a href="{% url 'quiz_details' %}" class="quiz-btn">
+                <a href="{% url 'quiz_details' quiz.id %}" class="quiz-btn">
                     Start quiz →
                 </a>
             </div>
@@ -187,7 +187,7 @@
                     <span>⏱ 10 min</span>
                 </div>
 
-                <a href="{% url 'quiz_details' %}" class="quiz-btn">
+                <a href="{% url 'quiz_details' quiz.id  %}" class="quiz-btn">
                     Start quiz →
                 </a>
             </div>

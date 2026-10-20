@@ -6,7 +6,7 @@
         <div class="nav-item " ><a href="{% url 'dashboard' %}">Dashboard</a></div>
         <div class="nav-item active"><a href="{% url 'quiz_list' %}">Quizzes</a></div>
         <div class="nav-item"><a href="{% url 'categories' %}">Categories</a></div>
-        <div class="nav-item"><a href="">Attempts</a></div>
+        <div class="nav-item"><a href="{% url 'attempts' %}">Attempts</a></div>
         
     </nav>
 <section>
@@ -33,7 +33,7 @@
                     <span>⏱ 10 min</span>
                 </div>
 
-                <a href="{% url 'quiz_details' %}" class="btn quiz-btn">
+                <a href="{% url 'quiz_details' quiz.id %}" class="btn quiz-btn">
                     Start quiz →
                 </a>
             </div>
@@ -50,7 +50,7 @@
                     <span>⏱ 10 min</span>
                 </div>
 
-                <a href="{% url 'quiz_details' %}" class="btn quiz-btn">
+                <a href="{% url 'quiz_details' quid.id  %}" class="btn quiz-btn">
                     Start quiz →
                 </a>
             </div>
@@ -67,7 +67,7 @@
                     <span>⏱ 10 min</span>
                 </div>
 
-                <a href="{% url 'quiz_details' %}" class="btn quiz-btn">
+                <a href="{% url 'quiz_details' quiz.id %}" class="btn quiz-btn">
                     Start quiz →
                 </a>
             </div>
@@ -94,7 +94,7 @@
             <span>⏱ 10 min</span>
         </div>
 
-        <a href="{% url 'quiz_details' %}" class="btn quiz-btn">Start quiz →</a>
+        <a href="{% url 'quiz_details'  quiz.id %}" class="btn quiz-btn">Start quiz →</a>
     </div>
 
 
@@ -115,7 +115,7 @@
             <span>⏱ 10 min</span>
         </div>
 
-        <a href="{% url 'quiz_details' %}" class="btn quiz-btn">Start quiz →</a>
+        <a href="{% url 'quiz_details' quiz.id %}" class="btn quiz-btn">Start quiz →</a>
     </div>
 
 
@@ -136,7 +136,7 @@
             <span>⏱ 10 min</span>
         </div>
 
-        <a href="{% url 'quiz_details' %}" class="btn quiz-btn">Start quiz →</a>
+        <a href="{% url 'quiz_details' quiz.id %} " class="btn quiz-btn">Start quiz →</a>
     </div>
 
 </div>

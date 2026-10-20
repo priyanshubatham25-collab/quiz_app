@@ -4,8 +4,7 @@ from .forms import  RegistrationForm
 from django.contrib import messages
 from .forms import LoginForm
 from django.contrib.auth.decorators import login_required
-from .models import Attempt, AttemptAnswer, Category, Quiz  
-from django.db.models import Count, Q
+from .models import Attempt,Question ,Category,Quiz 
 from django.views.decorators.http import require_POST
 
 
@@ -25,8 +24,7 @@ def register(request):
         form = RegistrationForm() 
         return render(request,"registration_form.html",{'form': form}) 
     
-       
-            
+          
 def login(request):
     if request.method == "POST":
         form = LoginForm(request, data=request.POST)
@@ -44,11 +42,13 @@ def login(request):
 
     return render(request, 'login_form.html', {'form': form})
 
-              
+             
 def logout_user(request):
         logout(request)
         messages.success(request,"you have been logged out")
         return redirect('login')
+
+
 
 @login_required(login_url='login') 
 def dashboard(request):
@@ -57,8 +57,15 @@ def dashboard(request):
 def quiz_list(request):
      return render(request,'quiz_list.html')
 
-def quiz_details(request):
-     return render(request,'quiz_details.html')
-    
+def quiz_details(request, quiz_id):
+    quiz = get_object_or_404(Quiz, id=quiz_id)
+    questions = quiz.questions.all()
+    return render(request, 'quiz_details.html', { 'quiz': quiz, 'questions': questions})
+
+
+
 def categories(request):
-     return render(request,'categories.html')
+     return render(request,'categories.html')   
+
+def attempts(request):
+    return render(request, 'attempts.html')
