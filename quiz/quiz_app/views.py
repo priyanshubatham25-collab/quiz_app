@@ -100,4 +100,5 @@ def categories(request):
      return render(request,'categories.html')   
 
 def attempts(request):
-    return render(request, 'attempts.html')
+    attempts = Attempt.objects.filter(user=request.user).select_related('quiz')
+    return render(request,'attempts.html',{'attempts': attempts})
