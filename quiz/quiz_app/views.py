@@ -56,7 +56,7 @@ def dashboard(request):
     quizzes = Quiz.objects.filter(is_published=True)
     return render(request, 'dashboard.html', {'quizzes': quizzes})
 
-
+@login_required(login_url='login')
 def quiz_list(request):
      return render(request,'quiz_list.html')
 
@@ -95,10 +95,12 @@ def quiz_result(request, pk):
     return render(request, 'quiz_result.html')
 
 
-
+@login_required(login_url='login')
 def categories(request):
      return render(request,'categories.html')   
 
+@login_required(login_url='login')
 def attempts(request):
-    attempts = Attempt.objects.filter(user=request.user).select_related('quiz')
-    return render(request,'attempts.html',{'attempts': attempts})
+    quizzes = Quiz.objects.filter(is_published=True).prefetch_related('attempts', 'questions')
+    return render(request, 'attempts.html', {'quizzes': quizzes})
+    

@@ -6,9 +6,33 @@
 
 <link rel="stylesheet" href="{% static 'css/quiz_details.css' %}">
 
-<div class="quiz-details">
 
+<div class="quiz-details relative" id="quizMainWrapper">
+
+
+    <div id="quizPopup" class="fixed inset-0 bg-black/50 backdrop-blur-md flex justify-center items-center z-50 p-5">
+        <div class="bg-white rounded-lg p-8 text-center shadow-2xl max-w-md border border-gray-200 pointer-events-auto">
+            <h3 class="text-2xl font-bold text-gray-800 mb-3">Ready to Start the Quiz?</h3>
+            <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                Welcome to <strong>{{ quiz.title }}</strong>! To start the quiz click the button below, your <strong>{{ questions|length }} questions</strong> will appear and the <strong>{{ quiz.time_limit_minutes }}-minute</strong> countdown timer will start immediately. The quiz will auto-submit once the time runs out.
+            </p>
+            <button onclick="startActualQuiz()" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-md transition duration-200 cursor-pointer">
+                Let's Start
+            </button>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <div class="flex justify-between items-center border-b-2 border-gray-100 pb-4 mb-6">
+        <div class="text-2xl font-bold text-blue-600">Daily Mock Test</div>
+        <div class="bg-red-500 text-white py-2 px-4 rounded-full font-bold text-base shadow-sm">
+            ⏱️ <span id="quizTimer">10:00</span>
+        </div>
+    </div>
+
+<div class="quiz-details">
     <!-- Page Header -->
+
     <div class="quiz-header">
         <div class="quiz-icon">🎯</div>
         <h1>Quiz Challenge</h1>
@@ -106,5 +130,56 @@
     </form>
 
 </div>
+
+
+
+<script>
+    let timerInterval;
+
+    function startActualQuiz() {
+        document.getElementById('quizPopup').style.display = 'none';
+        
+        const quizForm = document.getElementById('quiz-form');
+        if (quizForm) {
+            quizForm.classList.remove('hidden');
+        }
+        
+        let timeRemaining = 10 * 60;
+        const timerDisplay = document.getElementById('quizTimer');
+
+        timerInterval = setInterval(function() {
+            let minutes = Math.floor(timeRemaining / 60);
+            let seconds = timeRemaining % 60;
+
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+
+            timerDisplay.textContent = minutes + ":" + seconds;
+
+            if (--timeRemaining < 0) {
+                clearInterval(timerInterval);
+                autoSubmitQuiz();
+            }
+        }, 1000);
+    }
+
+    // Manual Submission
+    function submitQuiz(event) {
+        if(event) event.preventDefault(); 
+        clearInterval(timerInterval);
+        alert("Quiz submitted successfully!");
+    }
+
+    // Automatic Submission
+    function autoSubmitQuiz() {
+        alert("Time is up! Your quiz is being submitted automatically.");
+        const form = document.getElementById('quiz-form'); 
+        if (form) {
+            form.submit(); 
+        }
+    }
+</script>
+
+
 
 {% endblock %}
