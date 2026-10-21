@@ -1,6 +1,7 @@
-{% extends 'index.html' %}
+
+{% extends "index.html" %}
+
 {% block content %}
-{% load static %}
  <nav class="dashboard-nav">
        
         <div class="nav-item" ><a href="{% url 'dashboard' %}">Dashboard</a></div>
@@ -8,6 +9,45 @@
         <div class="nav-item"><a href="{% url 'categories' %}">Categories</a></div>
         <div class="nav-item active"><a href="{% url 'attempts' %}">Attempts</a></div>
         
+        
     </nav>
+<div class="attempts-container">
+    <h1>Quiz Attempts</h1>
+    <p>Users who attempted quizzes</p>
 
-{% endblock%}
+    <table>
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Quiz Name</th>
+                <th>Score</th>
+                <th>Total Questions</th>
+                <th>Started At</th>
+                <th>Finished At</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for attempt in attempts %}
+            <tr>
+                <td>{{ attempt.user.username }}</td>
+                <td>{{ attempt.user.email|default:"Not provided" }}</td>
+                <td>{{ attempt.quiz.title }}</td>
+                <td>{{ attempt.score }}</td>
+                <td>{{ attempt.total}}</td>
+                <td>{{ attempt.start_at|date:"d M Y, h:i A" }}</td>
+                <td>
+                    {{ attempt.finished_at|date:"d M Y, h:i A"|default:"Not completed" }}
+                </td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="7">No quiz attempts found.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

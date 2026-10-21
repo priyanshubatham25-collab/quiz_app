@@ -9,7 +9,7 @@
         <div class="nav-item"><a href="{% url 'attempts' %}">Attempts</a></div>
         
     </nav>
-<section>
+<section >
         <div class="section-header">
             <div>
                 <h2>All quizzes</h2>
@@ -21,11 +21,15 @@
 
         <div class="quiz-grid">
 
+            <!-- HTML5 Card -->
             <div class="quiz-card">
-                <div class="quiz-icon orange-icon">🌐</div>
-                <h3>Django</h3>
+                 <div class="quiz-icon orange-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                 alt="HTML5 Logo">
+        </div>
+                <h3>HTML5</h3>
                 <p class="quiz-description">
-                    Web frameworks· 10 questions
+                    Web Development · 10 questions
                 </p>
 
                 <div class="quiz-meta">
@@ -37,12 +41,17 @@
                     Start quiz →
                 </a>
             </div>
-
+ 
+            <!-- CSS3 Card -->
             <div class="quiz-card">
-                <div class="quiz-icon cyan-icon">⚛️</div>
-                <h3>Reactjs</h3>
+                <div class="quiz-icon cyan-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                 alt="CSS3 Logo">
+        </div>
+              
+                <h3>CSS3</h3>
                 <p class="quiz-description">
-                    Web frameworks · 10 questions
+                    Styling & Design · 10 questions
                 </p>
 
                 <div class="quiz-meta">
@@ -55,9 +64,15 @@
                 </a>
             </div>
 
+     <!-- JAVASCRIPT Card  -->
             <div class="quiz-card">
-                <div class="quiz-icon yellow-icon">🐍</div>
-                <h3>Python</h3>
+                <div class="quiz-icon yellow-icon">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                 alt="JavaScript Logo">
+        </div>
+
+               
+                <h3>JavaScript</h3>
                 <p class="quiz-description">
                     Programming · 10 questions
                 </p>
@@ -77,16 +92,13 @@
        
         <div class="quiz-grid">
 
-    <!-- HTML5 Card -->
+    <!-- REACT Card -->
     <div class="quiz-card">
-        <div class="quiz-icon orange-icon">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                 alt="HTML5 Logo">
-        </div>
 
-        <h3>HTML5</h3>
+         <div class="quiz-icon cyan-icon">⚛️</div>
+        <h3>ReactJS</h3>
         <p class="quiz-description">
-            Web Development · 10 questions
+            Web Framework · 10 questions
         </p>
 
         <div class="quiz-meta">
@@ -98,48 +110,54 @@
     </div>
 
 
-    <!-- CSS3 Card -->
+    <!-- PYTHON Card -->
     <div class="quiz-card">
-        <div class="quiz-icon cyan-icon">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                 alt="CSS3 Logo">
-        </div>
+                <div class="quiz-icon yellow-icon">🐍</div>
+                <h3>Python</h3>
+                <p class="quiz-description">Programming · 10 questions</p>
 
-        <h3>CSS3</h3>
-        <p class="quiz-description">
-            Styling & Design · 10 questions
-        </p>
+                <div class="quiz-meta">
+                    <span class="level">Beginner</span>
+                    <span>⏱ 10 min</span>
+                </div>
 
-        <div class="quiz-meta">
-            <span class="level level-cyan">Intermediate</span>
-            <span>⏱ 10 min</span>
-        </div>
+                <a href="{% url 'quiz_start' 5 %}" class="quiz-btn">
+                    Start quiz →
+                </a>
+            </div>
+           
+    <!-- DJANGO Card -->
+     <div class="quiz-card">
+                
+                <div class="quiz-icon orange-icon">♻️</div>
+                <h3>Django</h3>
+                <p class="quiz-description">Web framework · 10 questions</p>
 
-        <a href="{% url 'quiz_start' 4 %}" class="btn quiz-btn">Start quiz →</a>
-    </div>
+                <div class="quiz-meta">
+                    <span class="level level-cyan">Intermediate</span>
+                    <span>⏱ 10 min</span>
+                </div>
 
+                <a href="{% url 'quiz_start'  6 %}" class="quiz-btn">
+                    Start quiz →
+                </a>
+            </div>
 
-    <!-- JavaScript Card -->
-    <div class="quiz-card">
-        <div class="quiz-icon yellow-icon">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                 alt="JavaScript Logo">
-        </div>
+    <!-- MYSQL Card -->
+     <div class="quiz-card">
+                <div class="quiz-icon red-icon">🗄️</div>
+                <h3>MySQL</h3>
+                <p class="quiz-description">database· 10 questions</p>
 
-        <h3>JavaScript</h3>
-        <p class="quiz-description">
-            Programming · 10 questions
-        </p>
+                <div class="quiz-meta">
+                    <span class="level level-yellow">Beginner</span>
+                    <span>⏱ 10 min</span>
+                </div>
 
-        <div class="quiz-meta">
-            <span class="level level-yellow">Beginner</span>
-            <span>⏱ 10 min</span>
-        </div>
-
-        <a href="{% url 'quiz_start' 5 %} " class="btn quiz-btn">Start quiz →</a>
-    </div>
-
-</div>
+                <a href="{% url 'quiz_start' 7  %}" class="quiz-btn">
+                    Start quiz →
+                </a>
+            </div>
     </section>
     
 

@@ -1,0 +1,39 @@
+.attempts-container {
+    padding: 30px;
+    color: #f3f0ff;
+    overflow-x: auto;
+}
+
+.attempts-container h1 {
+    color: #a855f7;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.attempts-container p {
+    color: #c4b5fd;
+    margin-bottom: 20px;
+}
+
+.attempts-container table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #11111f;
+}
+
+.attempts-container th,
+.attempts-container td {
+    padding: 14px;
+    border: 1px solid #34304b;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.attempts-container th {
+    background: #581c87;
+    color: white;
+}
+
+.attempts-container tr:hover {
+    background: #211832;
+}
