@@ -1,0 +1,130 @@
+{% extends 'index.html' %} {% block content %} {% load static %}
+<nav class="dashboard-nav">
+  <div class="nav-item"><a href="{% url 'dashboard' %}">Dashboard</a></div>
+  <div class="nav-item"><a href="{% url 'quiz_list' %}">Quizzes</a></div>
+  <div class="nav-item"><a href="{% url 'categories' %}">Categories</a></div>
+  <div class="nav-item active"><a href="{% url 'attempts' %}">Attempts</a></div>
+</nav>
+
+<link rel="stylesheet" href="{% static 'css/attempts.css' %}">
+
+<div class="attempts-container">
+
+    {% for quiz in quizzes %}
+
+        {% if quiz.attempts.all %}
+
+            {% with latest_attempt=quiz.attempts.all.first %}
+
+            <div class="quiz-card">
+
+                <!-- Quiz Header -->
+                <div class="quiz-header">
+
+                    <div>
+                        <span class="quiz-label">Quiz Details</span>
+
+                        <h1 class="quiz-title">
+                            🎯 {{ quiz.title }}
+                        </h1>
+                    </div>
+
+                    <div>
+                        <span class="attempted-badge">Attempted</span>
+                    </div>
+
+                </div>
+
+                <!-- Quiz Statistics -->
+                <div class="quiz-stats">
+
+                    <!-- Latest Score -->
+                    <div class="stat-card">
+
+                        <div class="stat-icon score-icon">
+                            🏆
+                        </div>
+
+                        <div class="stat-content">
+
+                            <p class="stat-label">
+                                Latest Score
+                            </p>
+
+                            <p class="score-details">
+                                Raw Score:
+
+                                <span class="score-value">
+                                    {{ latest_attempt.score|default:"0" }}
+                                </span>
+
+                                out of
+
+                                <span class="total-questions">
+                                    {{ quiz.questions.count }}
+                                </span>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Total Attempts -->
+                    <div class="stat-card">
+
+                        <div class="stat-icon attempts-icon">
+                            🔄
+                        </div>
+
+                        <div class="stat-content">
+
+                            <p class="stat-label">
+                                Your Total Attempts
+                            </p>
+
+                            <h3 class="attempt-count">
+                                {{ quiz.attempts.count }}
+
+                                <span class="attempt-text">
+                                    Times tried
+                                </span>
+                            </h3>
+
+                            <p class="stat-description">
+                                Updates on every new submission
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            {% endwith %}
+
+        {% endif %}
+
+    {% empty %}
+
+        <!-- Empty State -->
+        <div class="empty-state">
+
+            <span class="empty-icon">📝</span>
+
+            <p class="empty-title">
+                You have not attempted any quiz.
+            </p>
+
+            <p class="empty-description">
+                Go to the Quizzes section and try!
+            </p>
+
+        </div>
+
+    {% endfor %}
+
+</div>
+
+{% endblock %}

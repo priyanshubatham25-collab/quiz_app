@@ -1,0 +1,4175 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2026-10-19T09:59:26.195Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "Front-end",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2026-10-19T09:59:33.688Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "Back-end",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2026-10-19T10:00:01.970Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "HTML",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2026-10-19T10:00:21.318Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "2",
+      "object_repr": "CSS",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2026-10-19T10:01:24.569Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "3",
+      "object_repr": "JAVA-SCRIPT",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2026-10-19T10:01:44.707Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "4",
+      "object_repr": "ReactJs",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2026-10-19T10:01:55.880Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "5",
+      "object_repr": "Python",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2026-10-19T10:02:09.689Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "6",
+      "object_repr": "Django",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2026-10-19T10:02:27.349Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "7",
+      "object_repr": "Database",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2026-10-19T10:02:44.844Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "8",
+      "object_repr": "ApI",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2026-10-19T10:03:19.626Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "8",
+      "object_repr": "APIs",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2026-10-19T10:05:36.873Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "What does HTML stand for?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) Hyper Text Markup Language\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) High Text Machine Language\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) Hyperlinks and Text Markup Language\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) Home Tool Markup Language\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2026-10-19T10:05:59.634Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "HTML",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2026-10-19T10:07:20.463Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "2",
+      "object_repr": "Which tag is used to create a paragraph in HTML?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) <h1>\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) <p>\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) <para>\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) <text>\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2026-10-19T10:08:34.991Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "3",
+      "object_repr": "Which HTML tag is used to insert a line break?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) <break>\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) <lb>\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) <br>\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) <hr>\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2026-10-19T10:09:57.373Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "4",
+      "object_repr": "Which tag is used to create a hyperlink?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) <link>\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) <a>\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) <href>\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) <url>\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2026-10-19T10:11:03.334Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "5",
+      "object_repr": "Which HTML tag is used to display an image?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) <image>\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) <picture>\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) <img>\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) <src>\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2026-10-19T10:12:12.644Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "6",
+      "object_repr": "Which tag is used for the largest heading in HTML?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) <h6>\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) <head>\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) <heading>\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) <h1>\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2026-10-19T10:13:19.542Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "7",
+      "object_repr": "Which attribute specifies the destination URL of a hyperlink?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) src\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) href\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) link\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) url\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2026-10-19T10:14:34.706Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "8",
+      "object_repr": "Which tag is used to create an unordered list?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) <ol>\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) <li>\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) <ul>\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) <list>\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+      "action_time": "2026-10-19T10:15:39.933Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "9",
+      "object_repr": "Which HTML tag is used to create a table row?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) <td>\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) <th>\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) <table-row>\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) <tr>\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+      "action_time": "2026-10-19T10:17:00.508Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "10",
+      "object_repr": "Which HTML tag defines the title displayed in the browser tab?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) <body>\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) <title>\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) <head>\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) <h1>\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+      "action_time": "2026-10-19T10:18:48.811Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "11",
+      "object_repr": "What does CSS stand for?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) Computer Style Sheets\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) Cascading Style Sheets\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) Creative Style System\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) Colorful Style Sheets\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+      "action_time": "2026-10-19T10:19:52.636Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "12",
+      "object_repr": "Which HTML tag is used to link an external CSS file?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) <css>\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) <style>\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) <link>\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) <script>\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+      "action_time": "2026-10-19T10:21:14.377Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "13",
+      "object_repr": "Which CSS property changes the text color?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) font-color\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) text-color\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) color\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) background-color\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+      "action_time": "2026-10-19T10:22:31.563Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "14",
+      "object_repr": "Which CSS property changes the background color of an element?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) bgcolor\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) background-color\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) color-background\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) background-style\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+      "action_time": "2026-10-19T10:23:43.038Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "15",
+      "object_repr": "Which symbol is used to select an HTML element by its ID in CSS?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) .\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) #\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) *\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) @\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+      "action_time": "2026-10-19T10:24:50.107Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "16",
+      "object_repr": "Which symbol is used to select elements by their class in CSS?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) #\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) &\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) .\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) @\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+      "action_time": "2026-10-19T10:25:57.986Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "17",
+      "object_repr": "Which CSS property changes the size of text?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) font-size\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) text-style\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) font-weight\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) text-size\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+      "action_time": "2026-10-19T10:27:05.883Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "18",
+      "object_repr": "Which CSS property makes text bold?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) font-style: bold;\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) text-weight: bold;\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) font-weight: bold;\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) text-bold: true;\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+      "action_time": "2026-10-19T10:28:13.752Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "19",
+      "object_repr": "Which CSS property adds space outside an element's border?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) padding\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) margin\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) spacing\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) border-spacing\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+      "action_time": "2026-10-19T10:29:18.300Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "20",
+      "object_repr": "Which CSS property is used to make a flexbox container?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) position: flex;\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) display: flex;\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) flex: display;\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) layout: flex;\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+      "action_time": "2026-10-19T10:31:34.606Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "21",
+      "object_repr": "What is JavaScript mainly used for?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) Styling web pages\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) Creating interactive web pages\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) Storing files only\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) Designing databases\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+      "action_time": "2026-10-19T10:32:41.932Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "22",
+      "object_repr": "Which keyword is used to declare a variable in JavaScript?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) var\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) int\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) string\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) define\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+      "action_time": "2026-10-19T10:33:52.283Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "23",
+      "object_repr": "Which symbol is used for single-line comments in JavaScript?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) <!-- -->\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) **\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) //\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) ##\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+      "action_time": "2026-10-19T10:35:06.410Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "24",
+      "object_repr": "Which function displays a message in a browser popup box?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) print()\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) alert()\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) display()\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) message()\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+      "action_time": "2026-10-19T10:36:22.174Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "25",
+      "object_repr": "Which operator is used to compare both value and data type?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) =\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) ==\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) ===\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) !=\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+      "action_time": "2026-10-19T10:37:28.802Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "26",
+      "object_repr": "What is the output of console.log(2 + 3);?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) 23\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) 5\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) 2 + 3\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) Error\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+      "action_time": "2026-10-19T10:38:34.897Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "27",
+      "object_repr": "Which keyword declares a block-scoped variable that can be reassigned?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) const\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) let\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) fixed\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) static\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+      "action_time": "2026-10-19T10:39:49.797Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "28",
+      "object_repr": "Which of the following is an array in JavaScript?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) {1, 2, 3}\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) (1, 2, 3)\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) [1, 2, 3]\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) <1, 2, 3>\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+      "action_time": "2026-10-19T10:41:06.683Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "29",
+      "object_repr": "Which method adds an element to the end of an array?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) push()\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) pop()\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) shift()\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) remove()\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+      "action_time": "2026-10-19T10:42:21.900Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "30",
+      "object_repr": "Which keyword is used to define a function in JavaScript?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) method\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) func\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) function\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) define\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+      "action_time": "2026-10-19T10:44:05.441Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "31",
+      "object_repr": "What is React.js?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) A database\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) A JavaScript library for building user interfaces\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) A programming language\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) A CSS framework\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+      "action_time": "2026-10-19T10:45:18.446Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "32",
+      "object_repr": "Who developed React.js?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) Google\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) Microsoft\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) Facebook (now Meta)\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) Amazon\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+      "action_time": "2026-10-19T10:46:51.078Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "33",
+      "object_repr": "What is JSX in React?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) JavaScript XML\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) Java Syntax Extension\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) JavaScript Extra\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) JSON XML\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+      "action_time": "2026-10-19T10:48:09.384Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "34",
+      "object_repr": "Which method is used to create a React component using a function?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) createComponent()\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) function MyComponent() {}\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) makeComponent()\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) new Component()\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+      "action_time": "2026-10-19T10:49:17.154Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "35",
+      "object_repr": "Which React hook is used to manage state in a functional component?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) useEffect()\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) useState()\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) useRef()\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) useContext()\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+      "action_time": "2026-10-19T10:50:20.993Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "36",
+      "object_repr": "Which prop is commonly used to uniquely identify items in a rendered l",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) id\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) index\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) key\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) ref\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+      "action_time": "2026-10-19T10:51:35.090Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "37",
+      "object_repr": "Which React hook is used to perform side effects?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) useState()\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) useEffect()\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) useMemo()\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) useReducer()\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+      "action_time": "2026-10-19T10:52:42.672Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "38",
+      "object_repr": "What is the correct way to pass data from a parent component to a chil",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) Using props\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) Using CSS\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) Using HTML tags only\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) Using useEffect() only\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+      "action_time": "2026-10-19T10:53:51.278Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "39",
+      "object_repr": "Which syntax is used to embed a JavaScript expression inside JSX?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) ()\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) []\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) {}\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) <>\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+      "action_time": "2026-10-19T10:55:14.768Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "40",
+      "object_repr": "What is the purpose of the Virtual DOM in React?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) To store files permanently\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) To help update the UI efficiently\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) To replace JavaScript\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) To style components\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+      "action_time": "2026-10-19T10:58:48.423Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "41",
+      "object_repr": "Who developed Python?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) Dennis Ritchie\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) James Gosling\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) Guido van Rossum\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) Bjarne Stroustrup\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+      "action_time": "2026-10-19T11:00:12.398Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "42",
+      "object_repr": "Which symbol is used for single-line comments in Python?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) //\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) #\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) <!-- -->\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) **\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+      "action_time": "2026-10-19T11:01:27.810Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "43",
+      "object_repr": "Which of the following is a valid Python variable assignment?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) int x = 10\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) x = 10\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) var x := 10\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) let x = 10\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+      "action_time": "2026-10-19T11:02:38.503Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "44",
+      "object_repr": "Which function is used to display output in Python?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) echo()\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) display()\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) print()\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) output()\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+      "action_time": "2026-10-19T11:03:47.385Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "45",
+      "object_repr": "Which data type is used to store a sequence of items that can be chang",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) tuple\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) list\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) str\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) int\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+      "action_time": "2026-10-19T11:05:00.975Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "46",
+      "object_repr": "What is the output of print(5 + 3)?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) 53\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) 8\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) 5 + 3\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) Error\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+      "action_time": "2026-10-19T11:06:08.284Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "47",
+      "object_repr": "Which keyword is used to define a function in Python?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) function\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) define\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) def\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) fun\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+      "action_time": "2026-10-19T11:07:36.252Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "48",
+      "object_repr": "Which operator is used for exponentiation in Python?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) ^\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) //\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) **\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) %\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+      "action_time": "2026-10-19T11:08:44.648Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "49",
+      "object_repr": "Which keyword is used for a conditional statement in Python?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) when\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) if\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) check\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) case\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+      "action_time": "2026-10-19T11:10:02.648Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "50",
+      "object_repr": "What is the output of print(type(10))?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) <class 'str'>\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) <class 'float'>\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) <class 'int'>\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) <class 'number'>\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+      "action_time": "2026-10-19T11:12:19.983Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "51",
+      "object_repr": "What is Django?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) A JavaScript library\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) A Python web framework\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) A database\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) An operating system\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+      "action_time": "2026-10-19T11:13:23.480Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "52",
+      "object_repr": "Which programming language is used with Django?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) Java\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) C++\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) Python\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) PHP\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+      "action_time": "2026-10-19T11:14:56.397Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "53",
+      "object_repr": "Which command creates a new Django project?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) django startproject\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) python manage.py startapp\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) django-admin startproject\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) python create project\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+      "action_time": "2026-10-19T11:16:24.817Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "54",
+      "object_repr": "Which command starts the Django development server?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) python manage.py runserver\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) python manage.py start\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) django run\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) python server.py\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+      "action_time": "2026-10-19T11:27:11.775Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "55",
+      "object_repr": "Which file is commonly used to configure a Django project?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) views.py\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) settings.py\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) models.py\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) forms.py\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+      "action_time": "2026-10-19T11:28:35.483Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "56",
+      "object_repr": "Which Django component handles database models?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) views.py\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) urls.py\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) models.py\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) admin.py\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+      "action_time": "2026-10-19T11:30:07.398Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "57",
+      "object_repr": "Which command creates database migration files?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) python manage.py migrate\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) python manage.py makemigrations\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) python manage.py createdb\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) python manage.py makeapp\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+      "action_time": "2026-10-19T11:31:20.062Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "58",
+      "object_repr": "Which command applies migrations to the database?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) python manage.py makemigrations\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) python manage.py update\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) python manage.py migrate\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) python manage.py sync\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+      "action_time": "2026-10-19T11:32:34.023Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "59",
+      "object_repr": "Which file commonly defines URL patterns for a Django app or project?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) urls.py\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) models.py\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) settings.py\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) admin.py\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+      "action_time": "2026-10-19T11:34:07.511Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "60",
+      "object_repr": "Which command creates a Django superuser?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) python manage.py createuser\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) python manage.py admin\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) python manage.py createsuperuser\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) python manage.py superuser\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+      "action_time": "2026-10-19T11:36:19.508Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "61",
+      "object_repr": "What is MySQL?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) A programming language\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) A relational database management system (RDBMS)\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) A web browser\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) An operating system\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+      "action_time": "2026-10-19T11:37:41.335Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "62",
+      "object_repr": "Which SQL command is used to retrieve data from a table?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) GET\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) OPEN\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) SELECT\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) FETCHALL\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+      "action_time": "2026-10-19T11:39:40.931Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "63",
+      "object_repr": "Which command is used to create a new database in MySQL?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) MAKE DATABASE\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) CREATE DATABASE\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) NEW DATABASE\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) ADD DATABASE\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+      "action_time": "2026-10-19T11:40:46.855Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "64",
+      "object_repr": "Which clause is used to filter records in a query?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) ORDER BY\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) GROUP BY\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) WHERE\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) SELECT\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+      "action_time": "2026-10-19T11:42:09.377Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "65",
+      "object_repr": "Which command is used to insert new records into a table?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) ADD INTO\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) INSERT INTO\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) UPDATE INTO\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) CREATE ROW\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+      "action_time": "2026-10-19T11:43:14.284Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "66",
+      "object_repr": "Which command is used to modify existing records in a table?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) CHANGE\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) MODIFY\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) UPDATE\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) ALTER\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+      "action_time": "2026-10-19T11:44:33.867Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "67",
+      "object_repr": "Which command deletes a table and its structure from a database?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) DELETE\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) REMOVE\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) DROP TABLE\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) CLEAR TABLE\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+      "action_time": "2026-10-19T11:45:40.541Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "68",
+      "object_repr": "Which key uniquely identifies each record in a table?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) Foreign key\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) Primary key\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) Duplicate key\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) Common key\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+      "action_time": "2026-10-19T11:46:45.941Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "69",
+      "object_repr": "Which function returns the number of rows in a query result?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) SUM()\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) TOTAL()\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) COUNT()\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) NUMBER()\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+      "action_time": "2026-10-19T11:47:54.667Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "70",
+      "object_repr": "Which clause sorts query results in ascending or descending order?",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"choice\", \"object\": \"A) SORT BY\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"B) ORDER BY\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"C) GROUP BY\"}}, {\"added\": {\"name\": \"choice\", \"object\": \"D) ARRANGE BY\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+      "action_time": "2026-10-19T11:50:18.485Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "8",
+      "object_repr": "APIs",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 3,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 3,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 3,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 3,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 2,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 2,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 2,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 2,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 4,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 5,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 6,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add category",
+      "content_type": 9,
+      "codename": "add_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change category",
+      "content_type": 9,
+      "codename": "change_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete category",
+      "content_type": 9,
+      "codename": "delete_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view category",
+      "content_type": 9,
+      "codename": "view_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add question",
+      "content_type": 11,
+      "codename": "add_question"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change question",
+      "content_type": 11,
+      "codename": "change_question"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete question",
+      "content_type": 11,
+      "codename": "delete_question"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view question",
+      "content_type": 11,
+      "codename": "view_question"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add choice",
+      "content_type": 10,
+      "codename": "add_choice"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change choice",
+      "content_type": 10,
+      "codename": "change_choice"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete choice",
+      "content_type": 10,
+      "codename": "delete_choice"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view choice",
+      "content_type": 10,
+      "codename": "view_choice"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add quiz",
+      "content_type": 12,
+      "codename": "add_quiz"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change quiz",
+      "content_type": 12,
+      "codename": "change_quiz"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete quiz",
+      "content_type": 12,
+      "codename": "delete_quiz"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view quiz",
+      "content_type": 12,
+      "codename": "view_quiz"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can add attempt",
+      "content_type": 7,
+      "codename": "add_attempt"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can change attempt",
+      "content_type": 7,
+      "codename": "change_attempt"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can delete attempt",
+      "content_type": 7,
+      "codename": "delete_attempt"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can view attempt",
+      "content_type": 7,
+      "codename": "view_attempt"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+      "name": "Can add attempt answer",
+      "content_type": 8,
+      "codename": "add_attemptanswer"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+      "name": "Can change attempt answer",
+      "content_type": 8,
+      "codename": "change_attemptanswer"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+      "name": "Can delete attempt answer",
+      "content_type": 8,
+      "codename": "delete_attemptanswer"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+      "name": "Can view attempt answer",
+      "content_type": 8,
+      "codename": "view_attemptanswer"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$lmfnCrM0bI2vlFzixCNKgU$OdLTvUXgFiiUDNulYo75J3FKRWStGXyKeQ8lcEVvPWI=",
+      "last_login": "2026-10-17T07:03:12.252Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2026-10-15T04:58:26.236Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$Y2zKRr5PwQGnlcrKtKjgfm$DfRqWvYp5bdMXhh1DZ16bkMAhxRoTxP495q3aAPIOZE=",
+      "last_login": "2026-10-16T09:39:35.122Z",
+      "is_superuser": false,
+      "username": "tannu_123",
+      "first_name": "",
+      "last_name": "",
+      "email": "jhonedoe2@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-15T06:39:51.726Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$SctTde4EOs5BBq4EOGOhgA$VYseVNeLYnsGjCftILdt/o0xJIbQHUoKQaW+C/cgeXc=",
+      "last_login": "2026-10-16T10:11:42.512Z",
+      "is_superuser": false,
+      "username": "vivek",
+      "first_name": "",
+      "last_name": "",
+      "email": "exmple@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-16T10:11:13.690Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$nMYjSI2i9b0gqpTuP2hfYQ$s+MFMaYcdoyzYHYD0h2fpiIMZng02a6tMH7k0nM7plA=",
+      "last_login": "2026-10-16T17:07:04.378Z",
+      "is_superuser": false,
+      "username": "veteran_0811",
+      "first_name": "",
+      "last_name": "",
+      "email": "johndoe@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-16T17:03:10.459Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": { "app_label": "admin", "model": "logentry" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": { "app_label": "auth", "model": "group" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": { "app_label": "auth", "model": "permission" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": { "app_label": "auth", "model": "user" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": { "app_label": "contenttypes", "model": "contenttype" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": { "app_label": "sessions", "model": "session" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": { "app_label": "quiz_app", "model": "attempt" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": { "app_label": "quiz_app", "model": "attemptanswer" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": { "app_label": "quiz_app", "model": "category" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": { "app_label": "quiz_app", "model": "choice" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": { "app_label": "quiz_app", "model": "question" }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": { "app_label": "quiz_app", "model": "quiz" }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "44hfux7s5kys0oz2mvk6dtkice4chmhy",
+    "fields": {
+      "session_data": ".eJxVjDsOwyAQRO9CHSG-XkiZ3mdAwC7BSYQlY1dR7h5bcpFUI817M28W4rbWsHVawoTsyiS7_HYp5ie1A-AjtvvM89zWZUr8UPhJOx9npNftdP8Oaux1X2ehSTuhtC8l7UGygMlgCKRNA4D12gpDNmmnJECSwmfnUBYasAiF7PMFwFs3GA:1xHyRk:wFX5f6_NSmvoCTqLLjVF_2mKYMpbjhWivzRDlp-z7do",
+      "expire_date": "2026-10-31T07:03:12.257Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "4g0zbvatxstwma3206j7pg9tb3y4sib6",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQAP_C2RCgxXY9evcNZBd2pWogKe3J-HdD0oNeZybzVgH3LYe98RqWpC5qUKdfRhifXLpIDyz3qmMt27qQ7ok-bNO3mvh1Pdq_QcaW-9bixGQjmwkEQIzzs6AHiM7NVoSAeLTOCYxMYkmQmUwc8IxMyVv1-QL62zki:1xHeuc:lIVK-z4J_qwkzUiAXQdX3341lSP2V0-2dWahdTB-8Yk",
+      "expire_date": "2026-10-30T10:11:42.523Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "y3e8c5wslrfuvn7pnfn4s3um4nxggdnx",
+    "fields": {
+      "session_data": ".eJxVjDsOwyAQRO9CHSG-XkiZ3mdAwC7BSYQlY1dR7h5bcpFUI817M28W4rbWsHVawoTsyiS7_HYp5ie1A-AjtvvM89zWZUr8UPhJOx9npNftdP8Oaux1X2ehSTuhtC8l7UGygMlgCKRNA4D12gpDNmmnJECSwmfnUBYasAiF7PMFwFs3GA:1xHy02:iOIwKskOsq3-e4ATz4JHzwha27N_NKn-6F7yAmhBb2E",
+      "expire_date": "2026-10-31T06:34:34.966Z"
+    }
+  },
+  { "model": "quiz_app.category", "pk": 1, "fields": { "name": "Front-end" } },
+  { "model": "quiz_app.category", "pk": 2, "fields": { "name": "Back-end" } },
+  {
+    "model": "quiz_app.quiz",
+    "pk": 1,
+    "fields": {
+      "title": "HTML",
+      "description": "",
+      "category": 1,
+      "time_limit_minutes": 10,
+      "pass_percentage": 50,
+      "is_published": true,
+      "created": "2026-10-19T10:00:01.969Z"
+    }
+  },
+  {
+    "model": "quiz_app.quiz",
+    "pk": 2,
+    "fields": {
+      "title": "CSS",
+      "description": "",
+      "category": 1,
+      "time_limit_minutes": 10,
+      "pass_percentage": 50,
+      "is_published": true,
+      "created": "2026-10-19T10:00:21.316Z"
+    }
+  },
+  {
+    "model": "quiz_app.quiz",
+    "pk": 3,
+    "fields": {
+      "title": "JAVA-SCRIPT",
+      "description": "",
+      "category": 1,
+      "time_limit_minutes": 10,
+      "pass_percentage": 50,
+      "is_published": true,
+      "created": "2026-10-19T10:01:24.513Z"
+    }
+  },
+  {
+    "model": "quiz_app.quiz",
+    "pk": 4,
+    "fields": {
+      "title": "ReactJs",
+      "description": "",
+      "category": 1,
+      "time_limit_minutes": 10,
+      "pass_percentage": 50,
+      "is_published": true,
+      "created": "2026-10-19T10:01:44.653Z"
+    }
+  },
+  {
+    "model": "quiz_app.quiz",
+    "pk": 5,
+    "fields": {
+      "title": "Python",
+      "description": "",
+      "category": 2,
+      "time_limit_minutes": 10,
+      "pass_percentage": 50,
+      "is_published": true,
+      "created": "2026-10-19T10:01:55.877Z"
+    }
+  },
+  {
+    "model": "quiz_app.quiz",
+    "pk": 6,
+    "fields": {
+      "title": "Django",
+      "description": "",
+      "category": 2,
+      "time_limit_minutes": 10,
+      "pass_percentage": 50,
+      "is_published": true,
+      "created": "2026-10-19T10:02:09.632Z"
+    }
+  },
+  {
+    "model": "quiz_app.quiz",
+    "pk": 7,
+    "fields": {
+      "title": "Database",
+      "description": "",
+      "category": 2,
+      "time_limit_minutes": 10,
+      "pass_percentage": 50,
+      "is_published": true,
+      "created": "2026-10-19T10:02:27.295Z"
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 1,
+    "fields": {
+      "quiz": 1,
+      "text": "What does HTML stand for?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 2,
+    "fields": {
+      "quiz": 1,
+      "text": "Which tag is used to create a paragraph in HTML?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 3,
+    "fields": {
+      "quiz": 1,
+      "text": "Which HTML tag is used to insert a line break?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 4,
+    "fields": {
+      "quiz": 1,
+      "text": "Which tag is used to create a hyperlink?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 5,
+    "fields": {
+      "quiz": 1,
+      "text": "Which HTML tag is used to display an image?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 6,
+    "fields": {
+      "quiz": 1,
+      "text": "Which tag is used for the largest heading in HTML?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 7,
+    "fields": {
+      "quiz": 1,
+      "text": "Which attribute specifies the destination URL of a hyperlink?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 8,
+    "fields": {
+      "quiz": 1,
+      "text": "Which tag is used to create an unordered list?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 9,
+    "fields": {
+      "quiz": 1,
+      "text": "Which HTML tag is used to create a table row?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 10,
+    "fields": {
+      "quiz": 1,
+      "text": "Which HTML tag defines the title displayed in the browser tab?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 11,
+    "fields": {
+      "quiz": 2,
+      "text": "What does CSS stand for?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 12,
+    "fields": {
+      "quiz": 2,
+      "text": "Which HTML tag is used to link an external CSS file?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 13,
+    "fields": {
+      "quiz": 2,
+      "text": "Which CSS property changes the text color?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 14,
+    "fields": {
+      "quiz": 2,
+      "text": "Which CSS property changes the background color of an element?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 15,
+    "fields": {
+      "quiz": 2,
+      "text": "Which symbol is used to select an HTML element by its ID in CSS?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 16,
+    "fields": {
+      "quiz": 2,
+      "text": "Which symbol is used to select elements by their class in CSS?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 17,
+    "fields": {
+      "quiz": 2,
+      "text": "Which CSS property changes the size of text?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 18,
+    "fields": {
+      "quiz": 2,
+      "text": "Which CSS property makes text bold?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 19,
+    "fields": {
+      "quiz": 2,
+      "text": "Which CSS property adds space outside an element's border?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 20,
+    "fields": {
+      "quiz": 2,
+      "text": "Which CSS property is used to make a flexbox container?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 21,
+    "fields": {
+      "quiz": 3,
+      "text": "What is JavaScript mainly used for?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 22,
+    "fields": {
+      "quiz": 3,
+      "text": "Which keyword is used to declare a variable in JavaScript?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 23,
+    "fields": {
+      "quiz": 3,
+      "text": "Which symbol is used for single-line comments in JavaScript?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 24,
+    "fields": {
+      "quiz": 3,
+      "text": "Which function displays a message in a browser popup box?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 25,
+    "fields": {
+      "quiz": 3,
+      "text": "Which operator is used to compare both value and data type?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 26,
+    "fields": {
+      "quiz": 3,
+      "text": "What is the output of console.log(2 + 3);?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 27,
+    "fields": {
+      "quiz": 3,
+      "text": "Which keyword declares a block-scoped variable that can be reassigned?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 28,
+    "fields": {
+      "quiz": 3,
+      "text": "Which of the following is an array in JavaScript?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 29,
+    "fields": {
+      "quiz": 3,
+      "text": "Which method adds an element to the end of an array?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 30,
+    "fields": {
+      "quiz": 3,
+      "text": "Which keyword is used to define a function in JavaScript?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 31,
+    "fields": {
+      "quiz": 4,
+      "text": "What is React.js?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 32,
+    "fields": {
+      "quiz": 4,
+      "text": "Who developed React.js?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 33,
+    "fields": {
+      "quiz": 4,
+      "text": "What is JSX in React?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 34,
+    "fields": {
+      "quiz": 4,
+      "text": "Which method is used to create a React component using a function?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 35,
+    "fields": {
+      "quiz": 4,
+      "text": "Which React hook is used to manage state in a functional component?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 36,
+    "fields": {
+      "quiz": 4,
+      "text": "Which prop is commonly used to uniquely identify items in a rendered list?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 37,
+    "fields": {
+      "quiz": 4,
+      "text": "Which React hook is used to perform side effects?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 38,
+    "fields": {
+      "quiz": 4,
+      "text": "What is the correct way to pass data from a parent component to a child component?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 39,
+    "fields": {
+      "quiz": 4,
+      "text": "Which syntax is used to embed a JavaScript expression inside JSX?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 40,
+    "fields": {
+      "quiz": 4,
+      "text": "What is the purpose of the Virtual DOM in React?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 41,
+    "fields": {
+      "quiz": 5,
+      "text": "Who developed Python?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 42,
+    "fields": {
+      "quiz": 5,
+      "text": "Which symbol is used for single-line comments in Python?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 43,
+    "fields": {
+      "quiz": 5,
+      "text": "Which of the following is a valid Python variable assignment?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 44,
+    "fields": {
+      "quiz": 5,
+      "text": "Which function is used to display output in Python?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 45,
+    "fields": {
+      "quiz": 5,
+      "text": "Which data type is used to store a sequence of items that can be changed?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 46,
+    "fields": {
+      "quiz": 5,
+      "text": "What is the output of print(5 + 3)?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 47,
+    "fields": {
+      "quiz": 5,
+      "text": "Which keyword is used to define a function in Python?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 48,
+    "fields": {
+      "quiz": 5,
+      "text": "Which operator is used for exponentiation in Python?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 49,
+    "fields": {
+      "quiz": 5,
+      "text": "Which keyword is used for a conditional statement in Python?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 50,
+    "fields": {
+      "quiz": 5,
+      "text": "What is the output of print(type(10))?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 51,
+    "fields": {
+      "quiz": 6,
+      "text": "What is Django?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 52,
+    "fields": {
+      "quiz": 6,
+      "text": "Which programming language is used with Django?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 53,
+    "fields": {
+      "quiz": 6,
+      "text": "Which command creates a new Django project?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 54,
+    "fields": {
+      "quiz": 6,
+      "text": "Which command starts the Django development server?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 55,
+    "fields": {
+      "quiz": 6,
+      "text": "Which file is commonly used to configure a Django project?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 56,
+    "fields": {
+      "quiz": 6,
+      "text": "Which Django component handles database models?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 57,
+    "fields": {
+      "quiz": 6,
+      "text": "Which command creates database migration files?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 58,
+    "fields": {
+      "quiz": 6,
+      "text": "Which command applies migrations to the database?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 59,
+    "fields": {
+      "quiz": 6,
+      "text": "Which file commonly defines URL patterns for a Django app or project?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 60,
+    "fields": {
+      "quiz": 6,
+      "text": "Which command creates a Django superuser?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 61,
+    "fields": {
+      "quiz": 7,
+      "text": "What is MySQL?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 62,
+    "fields": {
+      "quiz": 7,
+      "text": "Which SQL command is used to retrieve data from a table?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 63,
+    "fields": {
+      "quiz": 7,
+      "text": "Which command is used to create a new database in MySQL?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 64,
+    "fields": {
+      "quiz": 7,
+      "text": "Which clause is used to filter records in a query?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 65,
+    "fields": {
+      "quiz": 7,
+      "text": "Which command is used to insert new records into a table?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 66,
+    "fields": {
+      "quiz": 7,
+      "text": "Which command is used to modify existing records in a table?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 67,
+    "fields": {
+      "quiz": 7,
+      "text": "Which command deletes a table and its structure from a database?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 68,
+    "fields": {
+      "quiz": 7,
+      "text": "Which key uniquely identifies each record in a table?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 69,
+    "fields": {
+      "quiz": 7,
+      "text": "Which function returns the number of rows in a query result?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.question",
+    "pk": 70,
+    "fields": {
+      "quiz": 7,
+      "text": "Which clause sorts query results in ascending or descending order?",
+      "explanation": "True",
+      "order": 0
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 1,
+    "fields": {
+      "question": 1,
+      "text": "A) Hyper Text Markup Language",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 2,
+    "fields": {
+      "question": 1,
+      "text": "B) High Text Machine Language",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 3,
+    "fields": {
+      "question": 1,
+      "text": "C) Hyperlinks and Text Markup Language",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 4,
+    "fields": {
+      "question": 1,
+      "text": "D) Home Tool Markup Language",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 5,
+    "fields": { "question": 2, "text": "A) <h1>", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 6,
+    "fields": { "question": 2, "text": "B) <p>", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 7,
+    "fields": { "question": 2, "text": "C) <para>", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 8,
+    "fields": { "question": 2, "text": "D) <text>", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 9,
+    "fields": { "question": 3, "text": "A) <break>", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 10,
+    "fields": { "question": 3, "text": "B) <lb>", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 11,
+    "fields": { "question": 3, "text": "C) <br>", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 12,
+    "fields": { "question": 3, "text": "D) <hr>", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 13,
+    "fields": { "question": 4, "text": "A) <link>", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 14,
+    "fields": { "question": 4, "text": "B) <a>", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 15,
+    "fields": { "question": 4, "text": "C) <href>", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 16,
+    "fields": { "question": 4, "text": "D) <url>", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 17,
+    "fields": { "question": 5, "text": "A) <image>", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 18,
+    "fields": { "question": 5, "text": "B) <picture>", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 19,
+    "fields": { "question": 5, "text": "C) <img>", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 20,
+    "fields": { "question": 5, "text": "D) <src>", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 21,
+    "fields": { "question": 6, "text": "A) <h6>", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 22,
+    "fields": { "question": 6, "text": "B) <head>", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 23,
+    "fields": { "question": 6, "text": "C) <heading>", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 24,
+    "fields": { "question": 6, "text": "D) <h1>", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 25,
+    "fields": { "question": 7, "text": "A) src", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 26,
+    "fields": { "question": 7, "text": "B) href", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 27,
+    "fields": { "question": 7, "text": "C) link", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 28,
+    "fields": { "question": 7, "text": "D) url", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 29,
+    "fields": { "question": 8, "text": "A) <ol>", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 30,
+    "fields": { "question": 8, "text": "B) <li>", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 31,
+    "fields": { "question": 8, "text": "C) <ul>", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 32,
+    "fields": { "question": 8, "text": "D) <list>", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 33,
+    "fields": { "question": 9, "text": "A) <td>", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 34,
+    "fields": { "question": 9, "text": "B) <th>", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 35,
+    "fields": { "question": 9, "text": "C) <table-row>", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 36,
+    "fields": { "question": 9, "text": "D) <tr>", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 37,
+    "fields": { "question": 10, "text": "A) <body>", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 38,
+    "fields": { "question": 10, "text": "B) <title>", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 39,
+    "fields": { "question": 10, "text": "C) <head>", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 40,
+    "fields": { "question": 10, "text": "D) <h1>", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 41,
+    "fields": {
+      "question": 11,
+      "text": "A) Computer Style Sheets",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 42,
+    "fields": {
+      "question": 11,
+      "text": "B) Cascading Style Sheets",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 43,
+    "fields": {
+      "question": 11,
+      "text": "C) Creative Style System",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 44,
+    "fields": {
+      "question": 11,
+      "text": "D) Colorful Style Sheets",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 45,
+    "fields": { "question": 12, "text": "A) <css>", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 46,
+    "fields": { "question": 12, "text": "B) <style>", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 47,
+    "fields": { "question": 12, "text": "C) <link>", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 48,
+    "fields": { "question": 12, "text": "D) <script>", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 49,
+    "fields": { "question": 13, "text": "A) font-color", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 50,
+    "fields": { "question": 13, "text": "B) text-color", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 51,
+    "fields": { "question": 13, "text": "C) color", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 52,
+    "fields": {
+      "question": 13,
+      "text": "D) background-color",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 53,
+    "fields": { "question": 14, "text": "A) bgcolor", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 54,
+    "fields": {
+      "question": 14,
+      "text": "B) background-color",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 55,
+    "fields": {
+      "question": 14,
+      "text": "C) color-background",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 56,
+    "fields": {
+      "question": 14,
+      "text": "D) background-style",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 57,
+    "fields": { "question": 15, "text": "A) .", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 58,
+    "fields": { "question": 15, "text": "B) #", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 59,
+    "fields": { "question": 15, "text": "C) *", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 60,
+    "fields": { "question": 15, "text": "D) @", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 61,
+    "fields": { "question": 16, "text": "A) #", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 62,
+    "fields": { "question": 16, "text": "B) &", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 63,
+    "fields": { "question": 16, "text": "C) .", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 64,
+    "fields": { "question": 16, "text": "D) @", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 65,
+    "fields": { "question": 17, "text": "A) font-size", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 66,
+    "fields": { "question": 17, "text": "B) text-style", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 67,
+    "fields": { "question": 17, "text": "C) font-weight", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 68,
+    "fields": { "question": 17, "text": "D) text-size", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 69,
+    "fields": {
+      "question": 18,
+      "text": "A) font-style: bold;",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 70,
+    "fields": {
+      "question": 18,
+      "text": "B) text-weight: bold;",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 71,
+    "fields": {
+      "question": 18,
+      "text": "C) font-weight: bold;",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 72,
+    "fields": {
+      "question": 18,
+      "text": "D) text-bold: true;",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 73,
+    "fields": { "question": 19, "text": "A) padding", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 74,
+    "fields": { "question": 19, "text": "B) margin", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 75,
+    "fields": { "question": 19, "text": "C) spacing", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 76,
+    "fields": {
+      "question": 19,
+      "text": "D) border-spacing",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 77,
+    "fields": {
+      "question": 20,
+      "text": "A) position: flex;",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 78,
+    "fields": {
+      "question": 20,
+      "text": "B) display: flex;",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 79,
+    "fields": {
+      "question": 20,
+      "text": "C) flex: display;",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 80,
+    "fields": {
+      "question": 20,
+      "text": "D) layout: flex;",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 81,
+    "fields": {
+      "question": 21,
+      "text": "A) Styling web pages",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 82,
+    "fields": {
+      "question": 21,
+      "text": "B) Creating interactive web pages",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 83,
+    "fields": {
+      "question": 21,
+      "text": "C) Storing files only",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 84,
+    "fields": {
+      "question": 21,
+      "text": "D) Designing databases",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 85,
+    "fields": { "question": 22, "text": "A) var", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 86,
+    "fields": { "question": 22, "text": "B) int", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 87,
+    "fields": { "question": 22, "text": "C) string", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 88,
+    "fields": { "question": 22, "text": "D) define", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 89,
+    "fields": { "question": 23, "text": "A) <!-- -->", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 90,
+    "fields": { "question": 23, "text": "B) **", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 91,
+    "fields": { "question": 23, "text": "C) //", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 92,
+    "fields": { "question": 23, "text": "D) ##", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 93,
+    "fields": { "question": 24, "text": "A) print()", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 94,
+    "fields": { "question": 24, "text": "B) alert()", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 95,
+    "fields": { "question": 24, "text": "C) display()", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 96,
+    "fields": { "question": 24, "text": "D) message()", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 97,
+    "fields": { "question": 25, "text": "A) =", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 98,
+    "fields": { "question": 25, "text": "B) ==", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 99,
+    "fields": { "question": 25, "text": "C) ===", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 100,
+    "fields": { "question": 25, "text": "D) !=", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 101,
+    "fields": { "question": 26, "text": "A) 23", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 102,
+    "fields": { "question": 26, "text": "B) 5", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 103,
+    "fields": { "question": 26, "text": "C) 2 + 3", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 104,
+    "fields": { "question": 26, "text": "D) Error", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 105,
+    "fields": { "question": 27, "text": "A) const", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 106,
+    "fields": { "question": 27, "text": "B) let", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 107,
+    "fields": { "question": 27, "text": "C) fixed", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 108,
+    "fields": { "question": 27, "text": "D) static", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 109,
+    "fields": { "question": 28, "text": "A) {1, 2, 3}", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 110,
+    "fields": { "question": 28, "text": "B) (1, 2, 3)", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 111,
+    "fields": { "question": 28, "text": "C) [1, 2, 3]", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 112,
+    "fields": { "question": 28, "text": "D) <1, 2, 3>", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 113,
+    "fields": { "question": 29, "text": "A) push()", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 114,
+    "fields": { "question": 29, "text": "B) pop()", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 115,
+    "fields": { "question": 29, "text": "C) shift()", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 116,
+    "fields": { "question": 29, "text": "D) remove()", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 117,
+    "fields": { "question": 30, "text": "A) method", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 118,
+    "fields": { "question": 30, "text": "B) func", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 119,
+    "fields": { "question": 30, "text": "C) function", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 120,
+    "fields": { "question": 30, "text": "D) define", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 121,
+    "fields": { "question": 31, "text": "A) A database", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 122,
+    "fields": {
+      "question": 31,
+      "text": "B) A JavaScript library for building user interfaces",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 123,
+    "fields": {
+      "question": 31,
+      "text": "C) A programming language",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 124,
+    "fields": {
+      "question": 31,
+      "text": "D) A CSS framework",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 125,
+    "fields": { "question": 32, "text": "A) Google", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 126,
+    "fields": { "question": 32, "text": "B) Microsoft", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 127,
+    "fields": {
+      "question": 32,
+      "text": "C) Facebook (now Meta)",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 128,
+    "fields": { "question": 32, "text": "D) Amazon", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 129,
+    "fields": {
+      "question": 33,
+      "text": "A) JavaScript XML",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 130,
+    "fields": {
+      "question": 33,
+      "text": "B) Java Syntax Extension",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 131,
+    "fields": {
+      "question": 33,
+      "text": "C) JavaScript Extra",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 132,
+    "fields": { "question": 33, "text": "D) JSON XML", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 133,
+    "fields": {
+      "question": 34,
+      "text": "A) createComponent()",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 134,
+    "fields": {
+      "question": 34,
+      "text": "B) function MyComponent() {}",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 135,
+    "fields": {
+      "question": 34,
+      "text": "C) makeComponent()",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 136,
+    "fields": {
+      "question": 34,
+      "text": "D) new Component()",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 137,
+    "fields": { "question": 35, "text": "A) useEffect()", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 138,
+    "fields": { "question": 35, "text": "B) useState()", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 139,
+    "fields": { "question": 35, "text": "C) useRef()", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 140,
+    "fields": { "question": 35, "text": "D) useContext()", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 141,
+    "fields": { "question": 36, "text": "A) id", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 142,
+    "fields": { "question": 36, "text": "B) index", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 143,
+    "fields": { "question": 36, "text": "C) key", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 144,
+    "fields": { "question": 36, "text": "D) ref", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 145,
+    "fields": { "question": 37, "text": "A) useState()", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 146,
+    "fields": { "question": 37, "text": "B) useEffect()", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 147,
+    "fields": { "question": 37, "text": "C) useMemo()", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 148,
+    "fields": { "question": 37, "text": "D) useReducer()", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 149,
+    "fields": { "question": 38, "text": "A) Using props", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 150,
+    "fields": { "question": 38, "text": "B) Using CSS", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 151,
+    "fields": {
+      "question": 38,
+      "text": "C) Using HTML tags only",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 152,
+    "fields": {
+      "question": 38,
+      "text": "D) Using useEffect() only",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 153,
+    "fields": { "question": 39, "text": "A) ()", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 154,
+    "fields": { "question": 39, "text": "B) []", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 155,
+    "fields": { "question": 39, "text": "C) {}", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 156,
+    "fields": { "question": 39, "text": "D) <>", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 157,
+    "fields": {
+      "question": 40,
+      "text": "A) To store files permanently",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 158,
+    "fields": {
+      "question": 40,
+      "text": "B) To help update the UI efficiently",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 159,
+    "fields": {
+      "question": 40,
+      "text": "C) To replace JavaScript",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 160,
+    "fields": {
+      "question": 40,
+      "text": "D) To style components",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 161,
+    "fields": {
+      "question": 41,
+      "text": "A) Dennis Ritchie",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 162,
+    "fields": {
+      "question": 41,
+      "text": "B) James Gosling",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 163,
+    "fields": {
+      "question": 41,
+      "text": "C) Guido van Rossum",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 164,
+    "fields": {
+      "question": 41,
+      "text": "D) Bjarne Stroustrup",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 165,
+    "fields": { "question": 42, "text": "A) //", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 166,
+    "fields": { "question": 42, "text": "B) #", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 167,
+    "fields": { "question": 42, "text": "C) <!-- -->", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 168,
+    "fields": { "question": 42, "text": "D) **", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 169,
+    "fields": { "question": 43, "text": "A) int x = 10", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 170,
+    "fields": { "question": 43, "text": "B) x = 10", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 171,
+    "fields": { "question": 43, "text": "C) var x := 10", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 172,
+    "fields": { "question": 43, "text": "D) let x = 10", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 173,
+    "fields": { "question": 44, "text": "A) echo()", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 174,
+    "fields": { "question": 44, "text": "B) display()", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 175,
+    "fields": { "question": 44, "text": "C) print()", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 176,
+    "fields": { "question": 44, "text": "D) output()", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 177,
+    "fields": { "question": 45, "text": "A) tuple", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 178,
+    "fields": { "question": 45, "text": "B) list", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 179,
+    "fields": { "question": 45, "text": "C) str", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 180,
+    "fields": { "question": 45, "text": "D) int", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 181,
+    "fields": { "question": 46, "text": "A) 53", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 182,
+    "fields": { "question": 46, "text": "B) 8", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 183,
+    "fields": { "question": 46, "text": "C) 5 + 3", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 184,
+    "fields": { "question": 46, "text": "D) Error", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 185,
+    "fields": { "question": 47, "text": "A) function", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 186,
+    "fields": { "question": 47, "text": "B) define", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 187,
+    "fields": { "question": 47, "text": "C) def", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 188,
+    "fields": { "question": 47, "text": "D) fun", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 189,
+    "fields": { "question": 48, "text": "A) ^", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 190,
+    "fields": { "question": 48, "text": "B) //", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 191,
+    "fields": { "question": 48, "text": "C) **", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 192,
+    "fields": { "question": 48, "text": "D) %", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 193,
+    "fields": { "question": 49, "text": "A) when", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 194,
+    "fields": { "question": 49, "text": "B) if", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 195,
+    "fields": { "question": 49, "text": "C) check", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 196,
+    "fields": { "question": 49, "text": "D) case", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 197,
+    "fields": {
+      "question": 50,
+      "text": "A) <class 'str'>",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 198,
+    "fields": {
+      "question": 50,
+      "text": "B) <class 'float'>",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 199,
+    "fields": { "question": 50, "text": "C) <class 'int'>", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 200,
+    "fields": {
+      "question": 50,
+      "text": "D) <class 'number'>",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 201,
+    "fields": {
+      "question": 51,
+      "text": "A) A JavaScript library",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 202,
+    "fields": {
+      "question": 51,
+      "text": "B) A Python web framework",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 203,
+    "fields": { "question": 51, "text": "C) A database", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 204,
+    "fields": {
+      "question": 51,
+      "text": "D) An operating system",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 205,
+    "fields": { "question": 52, "text": "A) Java", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 206,
+    "fields": { "question": 52, "text": "B) C++", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 207,
+    "fields": { "question": 52, "text": "C) Python", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 208,
+    "fields": { "question": 52, "text": "D) PHP", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 209,
+    "fields": {
+      "question": 53,
+      "text": "A) django startproject",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 210,
+    "fields": {
+      "question": 53,
+      "text": "B) python manage.py startapp",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 211,
+    "fields": {
+      "question": 53,
+      "text": "C) django-admin startproject",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 212,
+    "fields": {
+      "question": 53,
+      "text": "D) python create project",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 213,
+    "fields": {
+      "question": 54,
+      "text": "A) python manage.py runserver",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 214,
+    "fields": {
+      "question": 54,
+      "text": "B) python manage.py start",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 215,
+    "fields": { "question": 54, "text": "C) django run", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 216,
+    "fields": {
+      "question": 54,
+      "text": "D) python server.py",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 217,
+    "fields": { "question": 55, "text": "A) views.py", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 218,
+    "fields": { "question": 55, "text": "B) settings.py", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 219,
+    "fields": { "question": 55, "text": "C) models.py", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 220,
+    "fields": { "question": 55, "text": "D) forms.py", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 221,
+    "fields": { "question": 56, "text": "A) views.py", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 222,
+    "fields": { "question": 56, "text": "B) urls.py", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 223,
+    "fields": { "question": 56, "text": "C) models.py", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 224,
+    "fields": { "question": 56, "text": "D) admin.py", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 225,
+    "fields": {
+      "question": 57,
+      "text": "A) python manage.py migrate",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 226,
+    "fields": {
+      "question": 57,
+      "text": "B) python manage.py makemigrations",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 227,
+    "fields": {
+      "question": 57,
+      "text": "C) python manage.py createdb",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 228,
+    "fields": {
+      "question": 57,
+      "text": "D) python manage.py makeapp",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 229,
+    "fields": {
+      "question": 58,
+      "text": "A) python manage.py makemigrations",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 230,
+    "fields": {
+      "question": 58,
+      "text": "B) python manage.py update",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 231,
+    "fields": {
+      "question": 58,
+      "text": "C) python manage.py migrate",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 232,
+    "fields": {
+      "question": 58,
+      "text": "D) python manage.py sync",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 233,
+    "fields": { "question": 59, "text": "A) urls.py", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 234,
+    "fields": { "question": 59, "text": "B) models.py", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 235,
+    "fields": { "question": 59, "text": "C) settings.py", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 236,
+    "fields": { "question": 59, "text": "D) admin.py", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 237,
+    "fields": {
+      "question": 60,
+      "text": "A) python manage.py createuser",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 238,
+    "fields": {
+      "question": 60,
+      "text": "B) python manage.py admin",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 239,
+    "fields": {
+      "question": 60,
+      "text": "C) python manage.py createsuperuser",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 240,
+    "fields": {
+      "question": 60,
+      "text": "D) python manage.py superuser",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 241,
+    "fields": {
+      "question": 61,
+      "text": "A) A programming language",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 242,
+    "fields": {
+      "question": 61,
+      "text": "B) A relational database management system (RDBMS)",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 243,
+    "fields": {
+      "question": 61,
+      "text": "C) A web browser",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 244,
+    "fields": {
+      "question": 61,
+      "text": "D) An operating system",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 245,
+    "fields": { "question": 62, "text": "A) GET", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 246,
+    "fields": { "question": 62, "text": "B) OPEN", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 247,
+    "fields": { "question": 62, "text": "C) SELECT", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 248,
+    "fields": { "question": 62, "text": "D) FETCHALL", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 249,
+    "fields": {
+      "question": 63,
+      "text": "A) MAKE DATABASE",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 250,
+    "fields": {
+      "question": 63,
+      "text": "B) CREATE DATABASE",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 251,
+    "fields": { "question": 63, "text": "C) NEW DATABASE", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 252,
+    "fields": { "question": 63, "text": "D) ADD DATABASE", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 253,
+    "fields": { "question": 64, "text": "A) ORDER BY", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 254,
+    "fields": { "question": 64, "text": "B) GROUP BY", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 255,
+    "fields": { "question": 64, "text": "C) WHERE", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 256,
+    "fields": { "question": 64, "text": "D) SELECT", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 257,
+    "fields": { "question": 65, "text": "A) ADD INTO", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 258,
+    "fields": { "question": 65, "text": "B) INSERT INTO", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 259,
+    "fields": { "question": 65, "text": "C) UPDATE INTO", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 260,
+    "fields": { "question": 65, "text": "D) CREATE ROW", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 261,
+    "fields": { "question": 66, "text": "A) CHANGE", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 262,
+    "fields": { "question": 66, "text": "B) MODIFY", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 263,
+    "fields": { "question": 66, "text": "C) UPDATE", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 264,
+    "fields": { "question": 66, "text": "D) ALTER", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 265,
+    "fields": { "question": 67, "text": "A) DELETE", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 266,
+    "fields": { "question": 67, "text": "B) REMOVE", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 267,
+    "fields": { "question": 67, "text": "C) DROP TABLE", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 268,
+    "fields": { "question": 67, "text": "D) CLEAR TABLE", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 269,
+    "fields": { "question": 68, "text": "A) Foreign key", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 270,
+    "fields": { "question": 68, "text": "B) Primary key", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 271,
+    "fields": {
+      "question": 68,
+      "text": "C) Duplicate key",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 272,
+    "fields": { "question": 68, "text": "D) Common key", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 273,
+    "fields": { "question": 69, "text": "A) SUM()", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 274,
+    "fields": { "question": 69, "text": "B) TOTAL()", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 275,
+    "fields": { "question": 69, "text": "C) COUNT()", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 276,
+    "fields": { "question": 69, "text": "D) NUMBER()", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 277,
+    "fields": { "question": 70, "text": "A) SORT BY", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 278,
+    "fields": { "question": 70, "text": "B) ORDER BY", "is_correct": true }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 279,
+    "fields": { "question": 70, "text": "C) GROUP BY", "is_correct": false }
+  },
+  {
+    "model": "quiz_app.choice",
+    "pk": 280,
+    "fields": { "question": 70, "text": "D) ARRANGE BY", "is_correct": false }
+  }
+]
+
