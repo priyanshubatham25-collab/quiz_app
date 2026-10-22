@@ -2,9 +2,6 @@ from django.http import request
 from django.shortcuts import render,redirect,get_object_or_404
 from django.contrib.auth import logout,login as auth_login
 from django.utils import timezone
-from datetime import datetime
-
-
 from .forms import  RegistrationForm
 from django.contrib import messages
 from .forms import LoginForm
@@ -168,6 +165,8 @@ def quiz_result(request, pk):
             'percentage': percentage,
             'passed': passed,
         })
+    else:
+        return redirect('quiz_start', pk=quiz.pk)
 
 
 @login_required(login_url='login')
