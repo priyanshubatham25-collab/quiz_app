@@ -167,7 +167,10 @@
 }
 
 .view-all {
-    color: #c084fc;
+    background: #8833ef;
+    padding: 8px 14px;
+    color: #efebf3;
+    border-radius: 8px;
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
@@ -175,10 +178,11 @@
 
 .view-all:hover {
     color: #e9d5ff;
+    
 }
 
 /* Quiz grid */
-.quiz-grid {
+.quiz-grid1 {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 22px;
@@ -190,7 +194,7 @@
     flex-direction: column;
     min-width: 0;
     padding: 25px;
-    background: #11111f;
+    background: #0a0a12d1 ;
     border: 1px solid #29243d;
     border-radius: 18px;
     transition: transform 0.3s ease,
