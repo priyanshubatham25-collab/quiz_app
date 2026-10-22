@@ -3,6 +3,8 @@ from django.shortcuts import render,redirect,get_object_or_404
 from django.contrib.auth import logout,login as auth_login
 from django.utils import timezone
 from datetime import datetime
+
+
 from .forms import  RegistrationForm
 from django.contrib import messages
 from .forms import LoginForm
@@ -88,81 +90,84 @@ def quiz_start(request, pk):
         )
 
         request.session[f'active_attempt_{quiz.id}'] = attempt.id
-
+    
         return render(request, 'quiz_details.html', {
             'quiz': quiz,
             'questions': questions,
             'attempt': attempt,
             'total_questions': total_questions,
         })
+   
 
     return redirect('quiz_start', pk=quiz.pk)
 
 
 # quiz_result view----------------------
+
 @login_required(login_url='login')
 def quiz_result(request, pk):
     quiz = get_object_or_404(Quiz, pk=pk)
     questions = quiz.questions.prefetch_related('choices').all()
 
-    if request.method != 'POST':
-        return redirect('quiz_start', pk=quiz.pk)
+    if request.method == 'POST':
+        answered = any(request.POST.get(f'question_{question.id}')
+        for question in questions
+)
 
-    # Find the attempt created when the quiz started
-    attempt_id = request.session.get(
-        f'active_attempt_{quiz.id}'
-    )
+        if not answered:
+             return redirect('quiz_start', pk=quiz.pk)
 
-    attempt = get_object_or_404(
-        Attempt,
-        pk=attempt_id,
-        user=request.user,
-        quiz=quiz,
-        finished_at__isnull=True
-    )
-
-    score = 0
-    total_questions = questions.count()
-
-    # Check the selected answer for each question
-    for question in questions:
-        selected_choice_id = request.POST.get(
-            f'question_{question.id}'
+        # Active attempt ki ID session se lena
+        attempt_id = request.session.get(
+            f'active_attempt_{quiz.id}'
         )
 
-        if selected_choice_id:
-            selected_choice = question.choices.filter(
-                pk=selected_choice_id
-            ).first()
+        attempt = get_object_or_404(
+            Attempt,
+            pk=attempt_id,
+            user=request.user,
+            quiz=quiz,
+            finished_at__isnull=True
+        )
 
-            if selected_choice and selected_choice.is_correct:
-                score += 1
+        score = 0
+        total_questions = questions.count()
 
-    # Update the SAME attempt record
-    total_questions = questions.count()
-    attempt.score = score
-    attempt.total = total_questions
-    attempt.finished_at = timezone.now()
-    attempt.save()
+        # Har question ka answer check karna
+        for question in questions:
+            selected_choice_id = request.POST.get(f'question_{question.id}')
 
-    # Remove active attempt from the session
-    del request.session[f'active_attempt_{quiz.id}']
+            if selected_choice_id:
+                selected_choice = question.choices.filter( pk=selected_choice_id).first()
 
-    percentage = (
-        (score / total_questions) * 100
-        if total_questions > 0 else 0
-    )
+                if selected_choice.is_correct:
+                    score += 1
 
-    passed = percentage >= quiz.pass_percentage
-    return render(request, 'quiz_result.html', {
-        'quiz': quiz,
-        'score': score,
-        'total_questions': total_questions,
-        'percentage': round(percentage, 2),
-        'passed': passed
-    })
+        # Same attempt ko update karna
+        attempt.score = score
+        attempt.total = total_questions
+        attempt.finished_at = timezone.now()
+        attempt.save()
 
+        # Session se active attempt remove karna
+        request.session.pop(f'active_attempt_{quiz.id}', None )
 
+        # Percentage calculate karna
+        percentage = ((score / total_questions) * 100
+            if total_questions > 0 
+            else 0
+        )
+
+        # Pass ya fail check karna
+        passed = percentage >= quiz.pass_percentage
+
+        return render(request, 'quiz_result.html', {
+            'quiz': quiz,
+            'score': score,
+            'total_questions': total_questions,
+            'percentage': percentage,
+            'passed': passed,
+        })
 
 
 @login_required(login_url='login')
