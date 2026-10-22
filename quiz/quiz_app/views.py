@@ -2,9 +2,6 @@ from django.http import request
 from django.shortcuts import render,redirect,get_object_or_404
 from django.contrib.auth import logout,login as auth_login
 from django.utils import timezone
-from datetime import datetime
-
-
 from .forms import  RegistrationForm
 from django.contrib import messages
 from .forms import LoginForm
@@ -169,6 +166,8 @@ def quiz_result(request, pk):
             'percentage': percentage,
             'passed': passed,
         })
+    else:
+        return redirect('quiz_start', pk=quiz.pk)
 
 
 
@@ -179,6 +178,6 @@ def categories(request):
 # attempts views ---------------
 @login_required(login_url='login')
 def attempts(request):
-    attempts = Attempt.objects.select_related('user', 'quiz').order_by('-start_at')
+    attempts = Attempt.objects.filter(user=request.user).select_related('quiz').order_by('-start_at')
 
     return render(request, 'attempts.html', {'attempts': attempts})
