@@ -96,17 +96,15 @@
     </div>
   </div>
 
-  {% endwith %} {% endif %}
-  
-  {% empty %}
+  {% endwith %} {% endif %} {% empty %}
   <div
     class="bg-white/30 backdrop-blur-md rounded-xl border border-white/30 p-8 text-center shadow-sm"
   >
     <span class="text-3xl block mb-2">📝</span>
-    <p class="text-gray-900 font-medium text-lg">
+    <p class="text-gray-600 font-medium text-lg">
       You do not attempt any Quiz.
     </p>
-    <p class="text-gray-900 text-sm mt-1">Go to Quizz section and try!</p>
+    <p class="text-gray-400 text-sm mt-1">Go to Quizz section and try!</p>
   </div>
   {% endfor %}
 </div>
