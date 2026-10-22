@@ -6,107 +6,125 @@
   <div class="nav-item active"><a href="{% url 'attempts' %}">Attempts</a></div>
 </nav>
 
-<div class="max-w-4xl mx-auto px-4 py-8 space-y-6">
-  
-  {% for quiz in quizzes %}
-  
-  {% if quiz.attempts.all %}
+<link rel="stylesheet" href="{% static 'css/attempts.css' %}">
 
-  {% with latest_attempt=quiz.attempts.all.first %}
+<div class="attempts-container">
 
-  <div
-    class="bg-white/40 backdrop-blur-md rounded-xl border border-white/40 shadow-lg overflow-hidden p-6 md:p-8 transition-all duration-300 hover:shadow-xl"
-  >
-    <div
-      class="border-b border-gray-200/50 pb-4 mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2"
-    >
-      <div>
-        <span
-          class="bg-blue-50/60 text-blue-700 text-xs font-semibold px-2.5 py-1 rounded-md uppercase tracking-wider backdrop-blur-sm"
-          >Quiz Details</span
-        >
-        <h1 class="text-2xl font-extrabold text-gray-900 mt-2">
-          🎯 {{ quiz.title }}
-        </h1>
-      </div>
-      <div>
-        <span
-          class="text-xs font-medium px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800"
-          >Attempted</span
-        >
-      </div>
-    </div>
+    {% for quiz in quizzes %}
 
+        {% if quiz.attempts.all %}
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-      
-      <div
-        class="bg-white/50 backdrop-blur-sm rounded-lg p-5 border border-white/30 flex items-center gap-4 shadow-sm"
-      >
-        <div
-          class="p-3 bg-emerald-100 text-emerald-700 rounded-full text-xl shadow-sm"
-        >
-          🏆
+            {% with latest_attempt=quiz.attempts.all.first %}
+
+            <div class="quiz-card">
+
+                <!-- Quiz Header -->
+                <div class="quiz-header">
+
+                    <div>
+                        <span class="quiz-label">Quiz Details</span>
+
+                        <h1 class="quiz-title">
+                            🎯 {{ quiz.title }}
+                        </h1>
+                    </div>
+
+                    <div>
+                        <span class="attempted-badge">Attempted</span>
+                    </div>
+
+                </div>
+
+                <!-- Quiz Statistics -->
+                <div class="quiz-stats">
+
+                    <!-- Latest Score -->
+                    <div class="stat-card">
+
+                        <div class="stat-icon score-icon">
+                            🏆
+                        </div>
+
+                        <div class="stat-content">
+
+                            <p class="stat-label">
+                                Latest Score
+                            </p>
+
+                            <p class="score-details">
+                                Raw Score:
+
+                                <span class="score-value">
+                                    {{ latest_attempt.score|default:"0" }}
+                                </span>
+
+                                out of
+
+                                <span class="total-questions">
+                                    {{ quiz.questions.count }}
+                                </span>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Total Attempts -->
+                    <div class="stat-card">
+
+                        <div class="stat-icon attempts-icon">
+                            🔄
+                        </div>
+
+                        <div class="stat-content">
+
+                            <p class="stat-label">
+                                Your Total Attempts
+                            </p>
+
+                            <h3 class="attempt-count">
+                                {{ quiz.attempts.count }}
+
+                                <span class="attempt-text">
+                                    Times tried
+                                </span>
+                            </h3>
+
+                            <p class="stat-description">
+                                Updates on every new submission
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            {% endwith %}
+
+        {% endif %}
+
+    {% empty %}
+
+        <!-- Empty State -->
+        <div class="empty-state">
+
+            <span class="empty-icon">📝</span>
+
+            <p class="empty-title">
+                You have not attempted any quiz.
+            </p>
+
+            <p class="empty-description">
+                Go to the Quizzes section and try!
+            </p>
+
         </div>
-        <div class="w-full">
-          <p
-            class="text-xs font-medium uppercase tracking-wider text-gray-500 mb-0.5"
-          >
-            Latest Score (Out of 10)
-          </p>
 
-          
-          <p class="text-xs text-gray-500 mt-1">
-            Raw Score:
-            <span class="text-emerald-600 font-extrabold text-2xl">
-              {{ latest_attempt.score|default:"0" }}
-            </span>
-            out of
-            <span class="text-gray-700 font-normal text-base">
-              {{ quiz.questions.count }}
-            </span>
-          </p>
-        </div>
-      </div>
+    {% endfor %}
 
-    
-      <div
-        class="bg-white/50 backdrop-blur-sm rounded-lg p-5 border border-white/30 flex items-center gap-4 shadow-sm"
-      >
-        <div
-          class="p-3 bg-indigo-100 text-indigo-700 rounded-full text-xl shadow-sm"
-        >
-          🔄
-        </div>
-        <div>
-          <p
-            class="text-xs font-medium uppercase tracking-wider text-gray-500 mb-0.5"
-          >
-            Your Total Attempts
-          </p>
-          <h3 class="text-2xl font-bold text-gray-800">
-            {{ quiz.attempts.count }}
-            <span class="text-gray-500 font-normal text-sm">Times tried</span>
-          </h3>
-          <p class="text-xs text-gray-500 mt-1">
-            Updates live on every new submission
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  {% endwith %} {% endif %} {% empty %}
-  <div
-    class="bg-white/30 backdrop-blur-md rounded-xl border border-white/30 p-8 text-center shadow-sm"
-  >
-    <span class="text-3xl block mb-2">📝</span>
-    <p class="text-gray-600 font-medium text-lg">
-      You do not attempt any Quiz.
-    </p>
-    <p class="text-gray-400 text-sm mt-1">Go to Quizz section and try!</p>
-  </div>
-  {% endfor %}
 </div>
 
-{% endblock%}
+{% endblock %}
