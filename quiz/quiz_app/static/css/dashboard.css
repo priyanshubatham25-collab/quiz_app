@@ -78,7 +78,7 @@
     margin-bottom: 45px;
 }
 
-.stat-card {
+.state-card {
     padding: 24px;
     background: #11111f;
     border: 1px solid #29243d;
@@ -86,17 +86,17 @@
     transition: 0.3s ease;
 }
 
-.stat-card:hover {
+.state-card:hover {
     transform: translateY(-5px);
     border-color: #7c3aed;
     box-shadow: 0 12px 30px rgba(124, 58, 237, 0.12);
 }
 
-.stat-icon {
+.state-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 52px;
+    width: 52px;    
     height: 52px;
     margin-bottom: 18px;
     border-radius: 14px;
