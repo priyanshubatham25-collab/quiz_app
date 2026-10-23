@@ -9,6 +9,8 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import F, ExpressionWrapper, Prefetch, fields
 from .models import Attempt ,Choice,Quiz 
 from django.views.decorators.http import require_POST
+import random
+
 
 
 # register view---------------------
@@ -38,15 +40,28 @@ def login(request):
         if form.is_valid():
             user = form.get_user()
             auth_login(request, user)
+
+            # Har naye login par counters reset
+            request.session['completed_count'] = 0
+            request.session['learning_started_at'] = (
+                timezone.now().timestamp()
+            )
+            request.session['learning_seconds'] = 0
+
             messages.success(request, "Login successfully!")
             return redirect('dashboard')
-        else:
-            messages.error(request, "Invalid username or password!")
 
+        else:
+            messages.error(
+                request, "Invalid username or password!"
+            )
     else:
         form = LoginForm()
 
-    return render(request, 'login_form.html', {'form': form})
+    return render(
+        request, 'login_form.html', {'form': form}
+    )
+
 
 
 
@@ -64,8 +79,46 @@ def logout_user(request):
 # dashboard view----------------------
 @login_required(login_url='login')
 def dashboard(request):
+    # Total published quizzes
     quizzes = Quiz.objects.filter(is_published=True)
-    return render(request, 'dashboard.html', {'quizzes': quizzes})
+
+    # Average percentage of completed quizzes
+    attempts = Attempt.objects.filter(
+        user=request.user,
+        finished_at__isnull=False,
+        total__gt=0
+    )
+
+    percentages = [
+        (attempt.score / attempt.total) * 100
+        for attempt in attempts
+    ]
+
+    percentage = round(
+        sum(percentages) / len(percentages), 2
+    ) if percentages else 0
+
+    # Total available quizzes
+    total_quizzes = quizzes.count()
+
+    # Quizzes completed during current login session
+    completed_count = request.session.get(
+        'completed_count', 0
+    )
+
+    # Learning time in seconds during current login session
+    learning_seconds = request.session.get(
+        'learning_seconds', 0
+    )
+
+    return render(request, 'dashboard.html', {
+        'quizzes': quizzes,
+        'percentage': percentage,
+        'total_quizzes': total_quizzes,
+        'completed_count': completed_count,
+        'learning_seconds': learning_seconds,
+    })
+
 
 @login_required(login_url='login')
 def quiz_list(request):
@@ -77,12 +130,16 @@ def quiz_list(request):
 def quiz_start(request, pk):
     quiz = get_object_or_404(Quiz, pk=pk)
 
-    questions = quiz.questions.prefetch_related('choices').all()
-    total_questions = questions.count()
+    # Get all questions for this quiz
+    all_questions = list(
+        quiz.questions.prefetch_related('choices').all()
+    )
+
+    total_questions = min(10, len(all_questions))
 
     if request.method == 'GET':
 
-        # Check karo ki session mein active attempt hai ya nahi
+        # Check whether an active attempt already exists
         attempt_id = request.session.get(
             f'active_attempt_{quiz.id}'
         )
@@ -97,7 +154,7 @@ def quiz_start(request, pk):
                 finished_at__isnull=True
             ).first()
 
-        # Sirf tab naya attempt banao jab active attempt nahi hai
+        # Create a new attempt only if no active attempt exists
         if attempt is None:
             attempt = Attempt.objects.create(
                 user=request.user,
@@ -106,18 +163,57 @@ def quiz_start(request, pk):
                 score=0
             )
 
-            request.session[f'active_attempt_{quiz.id}'] = attempt.id
+            # Select 10 random questions for this attempt
+            selected_questions = random.sample(
+                all_questions, total_questions
+            )
+
+            # Save question IDs so refresh keeps the same questions
+            request.session[
+                f'quiz_questions_{attempt.id}'
+            ] = [q.id for q in selected_questions]
+
+            request.session[
+                f'active_attempt_{quiz.id}'
+            ] = attempt.id
+
+        else:
+            # Retrieve the same questions for the existing attempt
+            question_ids = request.session.get(
+                f'quiz_questions_{attempt.id}', []
+            )
+
+            questions_by_id = {
+                q.id: q for q in all_questions
+            }
+
+            selected_questions = [
+                questions_by_id[qid]
+                for qid in question_ids
+                if qid in questions_by_id
+            ]
+
+            # Fallback if the saved question IDs are missing
+            if not selected_questions:
+                selected_questions = random.sample(
+                    all_questions, total_questions
+                )
+
+                request.session[
+                    f'quiz_questions_{attempt.id}'
+                ] = [q.id for q in selected_questions]
 
         return render(request, 'quiz_details.html', {
             'quiz': quiz,
-            'questions': questions,
+            'questions': selected_questions,
             'attempt': attempt,
-            'total_questions': total_questions,
+            'total_questions': len(selected_questions),
         })
 
     return redirect('quiz_start', pk=quiz.pk)
 
 # quiz_result view----------------------
+
 
 @login_required(login_url='login')
 def quiz_result(request, pk):
@@ -125,12 +221,13 @@ def quiz_result(request, pk):
     questions = quiz.questions.prefetch_related('choices').all()
 
     if request.method == 'POST':
-        answered = any(request.POST.get(f'question_{question.id}')
-        for question in questions
-)
+        answered = any(
+            request.POST.get(f'question_{question.id}')
+            for question in questions
+        )
 
         if not answered:
-             return redirect('quiz_start', pk=quiz.pk)
+            return redirect('quiz_start', pk=quiz.pk)
 
         # Active attempt ki ID session se lena
         attempt_id = request.session.get(
@@ -146,44 +243,55 @@ def quiz_result(request, pk):
         )
 
         score = 0
-        total_questions = questions.count()
+        total_questions = 10
 
         # Har question ka answer check karna
         for question in questions:
-            selected_choice_id = request.POST.get(f'question_{question.id}')
+            selected_choice_id = request.POST.get(
+                f'question_{question.id}'
+            )
 
             if selected_choice_id:
-                selected_choice = question.choices.filter( pk=selected_choice_id).first()
+                selected_choice = question.choices.filter(
+                    pk=selected_choice_id
+                ).first()
 
-                if selected_choice.is_correct:
+                if selected_choice and selected_choice.is_correct:
                     score += 1
 
-        # Same attempt ko update karna
+        # Attempt save karna
         attempt.score = score
         attempt.total = total_questions
         attempt.finished_at = timezone.now()
         attempt.save()
 
-        # Session se active attempt remove karna
-        request.session.pop(f'active_attempt_{quiz.id}', None )
+        # Isi login session mein completed count badhana
+        request.session['completed_count'] = (
+            request.session.get('completed_count', 0) + 1
+        )
 
-        # Percentage calculate karna
-        percentage = ((score / total_questions) * 100
+        # Active attempt remove karna
+        request.session.pop(
+            f'active_attempt_{quiz.id}', None
+        )
+
+        # Actual total questions se percentage
+        percentage = (
+            (score / total_questions) * 100
             if total_questions > 0 else 0
         )
 
-        # Pass ya fail check karna
         passed = percentage >= quiz.pass_percentage
 
         return render(request, 'quiz_result.html', {
             'quiz': quiz,
             'score': score,
             'total_questions': total_questions,
-            'percentage':percentage  ,
+            'percentage': round(percentage, 2),
             'passed': passed,
         })
-    else:
-        return redirect('quiz_start', pk=quiz.pk)
+
+    return redirect('quiz_start', pk=quiz.pk)
 
 
 
