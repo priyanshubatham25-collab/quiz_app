@@ -4,6 +4,7 @@
   <div class="nav-item"><a href="{% url 'quiz_list' %}">Quizzes</a></div>
   <div class="nav-item"><a href="{% url 'categories' %}">Categories</a></div>
   <div class="nav-item active"><a href="{% url 'attempts' %}">Attempts</a></div>
+  <div class="nav-item"><a href="{% url 'leaderboard' %}">Leaderboard</a></div>
 </nav>
 
 <link rel="stylesheet" href="{% static 'css/attempts.css' %}">
@@ -61,7 +62,7 @@
                 </p>
 
                 <h3 class="attempts-count">
-                  {{ quiz.attempts.count }}
+                  {{ quiz.user_specific_attempts|length }}
                   <span class="times-tried">Times tried</span>
                 </h3>
 

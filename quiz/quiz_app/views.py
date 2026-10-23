@@ -6,6 +6,7 @@ from .forms import  RegistrationForm
 from django.contrib import messages
 from .forms import LoginForm
 from django.contrib.auth.decorators import login_required
+from django.db.models import F, ExpressionWrapper, Prefetch, fields
 from .models import Attempt ,Choice,Quiz 
 from django.views.decorators.http import require_POST
 
@@ -193,6 +194,62 @@ def categories(request):
 
 @login_required(login_url='login')
 def attempts(request):
-    quizzes = Quiz.objects.filter(is_published=True).prefetch_related('attempts', 'questions')
+    user_attempts_prefetch = Prefetch(
+        'attempts',
+        queryset=Attempt.objects.filter(
+            user=request.user, 
+            finished_at__isnull=False  # Only fetch successfully finished runs
+        ).order_by('-start_at'),
+        to_attr='user_specific_attempts' 
+    )
+    quizzes = Quiz.objects.filter(
+        attempts__user=request.user,
+        attempts__finished_at__isnull=False
+    ).prefetch_related(user_attempts_prefetch).distinct()
+
     return render(request, 'attempts.html', {'quizzes': quizzes})
-    
+
+
+@login_required(login_url='login')
+def leaderboard(request):
+    all_completed_attempts = Attempt.objects.filter(
+        finished_at__isnull=False
+    ).annotate(
+        duration_secs=ExpressionWrapper(
+            F('finished_at') - F('start_at'),
+            output_field=fields.DurationField()
+        )
+    ).order_by('-score', 'duration_secs', 'start_at') 
+    best_attempts_by_user = {}
+    for attempt in all_completed_attempts:
+        user_id = attempt.user_id
+        
+        if user_id not in best_attempts_by_user:
+            best_attempts_by_user[user_id] = attempt
+
+    sorted_global_list = sorted(
+        best_attempts_by_user.values(),
+        key=lambda x: (-x.score, x.duration_seconds)
+    )
+    leaderboard_positions = []
+    current_user_rank = None
+
+    for index, attempt in enumerate(sorted_global_list):
+        rank_position = index + 1
+        if rank_position <= 4:
+            leaderboard_positions.append({
+                'rank': rank_position,
+                'username': attempt.user.username,
+                'quiz_title': attempt.quiz.title,
+                'score': attempt.score,
+                'total': attempt.total,
+                'time_display': attempt.duration_display
+            })
+        if attempt.user == request.user:
+            current_user_rank = rank_position
+
+    context = {
+        'leaderboard': leaderboard_positions,
+        'current_user_rank': current_user_rank
+    }
+    return render(request, 'leaderboard.html', context)

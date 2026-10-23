@@ -14,6 +14,7 @@
         <div class="nav-item"><a href="{% url 'quiz_list' %}">Quizzes</a></div>
         <div class="nav-item"><a href="{% url 'categories' %}">Categories</a></div>
         <div class="nav-item"><a href="{% url 'attempts' %}">Attempts</a></div>
+        <div class="nav-item"><a href="{% url 'leaderboard' %}">Leaderboard</a></div>
         
         
     </nav>
@@ -44,7 +45,7 @@
         <div class="state-card">
             <div class="state-icon amber-icon">🎯</div>
             <p class="stat-label">Average score</p>
-            <h2 class="stat-number">0%</h2>
+            <h2 class="stat-number">{{ percentage }}%</h2>
             <p class="stat-description">You're making great progress</p>
         </div>
 

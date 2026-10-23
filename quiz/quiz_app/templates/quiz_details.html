@@ -10,15 +10,17 @@
 <div class="quiz-details relative" id="quizMainWrapper">
 
 
-    <div id="quizPopup" class="fixed inset-0 bg-black/50 backdrop-blur-md flex justify-center items-center z-50 p-5">
-        <div class="bg-white rounded-lg p-8 text-center shadow-2xl max-w-md border border-gray-200 pointer-events-auto">
-            <h3 class="text-2xl font-bold text-gray-800 mb-3">Ready to Start the Quiz?</h3>
-            <p class="text-gray-600 text-sm leading-relaxed mb-6">
+    <div id="quizPopup" class="fixed inset-0 bg-black/20 backdrop-blur-xl  flex justify-center items-center z-50 p-5">
+        <div class="backdrop-blur-xl rounded-lg p-8 text-center shadow-2xl max-w-md border border-gray-800 pointer-events-auto">
+            <h3 class="text-2xl font-bold text-white-800 mb-3">Ready to Start the Quiz?</h3>
+            <p class="text-gray-400 text-sm leading-relaxed mb-6">
                 Welcome to <strong>{{ quiz.title }}</strong>! To start the quiz click the button below, your <strong>{{ questions|length }} questions</strong> will appear and the <strong>{{ quiz.time_limit_minutes }}-minute</strong> countdown timer will start immediately. The quiz will auto-submit once the time runs out.
             </p>
-            <button onclick="startActualQuiz()" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-md transition duration-200 cursor-pointer">
+            <button onclick="startActualQuiz()" class="text-white bg-violet-600 hover:bg-purple-600 font-semibold py-3 px-8 rounded-md transition duration-200 cursor-pointer">
                 Let's Start
             </button>
+
+            <button class="text-white bg-violet-600 hover:bg-purple-600 font-semibold py-3 px-8 rounded-md transition duration-200 cursor-pointer"><a href="{% url 'quiz_list' %}">Cancel</a></button>
         </div>
     </div>
 

@@ -1,0 +1,74 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/leaderboard.css' %}">
+
+
+<nav class="dashboard-nav">
+        <div class="nav-item " ><a href="{% url 'dashboard' %}">Dashboard</a></div>
+        <div class="nav-item "><a href="{% url 'quiz_list' %}">Quizzes</a></div>
+        <div class="nav-item"><a href="{% url 'categories' %}">Categories</a></div>
+        <div class="nav-item"><a href="{% url 'attempts' %}">Attempts</a></div>
+        <div class="nav-item active"><a href="{% url 'leaderboard' %}">Leaderboard</a></div>
+        
+    </nav>
+<div class="leaderboard-card">
+    <h1>🏆 Leaderboard</h1>
+    <div class="subtitle">Quiz: <strong>{{ quiz.title }}</strong></div>
+
+    <!-- Active account rank placement criteria -->
+    <!-- {% if current_user_rank %}
+        {% if current_user_rank <= 4 %}
+            <div class="status-banner">🎉 Great job! Your account is ranked at Position 🥇{{ current_user_rank }}!</div>
+        {% elif current_user_rank <= 2 %}
+            <div class="status-banner not-ranked">Good job! You are ranked at Position 🥈{{ current_user_rank }} </div>
+        {% else %}
+            <div class="status-banner not-ranked">Keep practicing! You are ranked at Position 🥉{{ current_user_rank }} (Top 4 shown below).</div>
+        {% endif %}
+    {% else %}
+        <div class="status-banner not-ranked">You haven't finished an attempt for this quiz yet!</div>
+    {% endif %} -->
+
+    <table class="leaderboard-table">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Account User</th>
+                <th>Lowest Time</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in leaderboard %}
+                <tr class="rank-{{ row.rank }}">
+                    <!-- <td>🥇{{ row.rank }}</td> -->
+                     <td>
+                        {% if row.rank == 1 %}
+                            🥇{{ row.rank }}
+                        {% elif row.rank == 2 %}
+                            🥈{{ row.rank }}
+                        {% elif row.rank == 3 %}
+                            🥉{{ row.rank }}
+                        {% else %}
+                            {{ row.rank }}
+                        {% endif %}
+                    </td>
+                    <td>{{ row.username }}</td>
+                    <td>{{ row.time_display }} seconds</td>
+                    <td style="color: #34d399; font-weight: 700;">{{ row.score }}/{{ row.total }}</td>
+                </tr>
+            {% empty %}
+                <tr>
+                    <td colspan="4" style="text-align: center; color: #9ca3af; background: #111827;">No user has attempted this quiz yet.</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    
+</div>
+
+
+{% endblock %}
