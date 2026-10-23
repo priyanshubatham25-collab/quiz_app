@@ -19,3 +19,4 @@ window.addEventListener("scroll", () => {
   navbar.style.pointerEvents = opacity === 0 ? "none" : "auto";
 });
 
+

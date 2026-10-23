@@ -89,8 +89,8 @@
 
 /* Fixed Positions Rank Track Highlighters (Matches Your Theme) */
 .leaderboard-table tr.rank-1 td {
-    border-color: #ffd700;
-    background: rgba(255, 215, 0, 0.05);
+    border-color: #8f26eb;
+    background: rgba(141, 32, 224, 0.05);
 }
 .leaderboard-table tr.rank-1 td:first-child { color: #ffd700; font-size: 16px; }
 
@@ -101,7 +101,7 @@
 .leaderboard-table tr.rank-2 td:first-child { color: #e5e7eb; }
 
 .leaderboard-table tr.rank-3 td {
-    border-color: #cd7f32;
+    border-color: #8638e6;
     background: rgba(205, 127, 50, 0.05);
 }
 .leaderboard-table tr.rank-3 td:first-child { color: #cd7f32; }
