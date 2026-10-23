@@ -15,14 +15,14 @@
         </div>
 
         <!-- Display Django messages -->
-        {% if messages %}
+        <!-- {% if messages %}
             {% for message in messages %}
                 <div class="login-message">
                     {{ message }}
                 </div>
             {% endfor %}
-        {% endif %}
-
+        {% endif %} -->
+        
         <form method="POST" class="login-form">
             {% csrf_token %}
 

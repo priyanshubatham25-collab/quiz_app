@@ -51,9 +51,10 @@
     font-weight: 800;
 }
 
+
 .login-header p {
     margin: 0;
-    color: #f5f0f0;
+    color: #f6f4f4;
     font-size: 14px;
     line-height: 1.6;
 }
@@ -94,21 +95,32 @@
     background: #171329;
     box-shadow: 0 0 0 4px rgba(192, 38, 211, 0.12);
 }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-text-fill-color: #e5e7eb;
+    caret-color: #e5e7eb;
+    -webkit-box-shadow: 0 0 0 1000px #11111f inset;
+    box-shadow: 0 0 0 1000px #11111f inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
 
 /* Error messages */
 .login-form .errorlist {
     padding-left: 20px;
-    color: #dc2626;
+    color: #090808;
     font-size: 13px;
 }
 
 .login-message {
     margin-bottom: 20px;
     padding: 12px 14px;
-    border: 1px solid #fecaca;
+   background-color: #a12cea91;
     border-radius: 9px;
-    background: #fef2f2;
-    color: #b91c1c;
+   
+    color: #e4dee7;
     font-size: 14px;
 }
 

@@ -18,4 +18,3 @@ window.addEventListener("scroll", () => {
   // Optional: Disable pointer events when fully faded so users don't accidentally click invisible buttons
   navbar.style.pointerEvents = opacity === 0 ? "none" : "auto";
 });
-
