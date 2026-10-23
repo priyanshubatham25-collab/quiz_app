@@ -6,7 +6,7 @@ from .forms import  RegistrationForm
 from django.contrib import messages
 from .forms import LoginForm
 from django.contrib.auth.decorators import login_required
-from django.db.models import F, ExpressionWrapper, Prefetch, fields
+from django.db.models import F, Avg, ExpressionWrapper, Prefetch, fields
 from .models import Attempt ,Choice,Quiz 
 from django.views.decorators.http import require_POST
 
@@ -174,7 +174,7 @@ def quiz_result(request, pk):
 
         # Pass ya fail check karna
         passed = percentage >= quiz.pass_percentage
-
+        
         return render(request, 'quiz_result.html', {
             'quiz': quiz,
             'score': score,

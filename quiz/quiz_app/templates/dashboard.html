@@ -9,14 +9,20 @@
 
     <!-- Navigation -->
     <nav class="dashboard-nav">
-       
+
+         <div class="nav-header">
+        <a href="{% url 'dashboard' %}" class="nav-logo">🎯Quiz</a>
+
+        <button type="button" class="hamburger" id="hamburger">☰</button>
+        </div>
+        <div class="nav-links" id="nav-links">   
         <div class="nav-item active" ><a href="{% url 'dashboard' %}">Dashboard</a></div>
         <div class="nav-item"><a href="{% url 'quiz_list' %}">Quizzes</a></div>
         <div class="nav-item"><a href="{% url 'categories' %}">Categories</a></div>
         <div class="nav-item"><a href="{% url 'attempts' %}">Attempts</a></div>
         <div class="nav-item"><a href="{% url 'leaderboard' %}">Leaderboard</a></div>
         
-        
+        </div>
     </nav>
 
     <!-- Welcome -->
@@ -45,7 +51,7 @@
         <div class="state-card">
             <div class="state-icon amber-icon">🎯</div>
             <p class="stat-label">Average score</p>
-            <h2 class="stat-number">{{ percentage }}%</h2>
+            <h2 class="stat-number">{{ average_score|floatformat:2 }}%</h2>
             <p class="stat-description">You're making great progress</p>
         </div>
 
