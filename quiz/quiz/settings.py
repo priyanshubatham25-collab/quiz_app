@@ -126,3 +126,12 @@ MAILERS = {
         'BACKEND': 'django.core.mail.backends.console.EmailBackend',
     },
 }
+
+# Session 24 hours tak valid rahega
+SESSION_COOKIE_AGE = 172800
+
+# Browser band hone par session expire na ho
+SESSION_EXPIRE_AT_BROWSER_CLOSE = False
+
+# Har request par session ki expiry reset na ho
+SESSION_SAVE_EVERY_REQUEST = False
