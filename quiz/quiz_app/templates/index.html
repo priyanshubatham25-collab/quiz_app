@@ -50,9 +50,9 @@
           {% if user.is_authenticated %}
 
           <!-- Welcome User -->
-          <span class="text-sm font-medium text-purple-100">
-            Welcome, {{ user.username }} 👋
-          </span>
+      <span class="hidden lg:block text-sm font-medium text-purple-100 sm:block">
+    Welcome, {{ user.username }} 👋
+</span>
 
           <!-- Logout -->
           <form method="POST" action="{% url 'logout' %}">

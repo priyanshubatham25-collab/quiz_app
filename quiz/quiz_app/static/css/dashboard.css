@@ -26,6 +26,14 @@
     border-radius: 14px;
 }
 
+.dashboard-nav h1 {
+    display:none;
+    margin: 0;
+    color: #c084fc;
+    font-size: 24px;
+    font-weight: 800;
+}
+
 .nav-item a {
     display: block;
     padding: 12px 20px;
@@ -41,6 +49,7 @@
     color: #ffffff;
     background: #30204f;
 }
+
 .nav-links {
     display: flex;
     align-items: center;
@@ -52,17 +61,52 @@
     color: #ffffff;
     background: #7c3aed;
 }
-.hamburger {
+
+/* Hamburger menu button */
+.hamburger-menu {
     display: none;
-    padding: 5px 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 42px;
+    height: 42px;
+    padding: 8px;
     color: #ffffff;
     background: #30204f;
     border: 1px solid #49316d;
     border-radius: 9px;
-    font-size: 25px;
     cursor: pointer;
     transition: 0.3s ease;
+    flex-shrink: 0;
 }
+
+.hamburger-menu:hover {
+    background: #49316d;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 23px;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 3px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Animate hamburger lines into an X */
+.hamburger-menu.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
 .nav-logo {
     display: none;
     color: #c084fc;
@@ -70,21 +114,16 @@
     font-weight: 800;
 }
 
-
 /* Welcome section */
 .welcome {
     margin-bottom: 30px;
 }
 
-.welcome h1 {
-    margin: 0 0 10px;
-    color: #f9fafb;
-    font-size: clamp(26px, 4vw, 36px);
-    font-weight: 800;
-}
+
 
 .welcome h1 span {
     color: #c084fc;
+    
 }
 
 .welcome h3 {
@@ -120,7 +159,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 52px;    
+    width: 52px;
     height: 52px;
     margin-bottom: 18px;
     border-radius: 14px;
@@ -202,11 +241,10 @@
 
 .view-all:hover {
     color: #e9d5ff;
-    
 }
 
 /* Quiz grid */
-.quiz-grid1{
+.quiz-grid1 {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 22px;
@@ -218,12 +256,13 @@
     flex-direction: column;
     min-width: 0;
     padding: 25px;
-    background: #0a0a12d1 ;
+    background: #0a0a12d1;
     border: 1px solid #29243d;
     border-radius: 18px;
-    transition: transform 0.3s ease,
-                border-color 0.3s ease,
-                box-shadow 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .quiz-card:hover {
@@ -243,6 +282,12 @@
     font-size: 30px;
 }
 
+.quiz-icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
 .orange-icon {
     background: #422514;
 }
@@ -253,6 +298,10 @@
 
 .yellow-icon {
     background: #403512;
+}
+
+.red-icon {
+    background: #451f2b;
 }
 
 .quiz-card h3 {
@@ -326,7 +375,7 @@
     transform: scale(0.98);
 }
 
-/* Responsive layout */
+/* Responsive layout: tablets */
 @media (max-width: 1000px) {
     .stats-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -337,53 +386,76 @@
     }
 }
 
+/* Responsive layout: mobile */
 @media (max-width: 600px) {
     .dashboard {
         padding: 20px 14px 35px;
     }
 
+    /* Keep the navigation bar compact */
     .dashboard-nav {
         gap: 4px;
-        padding-inline: 10px;
+        padding: 8px 10px;
+        align-items: center;
+    }
+    .dashboard-nav h1 {
+        display:block;
+    }
+
+    /* Show the hamburger button */
+    .hamburger-menu {
+        display: flex;
+        margin-left: auto;
+    }
+
+    /* Hide navigation links until the menu is opened */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        flex-wrap: nowrap;
+        gap: 5px;
+        width: 100%;
+        flex-basis: 100%;
+        padding-top: 8px;
+    }
+
+    /* Display links when JavaScript adds .show */
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links .nav-item {
+        width: 100%;
+    }
+
+    .nav-links .nav-item a {
+        display: block;
+        width: 100%;
+        padding: 12px 14px;
+        font-size: 14px;
     }
 
     .nav-item a {
         padding: 10px 12px;
         font-size: 12px;
     }
-    .nav-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
+
+    .nav-logo {
+        display: block;
+        padding-inline: 10px;
     }
-
-    .nav-links {
-    display:none;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
+    .welcome {
+    margin-bottom: 30px;
+    
 }
-
-    .hamburger {
-    display: block;
-
-}
-.nav-logo {
-    display: block;
-    padding-inline: 10px;
-   
-}
- .nav-links.show {
-        display: flex;
-    }
 
     .stats-grid,
     .quiz-grid1 {
         grid-template-columns: 1fr;
     }
 
-    .stat-card,
+    .state-card,
     .quiz-card {
         padding: 20px;
     }

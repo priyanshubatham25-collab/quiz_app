@@ -1,10 +1,34 @@
-const button = document.getElementById("hamburger");
-const menu = document.getElementById("nav-links");
 
-button.addEventListener("click", function () {
-    menu.classList.toggle("show");
+document.addEventListener("DOMContentLoaded", function () {
 
-    const isOpen = menu.classList.contains("show");
-    button.setAttribute("aria-expanded", isOpen);
-    button.textContent = isOpen ? "✕" : "☰";
+    const hamburger = document.getElementById("hamburger-menu");
+    const menu = document.getElementById("dashboard-menu");
+
+    if (!hamburger || !menu) {
+        return;
+    }
+
+    hamburger.addEventListener("click", function () {
+
+        const isOpen = menu.classList.toggle("show");
+
+        hamburger.classList.toggle("active", isOpen);
+        hamburger.setAttribute("aria-expanded", String(isOpen));
+
+    });
+
+    // Close menu after clicking a navigation link
+    menu.querySelectorAll("a").forEach(function (link) {
+
+        link.addEventListener("click", function () {
+
+            menu.classList.remove("show");
+            hamburger.classList.remove("active");
+            hamburger.setAttribute("aria-expanded", "false");
+
+        });
+
+    });
+
 });
+

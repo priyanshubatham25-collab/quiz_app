@@ -1,182 +1,259 @@
-{% extends "index.html" %} {% load static %} {% block content %}
+
+{% extends "index.html" %}
+{% load static %}
+<script src="{% static 'js/dashboard.js' %}" defer></script>
+{% block content %}
 
 <div class="dashboard">
-  <!-- Navigation -->
-  <nav class="dashboard-nav">
-    <div class="nav-item active">
-      <a href="{% url 'dashboard' %}">Dashboard</a>
-    </div>
-    <div class="nav-item"><a href="{% url 'quiz_list' %}">Quizzes</a></div>
-    <div class="nav-item"><a href="{% url 'categories' %}">Categories</a></div>
-    <div class="nav-item"><a href="{% url 'attempts' %}">Attempts</a></div>
-    <div class="nav-item">
-      <a href="{% url 'leaderboard' %}">Leaderboard</a>
-    </div>
-  </nav>
 
-  <!-- Welcome -->
-  <div class="welcome">
-    <h1>Welcome <span>{{ user.username }}</span>! 👋</h1>
-    <h3>Ready to learn something new today?</h3>
-  </div>
+    <!-- Navigation -->
+    <nav class="dashboard-nav">
+        <h1>Quiz Game</h1>
+        <!-- Hamburger Menu Button -->
+        <button
+            type="button"
+            class="hamburger-menu"
+            id="hamburger-menu"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="dashboard-menu"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
-  <!-- Statistics -->
-  <div class="stats-grid">
-    <div class="state-card">
-      <div class="state-icon purple-icon">📖</div>
-      <p class="stat-label">Available quizzes</p>
-      <h2 class="stat-number">{{ quizzes.count }}</h2>
-      <p class="stat-description">Explore new topics and skills</p>
-    </div>
+        <!-- Navigation Links -->
+        <div class="nav-links" id="dashboard-menu">
 
-    <div class="state-card">
-      <div class="state-icon green-icon">✔️</div>
-      <p class="stat-label">Quizzes completed</p>
-      <h2 class="stat-number">{{ completed_count }} / {{ total_quizzes }}</h2>
-      <p class="stat-description">Keep up your learning streak</p>
-    </div>
+            <div class="nav-item active">
+                <a href="{% url 'dashboard' %}">Dashboard</a>
+            </div>
 
-    <div class="state-card">
-      <div class="state-icon amber-icon">🎯</div>
-      <p class="stat-label">Average score</p>
-      <h2 class="stat-number">{{ percentage }}%</h2>
-      <p class="stat-description">You're making great progress</p>
-    </div>
+            <div class="nav-item">
+                <a href="{% url 'quiz_list' %}">Quizzes</a>
+            </div>
 
-    <div class="state-card">
-      <div class="state-icon violet-icon">🕒</div>
-      <p class="stat-label">Learning time</p>
-      <h2 class="stat-number" id="learning-time">00 min</h2>
-      <p class="stat-description">Time spent on this website</p>
-    </div>
-  </div>
+            <div class="nav-item">
+                <a href="{% url 'categories' %}">Categories</a>
+            </div>
 
-  <!-- Featured quizzes -->
-  <section class="featured-section">
-    <div class="section-header">
-      <div>
-        <h2>Explore technologies</h2>
-        <p>Choose a topic and improve your skills.</p>
-      </div>
+            <div class="nav-item">
+                <a href="{% url 'attempts' %}">Attempts</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="{% url 'leaderboard' %}">Leaderboard</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Welcome -->
+    <div class="welcome">
+        <h1>Welcome <span>{{ user.username }}</span>! 👋</h1>
+        <h3>Ready to learn something new today?</h3>
     </div>
 
-    <div class="quiz-grid1">
-      <!-- HTML5 Card -->
-      <div class="quiz-card">
-        <div class="quiz-icon orange-icon">
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-            alt="HTML5 Logo"
-          />
+    <!-- Statistics -->
+    <div class="stats-grid">
+
+        <div class="state-card">
+            <div class="state-icon purple-icon">📖</div>
+            <p class="stat-label">Available quizzes</p>
+            <h2 class="stat-number">{{ quizzes.count }}</h2>
+            <p class="stat-description">Explore new topics and skills</p>
         </div>
 
-        <h3>HTML5</h3>
-        <p class="quiz-description">Web Development · 10 questions</p>
-
-        <div class="quiz-meta">
-          <span class="level">Beginner</span>
-          <span>⏱ 10 min</span>
+        <div class="state-card">
+            <div class="state-icon green-icon">✔️</div>
+            <p class="stat-label">Quizzes completed</p>
+            <h2 class="stat-number">{{ completed_count }} / {{ total_quizzes }}</h2>
+            <p class="stat-description">Keep up your learning streak</p>
         </div>
 
-        <a href="{% url 'quiz_start' 1 %}" class="btn quiz-btn">Start quiz →</a>
-      </div>
-
-      <!-- CSS3 Card -->
-      <div class="quiz-card">
-        <div class="quiz-icon cyan-icon">
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-            alt="CSS3 Logo"
-          />
+        <div class="state-card">
+            <div class="state-icon amber-icon">🎯</div>
+            <p class="stat-label">Average score</p>
+            <h2 class="stat-number">{{ percentage }}%</h2>
+            <p class="stat-description">You're making great progress</p>
         </div>
 
-        <h3>CSS3</h3>
-        <p class="quiz-description">Styling & Design · 10 questions</p>
-
-        <div class="quiz-meta">
-          <span class="level level-cyan">Intermediate</span>
-          <span>⏱ 10 min</span>
+        <div class="state-card">
+            <div class="state-icon violet-icon">🕒</div>
+            <p class="stat-label">Learning time</p>
+            <h2 class="stat-number" id="learning-time">00:00:00</h2>
+            <p class="stat-description">Time spent on this website</p>
         </div>
 
-        <a href="{% url 'quiz_start' 2 %}" class="btn quiz-btn">Start quiz →</a>
-      </div>
-
-      <!-- JavaScript Card -->
-      <div class="quiz-card">
-        <div class="quiz-icon yellow-icon">
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-            alt="JavaScript Logo"
-          />
-        </div>
-
-        <h3>JavaScript</h3>
-        <p class="quiz-description">Programming · 10 questions</p>
-
-        <div class="quiz-meta">
-          <span class="level level-yellow">Beginner</span>
-          <span>⏱ 10 min</span>
-        </div>
-
-        <a href="{% url 'quiz_start' 3 %}" class="btn quiz-btn">Start quiz →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Popular quizzes -->
-  <section class="popular-section">
-    <div class="section-header">
-      <div>
-        <h2>Popular quizzes</h2>
-        <p>Pick a quiz and test your knowledge.</p>
-      </div>
-
-      <a href="{% url 'quiz_list'  %}" class="view-all"> View all → </a>
     </div>
 
-    <div class="quiz-grid1">
-      <div class="quiz-card">
-        <div class="quiz-icon yellow-icon">🐍</div>
-        <h3>Python</h3>
-        <p class="quiz-description">Programming · 10 questions</p>
+    <!-- Featured Quizzes -->
+    <section class="featured-section">
 
-        <div class="quiz-meta">
-          <span class="level">Beginner</span>
-          <span>⏱ 10 min</span>
+        <div class="section-header">
+            <div>
+                <h2>Explore technologies</h2>
+                <p>Choose a topic and improve your skills.</p>
+            </div>
         </div>
 
-        <a href="{% url 'quiz_start' 5 %}" class="quiz-btn"> Start quiz → </a>
-      </div>
+        <div class="quiz-grid1">
 
-      <div class="quiz-card">
-        <div class="quiz-icon orange-icon">♻️</div>
-        <h3>Django</h3>
-        <p class="quiz-description">Web framework · 10 questions</p>
+            <!-- HTML5 Card -->
+            <div class="quiz-card">
 
-        <div class="quiz-meta">
-          <span class="level level-cyan">Intermediate</span>
-          <span>⏱ 10 min</span>
+                <div class="quiz-icon orange-icon">
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                        alt="HTML5 Logo"
+                    >
+                </div>
+
+                <h3>HTML5</h3>
+                <p class="quiz-description">Web Development · 10 questions</p>
+
+                <div class="quiz-meta">
+                    <span class="level">Beginner</span>
+                    <span>⏱ 10 min</span>
+                </div>
+
+                <a href="{% url 'quiz_start' 1 %}" class="btn quiz-btn">
+                    Start quiz →
+                </a>
+
+            </div>
+
+            <!-- CSS3 Card -->
+            <div class="quiz-card">
+
+                <div class="quiz-icon cyan-icon">
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                        alt="CSS3 Logo"
+                    >
+                </div>
+
+                <h3>CSS3</h3>
+                <p class="quiz-description">Styling &amp; Design · 10 questions</p>
+
+                <div class="quiz-meta">
+                    <span class="level level-cyan">Intermediate</span>
+                    <span>⏱ 10 min</span>
+                </div>
+
+                <a href="{% url 'quiz_start' 2 %}" class="btn quiz-btn">
+                    Start quiz →
+                </a>
+
+            </div>
+
+            <!-- JavaScript Card -->
+            <div class="quiz-card">
+
+                <div class="quiz-icon yellow-icon">
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JavaScript Logo"
+                    >
+                </div>
+
+                <h3>JavaScript</h3>
+                <p class="quiz-description">Programming · 10 questions</p>
+
+                <div class="quiz-meta">
+                    <span class="level level-yellow">Beginner</span>
+                    <span>⏱ 10 min</span>
+                </div>
+
+                <a href="{% url 'quiz_start' 3 %}" class="btn quiz-btn">
+                    Start quiz →
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Popular Quizzes -->
+    <section class="popular-section">
+
+        <div class="section-header">
+            <div>
+                <h2>Popular quizzes</h2>
+                <p>Pick a quiz and test your knowledge.</p>
+            </div>
+
+            <a href="{% url 'quiz_list' %}" class="view-all">
+                View all →
+            </a>
         </div>
 
-        <a href="{% url 'quiz_start'  6 %}" class="quiz-btn"> Start quiz → </a>
-      </div>
+        <div class="quiz-grid1">
 
-      <div class="quiz-card">
-        <div class="quiz-icon red-icon">🗄️</div>
-        <h3>MySQL</h3>
-        <p class="quiz-description">database· 10 questions</p>
+            <!-- Python Card -->
+            <div class="quiz-card">
 
-        <div class="quiz-meta">
-          <span class="level level-yellow">Beginner</span>
-          <span>⏱ 10 min</span>
+                <div class="quiz-icon yellow-icon">🐍</div>
+
+                <h3>Python</h3>
+                <p class="quiz-description">Programming · 10 questions</p>
+
+                <div class="quiz-meta">
+                    <span class="level">Beginner</span>
+                    <span>⏱ 10 min</span>
+                </div>
+
+                <a href="{% url 'quiz_start' 5 %}" class="quiz-btn">
+                    Start quiz →
+                </a>
+
+            </div>
+
+            <!-- Django Card -->
+            <div class="quiz-card">
+
+                <div class="quiz-icon orange-icon">♻️</div>
+
+                <h3>Django</h3>
+                <p class="quiz-description">Web framework · 10 questions</p>
+
+                <div class="quiz-meta">
+                    <span class="level level-cyan">Intermediate</span>
+                    <span>⏱ 10 min</span>
+                </div>
+
+                <a href="{% url 'quiz_start' 6 %}" class="quiz-btn">
+                    Start quiz →
+                </a>
+
+            </div>
+
+            <!-- MySQL Card -->
+            <div class="quiz-card">
+
+                <div class="quiz-icon red-icon">🗄️</div>
+
+                <h3>MySQL</h3>
+                <p class="quiz-description">Database · 10 questions</p>
+
+                <div class="quiz-meta">
+                    <span class="level level-yellow">Beginner</span>
+                    <span>⏱ 10 min</span>
+                </div>
+
+                <a href="{% url 'quiz_start' 7 %}" class="quiz-btn">
+                    Start quiz →
+                </a>
+
+            </div>
+
         </div>
+    </section>
 
-        <a href="{% url 'quiz_start' 7  %}" class="quiz-btn"> Start quiz → </a>
-      </div>
-    </div>
-  </section>
 </div>
 
+<!-- Learning Timer -->
 <script>
 (function () {
     const timer = document.getElementById('learning-time');
@@ -204,5 +281,7 @@
     }, 1000);
 })();
 </script>
+
+<!-- Hamburger Menu JavaScript -->
 
 {% endblock %}

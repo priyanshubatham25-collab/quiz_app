@@ -2,14 +2,48 @@
 {% extends 'index.html' %}
 
 {% block content %}
-<nav class="dashboard-nav">
-        <div class="nav-item " ><a href="{% url 'dashboard' %}">Dashboard</a></div>
-        <div class="nav-item active"><a href="{% url 'quiz_list' %}">Quizzes</a></div>
-        <div class="nav-item"><a href="{% url 'categories' %}">Categories</a></div>
-        <div class="nav-item"><a href="{% url 'attempts' %}">Attempts</a></div>
-        <div class="nav-item"><a href="{% url 'leaderboard' %}">Leaderboard</a></div>
-        
+ <nav class="dashboard-nav">
+        <h1>Quiz Game</h1>
+        <!-- Hamburger Menu Button -->
+        <button
+            type="button"
+            class="hamburger-menu"
+            id="hamburger-menu"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="dashboard-menu"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="nav-links" id="dashboard-menu">
+
+            <div class="nav-item active">
+                <a href="{% url 'dashboard' %}">Dashboard</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="{% url 'quiz_list' %}">Quizzes</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="{% url 'categories' %}">Categories</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="{% url 'attempts' %}">Attempts</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="{% url 'leaderboard' %}">Leaderboard</a>
+            </div>
+
+        </div>
     </nav>
+
 <section >
         <div class="section-header">
             <div>
