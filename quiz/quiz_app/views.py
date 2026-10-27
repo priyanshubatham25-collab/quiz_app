@@ -20,8 +20,8 @@ def register(request):
     if request.method == "POST":
         form =  RegistrationForm(request.POST)
         if form.is_valid():
-            form.save()
-            login(request)
+            user = form.save()
+            auth_login(request, user)
             messages.success(request,'registration sucessfull 👍!')
             return redirect('login')
 
