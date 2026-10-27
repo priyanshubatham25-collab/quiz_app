@@ -156,6 +156,24 @@ MAILERS = {
     },
 }
 
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "handlers": {
+        "console": {
+            "class": "logging.StreamHandler",
+        },
+    },
+    "loggers": {
+        "django": {
+            "handlers": ["console"],
+            "level": "ERROR",
+            "propagate": True,
+        },
+    },
+}
+
 # Session 24 hours tak valid rahega
 SESSION_COOKIE_AGE = 172800
 
