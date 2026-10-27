@@ -81,6 +81,7 @@ WSGI_APPLICATION = 'quiz.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/6.1/ref/settings/#databases
+
 import os
 import dj_database_url
 from pathlib import Path
@@ -90,7 +91,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 if os.environ.get("DATABASE_URL"):
     DATABASES = {
         "default": dj_database_url.parse(
-            os.environ["postgresql://quiz_db_8ido_user:PuPYaDyQLcIbfHxomzEeZ599hJRbi7ID@dpg-dbg6ll2vcj2c73bb89pg-a/quiz_db_8ido"],
+            os.environ["DATABASE_URL"],
             conn_max_age=600,
         )
     }
@@ -101,6 +102,7 @@ else:
             "NAME": BASE_DIR / "db.sqlite3",
         }
     }
+
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
