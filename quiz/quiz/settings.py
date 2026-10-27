@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-#y4cimq(l6kz+jx5ew9+4x8haih2l4hgx&oy-g5_hp$4tbhqoq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["https://quiz-app-tlgp.onrender.com/"]
+ALLOWED_HOSTS = ["https://quiz-app-tlgp.onrender.com"]
 
 
 # Application definition
