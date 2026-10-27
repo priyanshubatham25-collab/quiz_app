@@ -30,6 +30,12 @@ DEBUG = False
 ALLOWED_HOSTS = ["https://quiz-app-tlgp.onrender.com"]
 
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://quiz-app-tlgp.onrender.com",
+]
+
+
+
 # Application definition
 
 INSTALLED_APPS = [
