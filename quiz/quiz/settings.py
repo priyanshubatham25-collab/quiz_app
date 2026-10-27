@@ -90,7 +90,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 if os.environ.get("DATABASE_URL"):
     DATABASES = {
         "default": dj_database_url.parse(
-            os.environ["DATABASE_URL"],
+            os.environ["postgresql://quiz_db_8ido_user:PuPYaDyQLcIbfHxomzEeZ599hJRbi7ID@dpg-dbg6ll2vcj2c73bb89pg-a/quiz_db_8ido"],
             conn_max_age=600,
         )
     }
