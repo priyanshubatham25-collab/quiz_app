@@ -102,6 +102,8 @@ else:
             "NAME": BASE_DIR / "db.sqlite3",
         }
     }
+print("DATABASE ENGINE:", DATABASES["default"]["ENGINE"])
+print("DATABASE URL SET:", bool(os.environ.get("DATABASE_URL")))
 
 # Password validation
 # https://docs.djangoproject.com/en/6.1/ref/settings/#auth-password-validators
