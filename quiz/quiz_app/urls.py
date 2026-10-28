@@ -16,4 +16,5 @@ urlpatterns = [
     path('quiz_result/<int:pk>/', views.quiz_result, name='quiz_result'),
     path('categories/', views.categories, name='categories'),
     path('attempts/', views.attempts, name='attempts'),
+    path('db-check/', views.db_check, name='db_check'),
 ]

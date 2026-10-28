@@ -1,4 +1,4 @@
-from django.http import request
+from django.http import HttpResponse, request
 from django.shortcuts import render,redirect,get_object_or_404
 from django.contrib.auth import logout,login as auth_login
 from django.utils import timezone
@@ -7,11 +7,22 @@ from django.contrib import messages
 from .forms import LoginForm
 from django.contrib.auth.decorators import login_required
 from django.db.models import F, Avg, ExpressionWrapper, Prefetch, fields
-from .models import Attempt ,Choice,Quiz 
+from .models import Attempt, Category ,Choice,Quiz 
 from django.views.decorators.http import require_POST
 import random
+from django.contrib.auth.models import User
+from django.http import HttpResponse
+from django.db import connection
 
-
+@login_required
+def db_check(request):
+    return HttpResponse(
+        f"Database: {connection.vendor}<br>"
+        f"Users: {User.objects.count()}<br>"
+        f"Quizzes: {Quiz.objects.count()}<br>"
+        f"Categories: {Category.objects.count()}<br>"
+        f"Attempts: {Attempt.objects.count()}"
+    )
 
 # register view---------------------
 def register(request):
