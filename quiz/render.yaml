@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: quiz-app
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn quiz.wsgi:application
+    preDeployCommand: python manage.py migrate  # Yeh line automatic migration chalati hai
