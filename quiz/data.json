@@ -1,0 +1,10338 @@
+[
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$lmfnCrM0bI2vlFzixCNKgU$OdLTvUXgFiiUDNulYo75J3FKRWStGXyKeQ8lcEVvPWI=",
+    "last_login": "2026-10-26T10:41:34.965Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-10-15T04:58:26.236Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$Y2zKRr5PwQGnlcrKtKjgfm$DfRqWvYp5bdMXhh1DZ16bkMAhxRoTxP495q3aAPIOZE=",
+    "last_login": "2026-10-16T09:39:35.122Z",
+    "is_superuser": false,
+    "username": "tannu_123",
+    "first_name": "",
+    "last_name": "",
+    "email": "jhonedoe2@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-10-15T06:39:51.726Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$SctTde4EOs5BBq4EOGOhgA$VYseVNeLYnsGjCftILdt/o0xJIbQHUoKQaW+C/cgeXc=",
+    "last_login": "2026-10-16T10:11:42.512Z",
+    "is_superuser": false,
+    "username": "vivek",
+    "first_name": "",
+    "last_name": "",
+    "email": "exmple@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-10-16T10:11:13.690Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$nMYjSI2i9b0gqpTuP2hfYQ$s+MFMaYcdoyzYHYD0h2fpiIMZng02a6tMH7k0nM7plA=",
+    "last_login": "2026-10-27T05:37:12.393Z",
+    "is_superuser": false,
+    "username": "veteran_0811",
+    "first_name": "",
+    "last_name": "",
+    "email": "johndoe@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-10-16T17:03:10.459Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$MBpr0AYAJ2UhnNhpm8wjyw$rhBnCLVvgXgdMdGOTLiC4pt3tYhBz8/Xqaa4hfg3wZY=",
+    "last_login": "2026-10-22T15:01:04.757Z",
+    "is_superuser": false,
+    "username": "tannu",
+    "first_name": "",
+    "last_name": "",
+    "email": "example@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-10-22T15:00:48.545Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$rKw3A8ULPCMzBn2Vhd1noZ$P6T0YxHyQrDpf4F+ZpzjXeku1tSmKcOREvnmYbj9Ixw=",
+    "last_login": "2026-10-22T15:16:29.807Z",
+    "is_superuser": false,
+    "username": "Vivek1",
+    "first_name": "",
+    "last_name": "",
+    "email": "example@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-10-22T15:15:57.468Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$5hamaPXSilmAnHk8ZV61pH$eshAveY/G8TI+ECTwq9/NhGkqmPkmPmKQNdSKB0c4NE=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "priyanshu",
+    "first_name": "",
+    "last_name": "",
+    "email": "example@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-10-23T11:57:01.178Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "quiz_app.category",
+  "pk": 1,
+  "fields": {
+    "name": "Front-end"
+  }
+},
+{
+  "model": "quiz_app.category",
+  "pk": 2,
+  "fields": {
+    "name": "Back-end"
+  }
+},
+{
+  "model": "quiz_app.quiz",
+  "pk": 1,
+  "fields": {
+    "title": "HTML",
+    "description": "",
+    "category": 1,
+    "time_limit_minutes": 10,
+    "pass_percentage": 50,
+    "is_published": true,
+    "created": "2026-10-19T10:00:01.969Z"
+  }
+},
+{
+  "model": "quiz_app.quiz",
+  "pk": 2,
+  "fields": {
+    "title": "CSS",
+    "description": "",
+    "category": 1,
+    "time_limit_minutes": 10,
+    "pass_percentage": 50,
+    "is_published": true,
+    "created": "2026-10-19T10:00:21.316Z"
+  }
+},
+{
+  "model": "quiz_app.quiz",
+  "pk": 3,
+  "fields": {
+    "title": "JAVA-SCRIPT",
+    "description": "",
+    "category": 1,
+    "time_limit_minutes": 10,
+    "pass_percentage": 50,
+    "is_published": true,
+    "created": "2026-10-19T10:01:24.513Z"
+  }
+},
+{
+  "model": "quiz_app.quiz",
+  "pk": 4,
+  "fields": {
+    "title": "ReactJs",
+    "description": "",
+    "category": 1,
+    "time_limit_minutes": 10,
+    "pass_percentage": 50,
+    "is_published": true,
+    "created": "2026-10-19T10:01:44.653Z"
+  }
+},
+{
+  "model": "quiz_app.quiz",
+  "pk": 5,
+  "fields": {
+    "title": "Python",
+    "description": "",
+    "category": 2,
+    "time_limit_minutes": 10,
+    "pass_percentage": 50,
+    "is_published": true,
+    "created": "2026-10-19T10:01:55.877Z"
+  }
+},
+{
+  "model": "quiz_app.quiz",
+  "pk": 6,
+  "fields": {
+    "title": "Django",
+    "description": "",
+    "category": 2,
+    "time_limit_minutes": 10,
+    "pass_percentage": 50,
+    "is_published": true,
+    "created": "2026-10-19T10:02:09.632Z"
+  }
+},
+{
+  "model": "quiz_app.quiz",
+  "pk": 7,
+  "fields": {
+    "title": "Database",
+    "description": "",
+    "category": 2,
+    "time_limit_minutes": 10,
+    "pass_percentage": 50,
+    "is_published": true,
+    "created": "2026-10-19T10:02:27.295Z"
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 1,
+  "fields": {
+    "quiz": 1,
+    "text": "What does HTML stand for?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 2,
+  "fields": {
+    "quiz": 1,
+    "text": "Which tag is used to create a paragraph in HTML?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 3,
+  "fields": {
+    "quiz": 1,
+    "text": "Which HTML tag is used to insert a line break?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 4,
+  "fields": {
+    "quiz": 1,
+    "text": "Which tag is used to create a hyperlink?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 5,
+  "fields": {
+    "quiz": 1,
+    "text": "Which HTML tag is used to display an image?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 6,
+  "fields": {
+    "quiz": 1,
+    "text": "Which tag is used for the largest heading in HTML?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 7,
+  "fields": {
+    "quiz": 1,
+    "text": "Which attribute specifies the destination URL of a hyperlink?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 8,
+  "fields": {
+    "quiz": 1,
+    "text": "Which tag is used to create an unordered list?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 9,
+  "fields": {
+    "quiz": 1,
+    "text": "Which HTML tag is used to create a table row?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 10,
+  "fields": {
+    "quiz": 1,
+    "text": "Which HTML tag defines the title displayed in the browser tab?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 11,
+  "fields": {
+    "quiz": 2,
+    "text": "What does CSS stand for?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 12,
+  "fields": {
+    "quiz": 2,
+    "text": "Which HTML tag is used to link an external CSS file?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 13,
+  "fields": {
+    "quiz": 2,
+    "text": "Which CSS property changes the text color?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 14,
+  "fields": {
+    "quiz": 2,
+    "text": "Which CSS property changes the background color of an element?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 15,
+  "fields": {
+    "quiz": 2,
+    "text": "Which symbol is used to select an HTML element by its ID in CSS?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 16,
+  "fields": {
+    "quiz": 2,
+    "text": "Which symbol is used to select elements by their class in CSS?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 17,
+  "fields": {
+    "quiz": 2,
+    "text": "Which CSS property changes the size of text?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 18,
+  "fields": {
+    "quiz": 2,
+    "text": "Which CSS property makes text bold?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 19,
+  "fields": {
+    "quiz": 2,
+    "text": "Which CSS property adds space outside an element's border?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 20,
+  "fields": {
+    "quiz": 2,
+    "text": "Which CSS property is used to make a flexbox container?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 21,
+  "fields": {
+    "quiz": 3,
+    "text": "What is JavaScript mainly used for?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 22,
+  "fields": {
+    "quiz": 3,
+    "text": "Which keyword is used to declare a variable in JavaScript?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 23,
+  "fields": {
+    "quiz": 3,
+    "text": "Which symbol is used for single-line comments in JavaScript?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 24,
+  "fields": {
+    "quiz": 3,
+    "text": "Which function displays a message in a browser popup box?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 25,
+  "fields": {
+    "quiz": 3,
+    "text": "Which operator is used to compare both value and data type?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 26,
+  "fields": {
+    "quiz": 3,
+    "text": "What is the output of console.log(2 + 3);?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 27,
+  "fields": {
+    "quiz": 3,
+    "text": "Which keyword declares a block-scoped variable that can be reassigned?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 28,
+  "fields": {
+    "quiz": 3,
+    "text": "Which of the following is an array in JavaScript?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 29,
+  "fields": {
+    "quiz": 3,
+    "text": "Which method adds an element to the end of an array?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 30,
+  "fields": {
+    "quiz": 3,
+    "text": "Which keyword is used to define a function in JavaScript?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 31,
+  "fields": {
+    "quiz": 4,
+    "text": "What is React.js?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 32,
+  "fields": {
+    "quiz": 4,
+    "text": "Who developed React.js?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 33,
+  "fields": {
+    "quiz": 4,
+    "text": "What is JSX in React?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 34,
+  "fields": {
+    "quiz": 4,
+    "text": "Which method is used to create a React component using a function?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 35,
+  "fields": {
+    "quiz": 4,
+    "text": "Which React hook is used to manage state in a functional component?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 36,
+  "fields": {
+    "quiz": 4,
+    "text": "Which prop is commonly used to uniquely identify items in a rendered list?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 37,
+  "fields": {
+    "quiz": 4,
+    "text": "Which React hook is used to perform side effects?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 38,
+  "fields": {
+    "quiz": 4,
+    "text": "What is the correct way to pass data from a parent component to a child component?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 39,
+  "fields": {
+    "quiz": 4,
+    "text": "Which syntax is used to embed a JavaScript expression inside JSX?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 40,
+  "fields": {
+    "quiz": 4,
+    "text": "What is the purpose of the Virtual DOM in React?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 41,
+  "fields": {
+    "quiz": 5,
+    "text": "Who developed Python?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 42,
+  "fields": {
+    "quiz": 5,
+    "text": "Which symbol is used for single-line comments in Python?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 43,
+  "fields": {
+    "quiz": 5,
+    "text": "Which of the following is a valid Python variable assignment?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 44,
+  "fields": {
+    "quiz": 5,
+    "text": "Which function is used to display output in Python?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 45,
+  "fields": {
+    "quiz": 5,
+    "text": "Which data type is used to store a sequence of items that can be changed?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 46,
+  "fields": {
+    "quiz": 5,
+    "text": "What is the output of print(5 + 3)?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 47,
+  "fields": {
+    "quiz": 5,
+    "text": "Which keyword is used to define a function in Python?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 48,
+  "fields": {
+    "quiz": 5,
+    "text": "Which operator is used for exponentiation in Python?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 49,
+  "fields": {
+    "quiz": 5,
+    "text": "Which keyword is used for a conditional statement in Python?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 50,
+  "fields": {
+    "quiz": 5,
+    "text": "What is the output of print(type(10))?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 51,
+  "fields": {
+    "quiz": 6,
+    "text": "What is Django?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 52,
+  "fields": {
+    "quiz": 6,
+    "text": "Which programming language is used with Django?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 53,
+  "fields": {
+    "quiz": 6,
+    "text": "Which command creates a new Django project?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 54,
+  "fields": {
+    "quiz": 6,
+    "text": "Which command starts the Django development server?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 55,
+  "fields": {
+    "quiz": 6,
+    "text": "Which file is commonly used to configure a Django project?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 56,
+  "fields": {
+    "quiz": 6,
+    "text": "Which Django component handles database models?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 57,
+  "fields": {
+    "quiz": 6,
+    "text": "Which command creates database migration files?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 58,
+  "fields": {
+    "quiz": 6,
+    "text": "Which command applies migrations to the database?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 59,
+  "fields": {
+    "quiz": 6,
+    "text": "Which file commonly defines URL patterns for a Django app or project?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 60,
+  "fields": {
+    "quiz": 6,
+    "text": "Which command creates a Django superuser?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 61,
+  "fields": {
+    "quiz": 7,
+    "text": "What is MySQL?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 62,
+  "fields": {
+    "quiz": 7,
+    "text": "Which SQL command is used to retrieve data from a table?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 63,
+  "fields": {
+    "quiz": 7,
+    "text": "Which command is used to create a new database in MySQL?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 64,
+  "fields": {
+    "quiz": 7,
+    "text": "Which clause is used to filter records in a query?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 65,
+  "fields": {
+    "quiz": 7,
+    "text": "Which command is used to insert new records into a table?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 66,
+  "fields": {
+    "quiz": 7,
+    "text": "Which command is used to modify existing records in a table?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 67,
+  "fields": {
+    "quiz": 7,
+    "text": "Which command deletes a table and its structure from a database?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 68,
+  "fields": {
+    "quiz": 7,
+    "text": "Which key uniquely identifies each record in a table?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 69,
+  "fields": {
+    "quiz": 7,
+    "text": "Which function returns the number of rows in a query result?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 70,
+  "fields": {
+    "quiz": 7,
+    "text": "Which clause sorts query results in ascending or descending order?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 71,
+  "fields": {
+    "quiz": 1,
+    "text": "Which tag is used to create an ordered list?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 72,
+  "fields": {
+    "quiz": 1,
+    "text": "Which tag is used to create a table data cell?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 73,
+  "fields": {
+    "quiz": 1,
+    "text": "Which HTML tag creates a form?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 74,
+  "fields": {
+    "quiz": 1,
+    "text": "Which input type is used to enter a password?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 75,
+  "fields": {
+    "quiz": 1,
+    "text": "Which tag is used to create a dropdown list?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 76,
+  "fields": {
+    "quiz": 1,
+    "text": "Which tag is used to define the title shown on the browser tab?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 77,
+  "fields": {
+    "quiz": 1,
+    "text": "Which declaration specifies that a document uses HTML5?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 78,
+  "fields": {
+    "quiz": 1,
+    "text": "Which tag is used to play video in HTML5?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 79,
+  "fields": {
+    "quiz": 1,
+    "text": "Which attribute provides alternative text for an image?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 80,
+  "fields": {
+    "quiz": 1,
+    "text": "Which semantic HTML tag represents the main content of a webpage?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 81,
+  "fields": {
+    "quiz": 1,
+    "text": "Which tag is used to make text bold in HTML?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 82,
+  "fields": {
+    "quiz": 1,
+    "text": "Which tag is used to create a horizontal line?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 83,
+  "fields": {
+    "quiz": 1,
+    "text": "Which attribute opens a link in a new tab?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 84,
+  "fields": {
+    "quiz": 1,
+    "text": "Which tag defines a cell heading in an HTML table?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 85,
+  "fields": {
+    "quiz": 1,
+    "text": "Which HTML tag is used to add JavaScript to a webpage?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 86,
+  "fields": {
+    "quiz": 1,
+    "text": "Which tag is used to link an external CSS file?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 87,
+  "fields": {
+    "quiz": 1,
+    "text": "Which attribute gives a unique identifier to an HTML element?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 88,
+  "fields": {
+    "quiz": 1,
+    "text": "Which input type allows the user to select only one option from a group?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 89,
+  "fields": {
+    "quiz": 1,
+    "text": "Which tag defines the footer of a webpage or section?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 90,
+  "fields": {
+    "quiz": 1,
+    "text": "Which attribute makes an input field mandatory?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 91,
+  "fields": {
+    "quiz": 2,
+    "text": "Which CSS property aligns text to the center?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 92,
+  "fields": {
+    "quiz": 2,
+    "text": "Which property adds space inside an element's border?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 93,
+  "fields": {
+    "quiz": 2,
+    "text": "Which CSS property adds a border around an element?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 94,
+  "fields": {
+    "quiz": 2,
+    "text": "Which CSS property controls the width of an element?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 95,
+  "fields": {
+    "quiz": 2,
+    "text": "Which CSS property controls the height of an element?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 96,
+  "fields": {
+    "quiz": 2,
+    "text": "Which CSS property changes the font family?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 97,
+  "fields": {
+    "quiz": 2,
+    "text": "Which value hides an element while keeping its layout space reserved?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 98,
+  "fields": {
+    "quiz": 2,
+    "text": "Which CSS declaration removes an element from the layout?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 99,
+  "fields": {
+    "quiz": 2,
+    "text": "Which Flexbox property aligns items along the main axis?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 100,
+  "fields": {
+    "quiz": 2,
+    "text": "Which Flexbox property aligns items along the cross axis?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 101,
+  "fields": {
+    "quiz": 2,
+    "text": "Which CSS property rounds the corners of an element?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 102,
+  "fields": {
+    "quiz": 2,
+    "text": "Which CSS property adds a shadow around a box?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 103,
+  "fields": {
+    "quiz": 2,
+    "text": "Which CSS position value keeps an element fixed relative to the viewport?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 104,
+  "fields": {
+    "quiz": 2,
+    "text": "What is the default value of the CSS position property?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 105,
+  "fields": {
+    "quiz": 2,
+    "text": "Which CSS property controls the stacking order of positioned elements?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 106,
+  "fields": {
+    "quiz": 2,
+    "text": "Which CSS unit is relative to the font size of the element?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 107,
+  "fields": {
+    "quiz": 2,
+    "text": "Which CSS unit represents 1% of the viewport width?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 108,
+  "fields": {
+    "quiz": 2,
+    "text": "Which CSS property controls what happens when content overflows an element's box?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 109,
+  "fields": {
+    "quiz": 2,
+    "text": "Which CSS at-rule is commonly used to apply responsive styles based on screen size?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 110,
+  "fields": {
+    "quiz": 2,
+    "text": "Which CSS property specifies the space between grid rows and columns?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 111,
+  "fields": {
+    "quiz": 3,
+    "text": "Which HTML tag is used to include JavaScript?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 112,
+  "fields": {
+    "quiz": 3,
+    "text": "Which keyword declares a variable that cannot be reassigned?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 113,
+  "fields": {
+    "quiz": 3,
+    "text": "Which operator is used for strict equality comparison?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 114,
+  "fields": {
+    "quiz": 3,
+    "text": "Which operator checks whether a value is not equal in both value and type?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 115,
+  "fields": {
+    "quiz": 3,
+    "text": "Which data type represents true or false?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 116,
+  "fields": {
+    "quiz": 3,
+    "text": "What is the output of typeof \"Hello\"?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 117,
+  "fields": {
+    "quiz": 3,
+    "text": "What is the index of the first element in a JavaScript array?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 118,
+  "fields": {
+    "quiz": 3,
+    "text": "Which method removes the last element from an array?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 119,
+  "fields": {
+    "quiz": 3,
+    "text": "Which statement returns a value from a function?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 120,
+  "fields": {
+    "quiz": 3,
+    "text": "Which loop executes a block while a condition is true?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 121,
+  "fields": {
+    "quiz": 3,
+    "text": "Which statement is used to make decisions based on conditions?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 122,
+  "fields": {
+    "quiz": 3,
+    "text": "Which method selects an HTML element by its ID?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 123,
+  "fields": {
+    "quiz": 3,
+    "text": "Which property changes the text content of an HTML element?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 124,
+  "fields": {
+    "quiz": 3,
+    "text": "Which method attaches an event handler to an HTML element?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 125,
+  "fields": {
+    "quiz": 3,
+    "text": "Which event occurs when a user clicks an element?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 126,
+  "fields": {
+    "quiz": 3,
+    "text": "What does DOM stand for?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 127,
+  "fields": {
+    "quiz": 3,
+    "text": "What is the result of Boolean(0)?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 128,
+  "fields": {
+    "quiz": 3,
+    "text": "What is the result of typeof 42?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 129,
+  "fields": {
+    "quiz": 3,
+    "text": "Which operator represents logical AND?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 130,
+  "fields": {
+    "quiz": 3,
+    "text": "What does setTimeout() do?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 131,
+  "fields": {
+    "quiz": 4,
+    "text": "Which language is commonly used to write React components?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 132,
+  "fields": {
+    "quiz": 4,
+    "text": "Which method is commonly used to render a React app into a DOM element in modern React?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 133,
+  "fields": {
+    "quiz": 4,
+    "text": "What is a React component?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 134,
+  "fields": {
+    "quiz": 4,
+    "text": "Which naming convention should be used for React component names?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 135,
+  "fields": {
+    "quiz": 4,
+    "text": "What are props in React?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 136,
+  "fields": {
+    "quiz": 4,
+    "text": "Can a component directly modify its props?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 137,
+  "fields": {
+    "quiz": 4,
+    "text": "What is state in React?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 138,
+  "fields": {
+    "quiz": 4,
+    "text": "How do you embed a JavaScript expression inside JSX?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 139,
+  "fields": {
+    "quiz": 4,
+    "text": "Which attribute is used instead of HTML's class in JSX?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 140,
+  "fields": {
+    "quiz": 4,
+    "text": "How do you handle a click event in JSX?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 141,
+  "fields": {
+    "quiz": 4,
+    "text": "Which method is commonly used to render a list of items in React?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 142,
+  "fields": {
+    "quiz": 4,
+    "text": "Why does React need a key when rendering lists?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 143,
+  "fields": {
+    "quiz": 4,
+    "text": "Which of the following is a valid React Fragment?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 144,
+  "fields": {
+    "quiz": 4,
+    "text": "What does a controlled input use to manage its displayed value?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 145,
+  "fields": {
+    "quiz": 4,
+    "text": "What does useState() return?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 146,
+  "fields": {
+    "quiz": 4,
+    "text": "What is the purpose of useContext()?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 147,
+  "fields": {
+    "quiz": 4,
+    "text": "What is the purpose of useRef()?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 148,
+  "fields": {
+    "quiz": 4,
+    "text": "What is conditional rendering in React?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 149,
+  "fields": {
+    "quiz": 4,
+    "text": "Which operator is commonly used for conditional rendering when a condition is true?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 150,
+  "fields": {
+    "quiz": 4,
+    "text": "What is the purpose of useMemo()?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 151,
+  "fields": {
+    "quiz": 5,
+    "text": "Which extension is used for Python files?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 152,
+  "fields": {
+    "quiz": 5,
+    "text": "Which of the following is a valid variable name in Python?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 153,
+  "fields": {
+    "quiz": 5,
+    "text": "Which data type stores whole numbers?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 154,
+  "fields": {
+    "quiz": 5,
+    "text": "Which data type stores text?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 155,
+  "fields": {
+    "quiz": 5,
+    "text": "What is the output of print(10 // 3)?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 156,
+  "fields": {
+    "quiz": 5,
+    "text": "Which operator calculates the remainder?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 157,
+  "fields": {
+    "quiz": 5,
+    "text": "What is the output of print(2 ** 3)?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 158,
+  "fields": {
+    "quiz": 5,
+    "text": "Which keyword returns a value from a function?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 159,
+  "fields": {
+    "quiz": 5,
+    "text": "Which brackets are used to create a list?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 160,
+  "fields": {
+    "quiz": 5,
+    "text": "Which brackets are commonly used to create a tuple?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 161,
+  "fields": {
+    "quiz": 5,
+    "text": "Which collection stores key-value pairs?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 162,
+  "fields": {
+    "quiz": 5,
+    "text": "Which method adds an item to the end of a list?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 163,
+  "fields": {
+    "quiz": 5,
+    "text": "Which keyword is used to create a loop over a sequence?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 164,
+  "fields": {
+    "quiz": 5,
+    "text": "Which keyword skips the current iteration of a loop?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 165,
+  "fields": {
+    "quiz": 5,
+    "text": "Which keyword immediately exits a loop?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 166,
+  "fields": {
+    "quiz": 5,
+    "text": "What is the output of print(len(\"Python\"))?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 167,
+  "fields": {
+    "quiz": 5,
+    "text": "What is the output of print(type(3.14))?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 168,
+  "fields": {
+    "quiz": 5,
+    "text": "Which keyword is used for conditional branching?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 169,
+  "fields": {
+    "quiz": 5,
+    "text": "What is the Boolean value of 10 > 5?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 170,
+  "fields": {
+    "quiz": 5,
+    "text": "Which keyword is used to handle exceptions?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 171,
+  "fields": {
+    "quiz": 6,
+    "text": "Which command is used to install Django?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 172,
+  "fields": {
+    "quiz": 6,
+    "text": "Which command creates a new Django app?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 173,
+  "fields": {
+    "quiz": 6,
+    "text": "What does MVT stand for in Django?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 174,
+  "fields": {
+    "quiz": 6,
+    "text": "Which file commonly contains Django model definitions?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 175,
+  "fields": {
+    "quiz": 6,
+    "text": "Which file commonly contains view functions?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 176,
+  "fields": {
+    "quiz": 6,
+    "text": "Which file is commonly used to define URL patterns for an app?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 177,
+  "fields": {
+    "quiz": 6,
+    "text": "What is the default database for a new Django project?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 178,
+  "fields": {
+    "quiz": 6,
+    "text": "Which file contains the main Django project settings?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 179,
+  "fields": {
+    "quiz": 6,
+    "text": "Which Django function is commonly used to render a template with context data?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 180,
+  "fields": {
+    "quiz": 6,
+    "text": "Which syntax displays a variable in a Django template?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 181,
+  "fields": {
+    "quiz": 6,
+    "text": "Which syntax is used for a Django template if statement?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 182,
+  "fields": {
+    "quiz": 6,
+    "text": "Which template tag is used to loop over a list?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 183,
+  "fields": {
+    "quiz": 6,
+    "text": "Which template tag includes another template file?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 184,
+  "fields": {
+    "quiz": 6,
+    "text": "Which method retrieves all records from a Django model?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 185,
+  "fields": {
+    "quiz": 6,
+    "text": "Which method filters records based on specified conditions?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 186,
+  "fields": {
+    "quiz": 6,
+    "text": "Which method retrieves a single matching object and raises an exception if it does not exist?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 187,
+  "fields": {
+    "quiz": 6,
+    "text": "Which Django model field stores text of variable length without a predefined maximum?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 188,
+  "fields": {
+    "quiz": 6,
+    "text": "Which model field is commonly used for a short text value?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 189,
+  "fields": {
+    "quiz": 6,
+    "text": "What is the purpose of admin.py?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 190,
+  "fields": {
+    "quiz": 6,
+    "text": "Which setting lists the apps enabled in a Django project?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 192,
+  "fields": {
+    "quiz": 7,
+    "text": "Which command is used to create a database in MySQL?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 193,
+  "fields": {
+    "quiz": 7,
+    "text": "Which clause filters records based on a condition?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 194,
+  "fields": {
+    "quiz": 7,
+    "text": "Which command inserts new records into a table?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 195,
+  "fields": {
+    "quiz": 7,
+    "text": "Which command modifies existing records in a table?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 196,
+  "fields": {
+    "quiz": 7,
+    "text": "Which command deletes records from a table?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 197,
+  "fields": {
+    "quiz": 7,
+    "text": "Which command removes a table and its structure from a database?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 198,
+  "fields": {
+    "quiz": 7,
+    "text": "Which clause sorts query results?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 199,
+  "fields": {
+    "quiz": 7,
+    "text": "Which keyword removes duplicate rows from query results?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 200,
+  "fields": {
+    "quiz": 7,
+    "text": "Which function counts the number of rows?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 201,
+  "fields": {
+    "quiz": 6,
+    "text": "Which function calculates the average of numeric values?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 202,
+  "fields": {
+    "quiz": 7,
+    "text": "Which function returns the largest value in a column?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 203,
+  "fields": {
+    "quiz": 7,
+    "text": "Which function calculates the total of numeric values?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 204,
+  "fields": {
+    "quiz": 7,
+    "text": "Which constraint prevents a column from containing NULL values?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 205,
+  "fields": {
+    "quiz": 7,
+    "text": "What is the purpose of a primary key?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 206,
+  "fields": {
+    "quiz": 7,
+    "text": "What is the purpose of a foreign key?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 207,
+  "fields": {
+    "quiz": 7,
+    "text": "Which constraint prevents duplicate values in a column or combination of columns?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 208,
+  "fields": {
+    "quiz": 7,
+    "text": "Which MySQL keyword is commonly used to generate sequential numeric values automatically?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 209,
+  "fields": {
+    "quiz": 7,
+    "text": "Which operator checks whether a value matches any value in a specified list?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 210,
+  "fields": {
+    "quiz": 7,
+    "text": "Which operator searches for a pattern in text?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 211,
+  "fields": {
+    "quiz": 7,
+    "text": "In a LIKE pattern, which wildcard represents any sequence of zero or more characters?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.question",
+  "pk": 212,
+  "fields": {
+    "quiz": 7,
+    "text": "Which join returns rows with matching values in both tables?",
+    "explanation": "True",
+    "order": 0
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 1,
+  "fields": {
+    "question": 1,
+    "text": "A) Hyper Text Markup Language",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 2,
+  "fields": {
+    "question": 1,
+    "text": "B) High Text Machine Language",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 3,
+  "fields": {
+    "question": 1,
+    "text": "C) Hyperlinks and Text Markup Language",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 4,
+  "fields": {
+    "question": 1,
+    "text": "D) Home Tool Markup Language",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 5,
+  "fields": {
+    "question": 2,
+    "text": "A) <h1>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 6,
+  "fields": {
+    "question": 2,
+    "text": "B) <p>",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 7,
+  "fields": {
+    "question": 2,
+    "text": "C) <para>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 8,
+  "fields": {
+    "question": 2,
+    "text": "D) <text>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 9,
+  "fields": {
+    "question": 3,
+    "text": "A) <break>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 10,
+  "fields": {
+    "question": 3,
+    "text": "B) <lb>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 11,
+  "fields": {
+    "question": 3,
+    "text": "C) <br>",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 12,
+  "fields": {
+    "question": 3,
+    "text": "D) <hr>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 13,
+  "fields": {
+    "question": 4,
+    "text": "A) <link>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 14,
+  "fields": {
+    "question": 4,
+    "text": "B) <a>",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 15,
+  "fields": {
+    "question": 4,
+    "text": "C) <href>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 16,
+  "fields": {
+    "question": 4,
+    "text": "D) <url>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 17,
+  "fields": {
+    "question": 5,
+    "text": "A) <image>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 18,
+  "fields": {
+    "question": 5,
+    "text": "B) <picture>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 19,
+  "fields": {
+    "question": 5,
+    "text": "C) <img>",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 20,
+  "fields": {
+    "question": 5,
+    "text": "D) <src>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 21,
+  "fields": {
+    "question": 6,
+    "text": "A) <h6>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 22,
+  "fields": {
+    "question": 6,
+    "text": "B) <head>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 23,
+  "fields": {
+    "question": 6,
+    "text": "C) <heading>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 24,
+  "fields": {
+    "question": 6,
+    "text": "D) <h1>",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 25,
+  "fields": {
+    "question": 7,
+    "text": "A) src",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 26,
+  "fields": {
+    "question": 7,
+    "text": "B) href",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 27,
+  "fields": {
+    "question": 7,
+    "text": "C) link",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 28,
+  "fields": {
+    "question": 7,
+    "text": "D) url",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 29,
+  "fields": {
+    "question": 8,
+    "text": "A) <ol>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 30,
+  "fields": {
+    "question": 8,
+    "text": "B) <li>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 31,
+  "fields": {
+    "question": 8,
+    "text": "C) <ul>",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 32,
+  "fields": {
+    "question": 8,
+    "text": "D) <list>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 33,
+  "fields": {
+    "question": 9,
+    "text": "A) <td>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 34,
+  "fields": {
+    "question": 9,
+    "text": "B) <th>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 35,
+  "fields": {
+    "question": 9,
+    "text": "C) <table-row>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 36,
+  "fields": {
+    "question": 9,
+    "text": "D) <tr>",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 37,
+  "fields": {
+    "question": 10,
+    "text": "A) <body>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 38,
+  "fields": {
+    "question": 10,
+    "text": "B) <title>",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 39,
+  "fields": {
+    "question": 10,
+    "text": "C) <head>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 40,
+  "fields": {
+    "question": 10,
+    "text": "D) <h1>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 41,
+  "fields": {
+    "question": 11,
+    "text": "A) Computer Style Sheets",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 42,
+  "fields": {
+    "question": 11,
+    "text": "B) Cascading Style Sheets",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 43,
+  "fields": {
+    "question": 11,
+    "text": "C) Creative Style System",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 44,
+  "fields": {
+    "question": 11,
+    "text": "D) Colorful Style Sheets",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 45,
+  "fields": {
+    "question": 12,
+    "text": "A) <css>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 46,
+  "fields": {
+    "question": 12,
+    "text": "B) <style>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 47,
+  "fields": {
+    "question": 12,
+    "text": "C) <link>",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 48,
+  "fields": {
+    "question": 12,
+    "text": "D) <script>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 49,
+  "fields": {
+    "question": 13,
+    "text": "A) font-color",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 50,
+  "fields": {
+    "question": 13,
+    "text": "B) text-color",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 51,
+  "fields": {
+    "question": 13,
+    "text": "C) color",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 52,
+  "fields": {
+    "question": 13,
+    "text": "D) background-color",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 53,
+  "fields": {
+    "question": 14,
+    "text": "A) bgcolor",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 54,
+  "fields": {
+    "question": 14,
+    "text": "B) background-color",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 55,
+  "fields": {
+    "question": 14,
+    "text": "C) color-background",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 56,
+  "fields": {
+    "question": 14,
+    "text": "D) background-style",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 57,
+  "fields": {
+    "question": 15,
+    "text": "A) .",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 58,
+  "fields": {
+    "question": 15,
+    "text": "B) #",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 59,
+  "fields": {
+    "question": 15,
+    "text": "C) *",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 60,
+  "fields": {
+    "question": 15,
+    "text": "D) @",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 61,
+  "fields": {
+    "question": 16,
+    "text": "A) #",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 62,
+  "fields": {
+    "question": 16,
+    "text": "B) &",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 63,
+  "fields": {
+    "question": 16,
+    "text": "C) .",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 64,
+  "fields": {
+    "question": 16,
+    "text": "D) @",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 65,
+  "fields": {
+    "question": 17,
+    "text": "A) font-size",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 66,
+  "fields": {
+    "question": 17,
+    "text": "B) text-style",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 67,
+  "fields": {
+    "question": 17,
+    "text": "C) font-weight",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 68,
+  "fields": {
+    "question": 17,
+    "text": "D) text-size",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 69,
+  "fields": {
+    "question": 18,
+    "text": "A) font-style: bold;",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 70,
+  "fields": {
+    "question": 18,
+    "text": "B) text-weight: bold;",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 71,
+  "fields": {
+    "question": 18,
+    "text": "C) font-weight: bold;",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 72,
+  "fields": {
+    "question": 18,
+    "text": "D) text-bold: true;",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 73,
+  "fields": {
+    "question": 19,
+    "text": "A) padding",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 74,
+  "fields": {
+    "question": 19,
+    "text": "B) margin",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 75,
+  "fields": {
+    "question": 19,
+    "text": "C) spacing",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 76,
+  "fields": {
+    "question": 19,
+    "text": "D) border-spacing",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 77,
+  "fields": {
+    "question": 20,
+    "text": "A) position: flex;",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 78,
+  "fields": {
+    "question": 20,
+    "text": "B) display: flex;",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 79,
+  "fields": {
+    "question": 20,
+    "text": "C) flex: display;",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 80,
+  "fields": {
+    "question": 20,
+    "text": "D) layout: flex;",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 81,
+  "fields": {
+    "question": 21,
+    "text": "A) Styling web pages",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 82,
+  "fields": {
+    "question": 21,
+    "text": "B) Creating interactive web pages",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 83,
+  "fields": {
+    "question": 21,
+    "text": "C) Storing files only",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 84,
+  "fields": {
+    "question": 21,
+    "text": "D) Designing databases",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 85,
+  "fields": {
+    "question": 22,
+    "text": "A) var",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 86,
+  "fields": {
+    "question": 22,
+    "text": "B) int",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 87,
+  "fields": {
+    "question": 22,
+    "text": "C) string",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 88,
+  "fields": {
+    "question": 22,
+    "text": "D) define",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 89,
+  "fields": {
+    "question": 23,
+    "text": "A) <!-- -->",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 90,
+  "fields": {
+    "question": 23,
+    "text": "B) **",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 91,
+  "fields": {
+    "question": 23,
+    "text": "C) //",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 92,
+  "fields": {
+    "question": 23,
+    "text": "D) ##",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 93,
+  "fields": {
+    "question": 24,
+    "text": "A) print()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 94,
+  "fields": {
+    "question": 24,
+    "text": "B) alert()",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 95,
+  "fields": {
+    "question": 24,
+    "text": "C) display()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 96,
+  "fields": {
+    "question": 24,
+    "text": "D) message()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 97,
+  "fields": {
+    "question": 25,
+    "text": "A) =",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 98,
+  "fields": {
+    "question": 25,
+    "text": "B) ==",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 99,
+  "fields": {
+    "question": 25,
+    "text": "C) ===",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 100,
+  "fields": {
+    "question": 25,
+    "text": "D) !=",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 101,
+  "fields": {
+    "question": 26,
+    "text": "A) 23",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 102,
+  "fields": {
+    "question": 26,
+    "text": "B) 5",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 103,
+  "fields": {
+    "question": 26,
+    "text": "C) 2 + 3",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 104,
+  "fields": {
+    "question": 26,
+    "text": "D) Error",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 105,
+  "fields": {
+    "question": 27,
+    "text": "A) const",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 106,
+  "fields": {
+    "question": 27,
+    "text": "B) let",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 107,
+  "fields": {
+    "question": 27,
+    "text": "C) fixed",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 108,
+  "fields": {
+    "question": 27,
+    "text": "D) static",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 109,
+  "fields": {
+    "question": 28,
+    "text": "A) {1, 2, 3}",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 110,
+  "fields": {
+    "question": 28,
+    "text": "B) (1, 2, 3)",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 111,
+  "fields": {
+    "question": 28,
+    "text": "C) [1, 2, 3]",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 112,
+  "fields": {
+    "question": 28,
+    "text": "D) <1, 2, 3>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 113,
+  "fields": {
+    "question": 29,
+    "text": "A) push()",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 114,
+  "fields": {
+    "question": 29,
+    "text": "B) pop()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 115,
+  "fields": {
+    "question": 29,
+    "text": "C) shift()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 116,
+  "fields": {
+    "question": 29,
+    "text": "D) remove()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 117,
+  "fields": {
+    "question": 30,
+    "text": "A) method",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 118,
+  "fields": {
+    "question": 30,
+    "text": "B) func",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 119,
+  "fields": {
+    "question": 30,
+    "text": "C) function",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 120,
+  "fields": {
+    "question": 30,
+    "text": "D) define",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 121,
+  "fields": {
+    "question": 31,
+    "text": "A) A database",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 122,
+  "fields": {
+    "question": 31,
+    "text": "B) A JavaScript library for building user interfaces",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 123,
+  "fields": {
+    "question": 31,
+    "text": "C) A programming language",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 124,
+  "fields": {
+    "question": 31,
+    "text": "D) A CSS framework",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 125,
+  "fields": {
+    "question": 32,
+    "text": "A) Google",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 126,
+  "fields": {
+    "question": 32,
+    "text": "B) Microsoft",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 127,
+  "fields": {
+    "question": 32,
+    "text": "C) Facebook (now Meta)",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 128,
+  "fields": {
+    "question": 32,
+    "text": "D) Amazon",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 129,
+  "fields": {
+    "question": 33,
+    "text": "A) JavaScript XML",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 130,
+  "fields": {
+    "question": 33,
+    "text": "B) Java Syntax Extension",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 131,
+  "fields": {
+    "question": 33,
+    "text": "C) JavaScript Extra",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 132,
+  "fields": {
+    "question": 33,
+    "text": "D) JSON XML",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 133,
+  "fields": {
+    "question": 34,
+    "text": "A) createComponent()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 134,
+  "fields": {
+    "question": 34,
+    "text": "B) function MyComponent() {}",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 135,
+  "fields": {
+    "question": 34,
+    "text": "C) makeComponent()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 136,
+  "fields": {
+    "question": 34,
+    "text": "D) new Component()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 137,
+  "fields": {
+    "question": 35,
+    "text": "A) useEffect()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 138,
+  "fields": {
+    "question": 35,
+    "text": "B) useState()",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 139,
+  "fields": {
+    "question": 35,
+    "text": "C) useRef()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 140,
+  "fields": {
+    "question": 35,
+    "text": "D) useContext()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 141,
+  "fields": {
+    "question": 36,
+    "text": "A) id",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 142,
+  "fields": {
+    "question": 36,
+    "text": "B) index",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 143,
+  "fields": {
+    "question": 36,
+    "text": "C) key",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 144,
+  "fields": {
+    "question": 36,
+    "text": "D) ref",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 145,
+  "fields": {
+    "question": 37,
+    "text": "A) useState()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 146,
+  "fields": {
+    "question": 37,
+    "text": "B) useEffect()",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 147,
+  "fields": {
+    "question": 37,
+    "text": "C) useMemo()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 148,
+  "fields": {
+    "question": 37,
+    "text": "D) useReducer()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 149,
+  "fields": {
+    "question": 38,
+    "text": "A) Using props",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 150,
+  "fields": {
+    "question": 38,
+    "text": "B) Using CSS",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 151,
+  "fields": {
+    "question": 38,
+    "text": "C) Using HTML tags only",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 152,
+  "fields": {
+    "question": 38,
+    "text": "D) Using useEffect() only",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 153,
+  "fields": {
+    "question": 39,
+    "text": "A) ()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 154,
+  "fields": {
+    "question": 39,
+    "text": "B) []",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 155,
+  "fields": {
+    "question": 39,
+    "text": "C) {}",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 156,
+  "fields": {
+    "question": 39,
+    "text": "D) <>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 157,
+  "fields": {
+    "question": 40,
+    "text": "A) To store files permanently",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 158,
+  "fields": {
+    "question": 40,
+    "text": "B) To help update the UI efficiently",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 159,
+  "fields": {
+    "question": 40,
+    "text": "C) To replace JavaScript",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 160,
+  "fields": {
+    "question": 40,
+    "text": "D) To style components",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 161,
+  "fields": {
+    "question": 41,
+    "text": "A) Dennis Ritchie",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 162,
+  "fields": {
+    "question": 41,
+    "text": "B) James Gosling",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 163,
+  "fields": {
+    "question": 41,
+    "text": "C) Guido van Rossum",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 164,
+  "fields": {
+    "question": 41,
+    "text": "D) Bjarne Stroustrup",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 165,
+  "fields": {
+    "question": 42,
+    "text": "A) //",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 166,
+  "fields": {
+    "question": 42,
+    "text": "B) #",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 167,
+  "fields": {
+    "question": 42,
+    "text": "C) <!-- -->",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 168,
+  "fields": {
+    "question": 42,
+    "text": "D) **",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 169,
+  "fields": {
+    "question": 43,
+    "text": "A) int x = 10",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 170,
+  "fields": {
+    "question": 43,
+    "text": "B) x = 10",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 171,
+  "fields": {
+    "question": 43,
+    "text": "C) var x := 10",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 172,
+  "fields": {
+    "question": 43,
+    "text": "D) let x = 10",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 173,
+  "fields": {
+    "question": 44,
+    "text": "A) echo()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 174,
+  "fields": {
+    "question": 44,
+    "text": "B) display()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 175,
+  "fields": {
+    "question": 44,
+    "text": "C) print()",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 176,
+  "fields": {
+    "question": 44,
+    "text": "D) output()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 177,
+  "fields": {
+    "question": 45,
+    "text": "A) tuple",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 178,
+  "fields": {
+    "question": 45,
+    "text": "B) list",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 179,
+  "fields": {
+    "question": 45,
+    "text": "C) str",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 180,
+  "fields": {
+    "question": 45,
+    "text": "D) int",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 181,
+  "fields": {
+    "question": 46,
+    "text": "A) 53",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 182,
+  "fields": {
+    "question": 46,
+    "text": "B) 8",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 183,
+  "fields": {
+    "question": 46,
+    "text": "C) 5 + 3",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 184,
+  "fields": {
+    "question": 46,
+    "text": "D) Error",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 185,
+  "fields": {
+    "question": 47,
+    "text": "A) function",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 186,
+  "fields": {
+    "question": 47,
+    "text": "B) define",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 187,
+  "fields": {
+    "question": 47,
+    "text": "C) def",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 188,
+  "fields": {
+    "question": 47,
+    "text": "D) fun",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 189,
+  "fields": {
+    "question": 48,
+    "text": "A) ^",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 190,
+  "fields": {
+    "question": 48,
+    "text": "B) //",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 191,
+  "fields": {
+    "question": 48,
+    "text": "C) **",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 192,
+  "fields": {
+    "question": 48,
+    "text": "D) %",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 193,
+  "fields": {
+    "question": 49,
+    "text": "A) when",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 194,
+  "fields": {
+    "question": 49,
+    "text": "B) if",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 195,
+  "fields": {
+    "question": 49,
+    "text": "C) check",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 196,
+  "fields": {
+    "question": 49,
+    "text": "D) case",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 197,
+  "fields": {
+    "question": 50,
+    "text": "A) <class 'str'>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 198,
+  "fields": {
+    "question": 50,
+    "text": "B) <class 'float'>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 199,
+  "fields": {
+    "question": 50,
+    "text": "C) <class 'int'>",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 200,
+  "fields": {
+    "question": 50,
+    "text": "D) <class 'number'>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 201,
+  "fields": {
+    "question": 51,
+    "text": "A) A JavaScript library",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 202,
+  "fields": {
+    "question": 51,
+    "text": "B) A Python web framework",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 203,
+  "fields": {
+    "question": 51,
+    "text": "C) A database",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 204,
+  "fields": {
+    "question": 51,
+    "text": "D) An operating system",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 205,
+  "fields": {
+    "question": 52,
+    "text": "A) Java",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 206,
+  "fields": {
+    "question": 52,
+    "text": "B) C++",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 207,
+  "fields": {
+    "question": 52,
+    "text": "C) Python",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 208,
+  "fields": {
+    "question": 52,
+    "text": "D) PHP",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 209,
+  "fields": {
+    "question": 53,
+    "text": "A) django startproject",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 210,
+  "fields": {
+    "question": 53,
+    "text": "B) python manage.py startapp",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 211,
+  "fields": {
+    "question": 53,
+    "text": "C) django-admin startproject",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 212,
+  "fields": {
+    "question": 53,
+    "text": "D) python create project",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 213,
+  "fields": {
+    "question": 54,
+    "text": "A) python manage.py runserver",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 214,
+  "fields": {
+    "question": 54,
+    "text": "B) python manage.py start",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 215,
+  "fields": {
+    "question": 54,
+    "text": "C) django run",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 216,
+  "fields": {
+    "question": 54,
+    "text": "D) python server.py",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 217,
+  "fields": {
+    "question": 55,
+    "text": "A) views.py",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 218,
+  "fields": {
+    "question": 55,
+    "text": "B) settings.py",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 219,
+  "fields": {
+    "question": 55,
+    "text": "C) models.py",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 220,
+  "fields": {
+    "question": 55,
+    "text": "D) forms.py",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 221,
+  "fields": {
+    "question": 56,
+    "text": "A) views.py",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 222,
+  "fields": {
+    "question": 56,
+    "text": "B) urls.py",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 223,
+  "fields": {
+    "question": 56,
+    "text": "C) models.py",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 224,
+  "fields": {
+    "question": 56,
+    "text": "D) admin.py",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 225,
+  "fields": {
+    "question": 57,
+    "text": "A) python manage.py migrate",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 226,
+  "fields": {
+    "question": 57,
+    "text": "B) python manage.py makemigrations",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 227,
+  "fields": {
+    "question": 57,
+    "text": "C) python manage.py createdb",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 228,
+  "fields": {
+    "question": 57,
+    "text": "D) python manage.py makeapp",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 229,
+  "fields": {
+    "question": 58,
+    "text": "A) python manage.py makemigrations",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 230,
+  "fields": {
+    "question": 58,
+    "text": "B) python manage.py update",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 231,
+  "fields": {
+    "question": 58,
+    "text": "C) python manage.py migrate",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 232,
+  "fields": {
+    "question": 58,
+    "text": "D) python manage.py sync",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 233,
+  "fields": {
+    "question": 59,
+    "text": "A) urls.py",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 234,
+  "fields": {
+    "question": 59,
+    "text": "B) models.py",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 235,
+  "fields": {
+    "question": 59,
+    "text": "C) settings.py",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 236,
+  "fields": {
+    "question": 59,
+    "text": "D) admin.py",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 237,
+  "fields": {
+    "question": 60,
+    "text": "A) python manage.py createuser",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 238,
+  "fields": {
+    "question": 60,
+    "text": "B) python manage.py admin",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 239,
+  "fields": {
+    "question": 60,
+    "text": "C) python manage.py createsuperuser",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 240,
+  "fields": {
+    "question": 60,
+    "text": "D) python manage.py superuser",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 241,
+  "fields": {
+    "question": 61,
+    "text": "A) A programming language",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 242,
+  "fields": {
+    "question": 61,
+    "text": "B) A relational database management system (RDBMS)",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 243,
+  "fields": {
+    "question": 61,
+    "text": "C) A web browser",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 244,
+  "fields": {
+    "question": 61,
+    "text": "D) An operating system",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 245,
+  "fields": {
+    "question": 62,
+    "text": "A) GET",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 246,
+  "fields": {
+    "question": 62,
+    "text": "B) OPEN",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 247,
+  "fields": {
+    "question": 62,
+    "text": "C) SELECT",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 248,
+  "fields": {
+    "question": 62,
+    "text": "D) FETCHALL",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 249,
+  "fields": {
+    "question": 63,
+    "text": "A) MAKE DATABASE",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 250,
+  "fields": {
+    "question": 63,
+    "text": "B) CREATE DATABASE",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 251,
+  "fields": {
+    "question": 63,
+    "text": "C) NEW DATABASE",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 252,
+  "fields": {
+    "question": 63,
+    "text": "D) ADD DATABASE",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 253,
+  "fields": {
+    "question": 64,
+    "text": "A) ORDER BY",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 254,
+  "fields": {
+    "question": 64,
+    "text": "B) GROUP BY",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 255,
+  "fields": {
+    "question": 64,
+    "text": "C) WHERE",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 256,
+  "fields": {
+    "question": 64,
+    "text": "D) SELECT",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 257,
+  "fields": {
+    "question": 65,
+    "text": "A) ADD INTO",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 258,
+  "fields": {
+    "question": 65,
+    "text": "B) INSERT INTO",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 259,
+  "fields": {
+    "question": 65,
+    "text": "C) UPDATE INTO",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 260,
+  "fields": {
+    "question": 65,
+    "text": "D) CREATE ROW",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 261,
+  "fields": {
+    "question": 66,
+    "text": "A) CHANGE",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 262,
+  "fields": {
+    "question": 66,
+    "text": "B) MODIFY",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 263,
+  "fields": {
+    "question": 66,
+    "text": "C) UPDATE",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 264,
+  "fields": {
+    "question": 66,
+    "text": "D) ALTER",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 265,
+  "fields": {
+    "question": 67,
+    "text": "A) DELETE",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 266,
+  "fields": {
+    "question": 67,
+    "text": "B) REMOVE",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 267,
+  "fields": {
+    "question": 67,
+    "text": "C) DROP TABLE",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 268,
+  "fields": {
+    "question": 67,
+    "text": "D) CLEAR TABLE",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 269,
+  "fields": {
+    "question": 68,
+    "text": "A) Foreign key",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 270,
+  "fields": {
+    "question": 68,
+    "text": "B) Primary key",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 271,
+  "fields": {
+    "question": 68,
+    "text": "C) Duplicate key",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 272,
+  "fields": {
+    "question": 68,
+    "text": "D) Common key",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 273,
+  "fields": {
+    "question": 69,
+    "text": "A) SUM()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 274,
+  "fields": {
+    "question": 69,
+    "text": "B) TOTAL()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 275,
+  "fields": {
+    "question": 69,
+    "text": "C) COUNT()",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 276,
+  "fields": {
+    "question": 69,
+    "text": "D) NUMBER()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 277,
+  "fields": {
+    "question": 70,
+    "text": "A) SORT BY",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 278,
+  "fields": {
+    "question": 70,
+    "text": "B) ORDER BY",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 279,
+  "fields": {
+    "question": 70,
+    "text": "C) GROUP BY",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 280,
+  "fields": {
+    "question": 70,
+    "text": "D) ARRANGE BY",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 281,
+  "fields": {
+    "question": 71,
+    "text": "A) <ul>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 282,
+  "fields": {
+    "question": 71,
+    "text": "B) <li>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 283,
+  "fields": {
+    "question": 71,
+    "text": "C) <ol>",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 284,
+  "fields": {
+    "question": 71,
+    "text": "D) <order>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 285,
+  "fields": {
+    "question": 72,
+    "text": "A) <td>",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 286,
+  "fields": {
+    "question": 72,
+    "text": "B) <tr>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 287,
+  "fields": {
+    "question": 72,
+    "text": "C) <th>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 288,
+  "fields": {
+    "question": 72,
+    "text": "D) <tc>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 289,
+  "fields": {
+    "question": 73,
+    "text": "A) <input>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 290,
+  "fields": {
+    "question": 73,
+    "text": "B) <form>",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 291,
+  "fields": {
+    "question": 73,
+    "text": "C) <fieldset>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 292,
+  "fields": {
+    "question": 73,
+    "text": "D) <button>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 293,
+  "fields": {
+    "question": 74,
+    "text": "A) type=\"text\"",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 294,
+  "fields": {
+    "question": 74,
+    "text": "B) type=\"hidden\"",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 295,
+  "fields": {
+    "question": 74,
+    "text": "C) type=\"password\"",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 296,
+  "fields": {
+    "question": 74,
+    "text": "D) type=\"secure\"",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 297,
+  "fields": {
+    "question": 75,
+    "text": "A) <dropdown>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 298,
+  "fields": {
+    "question": 75,
+    "text": "B) <input>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 299,
+  "fields": {
+    "question": 75,
+    "text": "C) <select>",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 300,
+  "fields": {
+    "question": 75,
+    "text": "D) <optionlist>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 301,
+  "fields": {
+    "question": 76,
+    "text": "A) <head>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 302,
+  "fields": {
+    "question": 76,
+    "text": "B) <title>",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 303,
+  "fields": {
+    "question": 76,
+    "text": "C) <h1>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 304,
+  "fields": {
+    "question": 76,
+    "text": "D) <meta>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 305,
+  "fields": {
+    "question": 77,
+    "text": "A) <html5>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 306,
+  "fields": {
+    "question": 77,
+    "text": "B) <!DOCTYPE html>",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 307,
+  "fields": {
+    "question": 77,
+    "text": "C) <doctype html5>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 308,
+  "fields": {
+    "question": 77,
+    "text": "D) <!HTML>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 309,
+  "fields": {
+    "question": 78,
+    "text": "A) <media>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 310,
+  "fields": {
+    "question": 78,
+    "text": "B) <movie>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 311,
+  "fields": {
+    "question": 78,
+    "text": "C) <video>",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 312,
+  "fields": {
+    "question": 78,
+    "text": "D) <play>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 313,
+  "fields": {
+    "question": 79,
+    "text": "A) title",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 314,
+  "fields": {
+    "question": 79,
+    "text": "B) alt",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 315,
+  "fields": {
+    "question": 79,
+    "text": "C) text",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 316,
+  "fields": {
+    "question": 79,
+    "text": "D) description",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 317,
+  "fields": {
+    "question": 80,
+    "text": "A) <footer>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 318,
+  "fields": {
+    "question": 80,
+    "text": "B) <header>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 319,
+  "fields": {
+    "question": 80,
+    "text": "C) <main>",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 320,
+  "fields": {
+    "question": 80,
+    "text": "D) <aside>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 321,
+  "fields": {
+    "question": 81,
+    "text": "A) <italic>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 322,
+  "fields": {
+    "question": 81,
+    "text": "B) <b>",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 323,
+  "fields": {
+    "question": 81,
+    "text": "C) <stronger>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 324,
+  "fields": {
+    "question": 81,
+    "text": "D) <bold>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 325,
+  "fields": {
+    "question": 82,
+    "text": "A) <line>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 326,
+  "fields": {
+    "question": 82,
+    "text": "B) <br>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 327,
+  "fields": {
+    "question": 82,
+    "text": "C) <hr>",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 328,
+  "fields": {
+    "question": 82,
+    "text": "D) <horizontal>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 329,
+  "fields": {
+    "question": 83,
+    "text": "A) target=\"_blank\"",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 330,
+  "fields": {
+    "question": 83,
+    "text": "B) href=\"_new\"",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 331,
+  "fields": {
+    "question": 83,
+    "text": "C) open=\"new\"",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 332,
+  "fields": {
+    "question": 83,
+    "text": "D) tab=\"new\"",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 333,
+  "fields": {
+    "question": 84,
+    "text": "A) <td>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 334,
+  "fields": {
+    "question": 84,
+    "text": "B) <tr>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 335,
+  "fields": {
+    "question": 84,
+    "text": "C) <th>",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 336,
+  "fields": {
+    "question": 84,
+    "text": "D) <thead-cell>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 337,
+  "fields": {
+    "question": 85,
+    "text": "A) <javascript>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 338,
+  "fields": {
+    "question": 85,
+    "text": "B) <js>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 339,
+  "fields": {
+    "question": 85,
+    "text": "C) <script>",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 340,
+  "fields": {
+    "question": 85,
+    "text": "D) <code>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 341,
+  "fields": {
+    "question": 86,
+    "text": "A) <style>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 342,
+  "fields": {
+    "question": 86,
+    "text": "B) <css>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 343,
+  "fields": {
+    "question": 86,
+    "text": "C) <link>",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 344,
+  "fields": {
+    "question": 86,
+    "text": "D) <script>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 345,
+  "fields": {
+    "question": 87,
+    "text": "A) class",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 346,
+  "fields": {
+    "question": 87,
+    "text": "B) id",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 347,
+  "fields": {
+    "question": 87,
+    "text": "C) name",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 348,
+  "fields": {
+    "question": 87,
+    "text": "D) style",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 349,
+  "fields": {
+    "question": 88,
+    "text": "A) checkbox",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 350,
+  "fields": {
+    "question": 88,
+    "text": "B) text",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 351,
+  "fields": {
+    "question": 88,
+    "text": "C) radio",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 352,
+  "fields": {
+    "question": 88,
+    "text": "D) button",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 353,
+  "fields": {
+    "question": 89,
+    "text": "A) <bottom>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 354,
+  "fields": {
+    "question": 89,
+    "text": "B) <end>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 355,
+  "fields": {
+    "question": 89,
+    "text": "C) <footer>",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 356,
+  "fields": {
+    "question": 89,
+    "text": "D) <section-end>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 357,
+  "fields": {
+    "question": 90,
+    "text": "A) validate",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 358,
+  "fields": {
+    "question": 90,
+    "text": "B) required",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 359,
+  "fields": {
+    "question": 90,
+    "text": "C) must",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 360,
+  "fields": {
+    "question": 90,
+    "text": "D) mandatory",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 361,
+  "fields": {
+    "question": 91,
+    "text": "A) align",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 362,
+  "fields": {
+    "question": 91,
+    "text": "B) font-align",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 363,
+  "fields": {
+    "question": 91,
+    "text": "C) text-align",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 364,
+  "fields": {
+    "question": 91,
+    "text": "D) text-position",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 365,
+  "fields": {
+    "question": 92,
+    "text": "A) margin",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 366,
+  "fields": {
+    "question": 92,
+    "text": "B) padding",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 367,
+  "fields": {
+    "question": 92,
+    "text": "C) spacing",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 368,
+  "fields": {
+    "question": 92,
+    "text": "D) border-spacing",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 369,
+  "fields": {
+    "question": 93,
+    "text": "A) outline-style",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 370,
+  "fields": {
+    "question": 93,
+    "text": "B) border",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 371,
+  "fields": {
+    "question": 93,
+    "text": "C) frame",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 372,
+  "fields": {
+    "question": 93,
+    "text": "D) box-border",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 373,
+  "fields": {
+    "question": 94,
+    "text": "A) size",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 374,
+  "fields": {
+    "question": 94,
+    "text": "B) element-width",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 375,
+  "fields": {
+    "question": 94,
+    "text": "C) width",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 376,
+  "fields": {
+    "question": 94,
+    "text": "D) length",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 377,
+  "fields": {
+    "question": 95,
+    "text": "A) height",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 378,
+  "fields": {
+    "question": 95,
+    "text": "B) size-height",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 379,
+  "fields": {
+    "question": 95,
+    "text": "C) length",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 380,
+  "fields": {
+    "question": 95,
+    "text": "D) element-height",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 381,
+  "fields": {
+    "question": 96,
+    "text": "A) font-type",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 382,
+  "fields": {
+    "question": 96,
+    "text": "B) font-family",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 383,
+  "fields": {
+    "question": 96,
+    "text": "C) text-family",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 384,
+  "fields": {
+    "question": 96,
+    "text": "D) font-name",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 385,
+  "fields": {
+    "question": 97,
+    "text": "A) display: none",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 386,
+  "fields": {
+    "question": 97,
+    "text": "B) visibility: hidden",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 387,
+  "fields": {
+    "question": 97,
+    "text": "C) opacity: 0",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 388,
+  "fields": {
+    "question": 97,
+    "text": "D) position: hidden",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 389,
+  "fields": {
+    "question": 98,
+    "text": "A) visibility: hidden",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 390,
+  "fields": {
+    "question": 98,
+    "text": "B) display: none",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 391,
+  "fields": {
+    "question": 98,
+    "text": "C) opacity: 0",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 392,
+  "fields": {
+    "question": 98,
+    "text": "D) overflow: hidden",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 393,
+  "fields": {
+    "question": 99,
+    "text": "A) align-items",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 394,
+  "fields": {
+    "question": 99,
+    "text": "B) justify-content",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 395,
+  "fields": {
+    "question": 99,
+    "text": "C) text-align",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 396,
+  "fields": {
+    "question": 99,
+    "text": "D) align-content",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 397,
+  "fields": {
+    "question": 100,
+    "text": "A) justify-content",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 398,
+  "fields": {
+    "question": 100,
+    "text": "B) text-align",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 399,
+  "fields": {
+    "question": 100,
+    "text": "C) align-items",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 400,
+  "fields": {
+    "question": 100,
+    "text": "D) flex-direction",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 401,
+  "fields": {
+    "question": 101,
+    "text": "A) corner-radius",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 402,
+  "fields": {
+    "question": 101,
+    "text": "B) border-round",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 403,
+  "fields": {
+    "question": 101,
+    "text": "C) border-radius",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 404,
+  "fields": {
+    "question": 101,
+    "text": "D) round-corner",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 405,
+  "fields": {
+    "question": 102,
+    "text": "A) text-shadow",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 406,
+  "fields": {
+    "question": 102,
+    "text": "B) box-shadow",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 407,
+  "fields": {
+    "question": 102,
+    "text": "C) shadow-box",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 408,
+  "fields": {
+    "question": 102,
+    "text": "D) border-shadow",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 409,
+  "fields": {
+    "question": 103,
+    "text": "A) absolute",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 410,
+  "fields": {
+    "question": 103,
+    "text": "B) relative",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 411,
+  "fields": {
+    "question": 103,
+    "text": "C) fixed",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 412,
+  "fields": {
+    "question": 103,
+    "text": "D) static",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 413,
+  "fields": {
+    "question": 104,
+    "text": "A) relative",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 414,
+  "fields": {
+    "question": 104,
+    "text": "B) absolute",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 415,
+  "fields": {
+    "question": 104,
+    "text": "C) fixed",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 416,
+  "fields": {
+    "question": 104,
+    "text": "- D) static",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 417,
+  "fields": {
+    "question": 105,
+    "text": "A) stack",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 418,
+  "fields": {
+    "question": 105,
+    "text": "B) z-index",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 419,
+  "fields": {
+    "question": 105,
+    "text": "C) layer",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 420,
+  "fields": {
+    "question": 105,
+    "text": "D) position-index",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 421,
+  "fields": {
+    "question": 106,
+    "text": "A) px",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 422,
+  "fields": {
+    "question": 106,
+    "text": "B) cm",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 423,
+  "fields": {
+    "question": 106,
+    "text": "C) em",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 424,
+  "fields": {
+    "question": 106,
+    "text": "D) vh",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 425,
+  "fields": {
+    "question": 107,
+    "text": "A) vh",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 426,
+  "fields": {
+    "question": 107,
+    "text": "B) vw",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 427,
+  "fields": {
+    "question": 107,
+    "text": "C) rem",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 428,
+  "fields": {
+    "question": 107,
+    "text": "D) em",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 429,
+  "fields": {
+    "question": 108,
+    "text": "A) overflow",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 430,
+  "fields": {
+    "question": 108,
+    "text": "B) content",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 431,
+  "fields": {
+    "question": 108,
+    "text": "C) visibility",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 432,
+  "fields": {
+    "question": 108,
+    "text": "D) display",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 433,
+  "fields": {
+    "question": 109,
+    "text": "A) @font-face",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 434,
+  "fields": {
+    "question": 109,
+    "text": "B) @keyframes",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 435,
+  "fields": {
+    "question": 109,
+    "text": "C) @media",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 436,
+  "fields": {
+    "question": 109,
+    "text": "D) @import",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 437,
+  "fields": {
+    "question": 110,
+    "text": "A) margin",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 438,
+  "fields": {
+    "question": 110,
+    "text": "B) padding",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 439,
+  "fields": {
+    "question": 110,
+    "text": "C) gap",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 440,
+  "fields": {
+    "question": 110,
+    "text": "D) border-spacing",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 441,
+  "fields": {
+    "question": 111,
+    "text": "A) <javascript>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 442,
+  "fields": {
+    "question": 111,
+    "text": "B) <js>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 443,
+  "fields": {
+    "question": 111,
+    "text": "C) <script>",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 444,
+  "fields": {
+    "question": 111,
+    "text": "D) <code>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 445,
+  "fields": {
+    "question": 112,
+    "text": "A) let",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 446,
+  "fields": {
+    "question": 112,
+    "text": "B) var",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 447,
+  "fields": {
+    "question": 112,
+    "text": "C) const",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 448,
+  "fields": {
+    "question": 112,
+    "text": "D) change",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 449,
+  "fields": {
+    "question": 113,
+    "text": "A) =",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 450,
+  "fields": {
+    "question": 113,
+    "text": "B) ==",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 451,
+  "fields": {
+    "question": 113,
+    "text": "C) ===",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 452,
+  "fields": {
+    "question": 113,
+    "text": "D) !=",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 453,
+  "fields": {
+    "question": 114,
+    "text": "A) !=",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 454,
+  "fields": {
+    "question": 114,
+    "text": "B) !==",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 455,
+  "fields": {
+    "question": 114,
+    "text": "C) ==",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 456,
+  "fields": {
+    "question": 114,
+    "text": "D) =",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 457,
+  "fields": {
+    "question": 115,
+    "text": "A) String",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 458,
+  "fields": {
+    "question": 115,
+    "text": "B) Number",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 459,
+  "fields": {
+    "question": 115,
+    "text": "C) Boolean",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 460,
+  "fields": {
+    "question": 115,
+    "text": "D) Array",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 461,
+  "fields": {
+    "question": 116,
+    "text": "A) text",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 462,
+  "fields": {
+    "question": 116,
+    "text": "B) string",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 463,
+  "fields": {
+    "question": 116,
+    "text": "C) character",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 464,
+  "fields": {
+    "question": 116,
+    "text": "D) boolean",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 465,
+  "fields": {
+    "question": 117,
+    "text": "A) 1",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 466,
+  "fields": {
+    "question": 117,
+    "text": "B) -1",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 467,
+  "fields": {
+    "question": 117,
+    "text": "C) 0",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 468,
+  "fields": {
+    "question": 117,
+    "text": "D) 2",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 469,
+  "fields": {
+    "question": 118,
+    "text": "A) shift()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 470,
+  "fields": {
+    "question": 118,
+    "text": "B) pop()",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 471,
+  "fields": {
+    "question": 118,
+    "text": "C) push()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 472,
+  "fields": {
+    "question": 118,
+    "text": "D) slice()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 473,
+  "fields": {
+    "question": 119,
+    "text": "A) break",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 474,
+  "fields": {
+    "question": 119,
+    "text": "B) return",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 475,
+  "fields": {
+    "question": 119,
+    "text": "C) continue",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 476,
+  "fields": {
+    "question": 119,
+    "text": "D) print",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 477,
+  "fields": {
+    "question": 120,
+    "text": "A) if",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 478,
+  "fields": {
+    "question": 120,
+    "text": "B) while",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 479,
+  "fields": {
+    "question": 120,
+    "text": "C) switch",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 480,
+  "fields": {
+    "question": 120,
+    "text": "D) case",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 481,
+  "fields": {
+    "question": 121,
+    "text": "A) if...else",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 482,
+  "fields": {
+    "question": 121,
+    "text": "B) for...in",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 483,
+  "fields": {
+    "question": 121,
+    "text": "C) console.log",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 484,
+  "fields": {
+    "question": 121,
+    "text": "D) import",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 485,
+  "fields": {
+    "question": 122,
+    "text": "A) document.getElementById()",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 486,
+  "fields": {
+    "question": 122,
+    "text": "B) document.getClass()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 487,
+  "fields": {
+    "question": 122,
+    "text": "C) document.selectId()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 488,
+  "fields": {
+    "question": 122,
+    "text": "D) document.findId()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 489,
+  "fields": {
+    "question": 123,
+    "text": "A) innerStyle",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 490,
+  "fields": {
+    "question": 123,
+    "text": "B) textContent",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 491,
+  "fields": {
+    "question": 123,
+    "text": "C) fontText",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 492,
+  "fields": {
+    "question": 123,
+    "text": "D) textValueOnly",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 493,
+  "fields": {
+    "question": 124,
+    "text": "A) addEventListener()",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 494,
+  "fields": {
+    "question": 124,
+    "text": "B) addHandlerOnly()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 495,
+  "fields": {
+    "question": 124,
+    "text": "C) createEvent()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 496,
+  "fields": {
+    "question": 124,
+    "text": "D) attachHTML()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 497,
+  "fields": {
+    "question": 125,
+    "text": "A) onchange",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 498,
+  "fields": {
+    "question": 125,
+    "text": "B) onhover",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 499,
+  "fields": {
+    "question": 125,
+    "text": "C) onclick",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 500,
+  "fields": {
+    "question": 125,
+    "text": "D) onloadclick",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 501,
+  "fields": {
+    "question": 126,
+    "text": "A) Data Object Management",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 502,
+  "fields": {
+    "question": 126,
+    "text": "B) Document Object Model",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 503,
+  "fields": {
+    "question": 126,
+    "text": "C) Digital Ordinance Model",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 504,
+  "fields": {
+    "question": 126,
+    "text": "D) Document Orientation Method",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 505,
+  "fields": {
+    "question": 127,
+    "text": "A) true",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 506,
+  "fields": {
+    "question": 127,
+    "text": "B) false",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 507,
+  "fields": {
+    "question": 127,
+    "text": "C) 0",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 508,
+  "fields": {
+    "question": 127,
+    "text": "D) undefined",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 509,
+  "fields": {
+    "question": 128,
+    "text": "A) integer",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 510,
+  "fields": {
+    "question": 128,
+    "text": "B) float",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 511,
+  "fields": {
+    "question": 128,
+    "text": "C) number",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 512,
+  "fields": {
+    "question": 128,
+    "text": "D) numeric",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 513,
+  "fields": {
+    "question": 129,
+    "text": "A) ||",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 514,
+  "fields": {
+    "question": 129,
+    "text": "B) !",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 515,
+  "fields": {
+    "question": 129,
+    "text": "C) &&",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 516,
+  "fields": {
+    "question": 129,
+    "text": "D) &",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 517,
+  "fields": {
+    "question": 130,
+    "text": "A) Repeats a function forever",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 518,
+  "fields": {
+    "question": 130,
+    "text": "B) Executes a callback after a specified delay",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 519,
+  "fields": {
+    "question": 130,
+    "text": "C) Stops JavaScript permanently",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 520,
+  "fields": {
+    "question": 130,
+    "text": "D) Reloads the browser automatically",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 521,
+  "fields": {
+    "question": 131,
+    "text": "A) Python",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 522,
+  "fields": {
+    "question": 131,
+    "text": "B) JavaScript",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 523,
+  "fields": {
+    "question": 131,
+    "text": "C) PHP",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 524,
+  "fields": {
+    "question": 131,
+    "text": "D) SQL",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 525,
+  "fields": {
+    "question": 132,
+    "text": "A) ReactDOM.start()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 526,
+  "fields": {
+    "question": 132,
+    "text": "B) React.renderApp()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 527,
+  "fields": {
+    "question": 132,
+    "text": "C) createRoot()",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 528,
+  "fields": {
+    "question": 132,
+    "text": "D) renderHTML()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 529,
+  "fields": {
+    "question": 133,
+    "text": "A) A reusable part of a user interface",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 530,
+  "fields": {
+    "question": 133,
+    "text": "B) A database table",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 531,
+  "fields": {
+    "question": 133,
+    "text": "C) A CSS selector",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 532,
+  "fields": {
+    "question": 133,
+    "text": "D) A browser extension",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 533,
+  "fields": {
+    "question": 134,
+    "text": "A) Always lowercase",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 534,
+  "fields": {
+    "question": 134,
+    "text": "B) PascalCase, starting with a capital letter",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 535,
+  "fields": {
+    "question": 134,
+    "text": "C) Only numbers",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 536,
+  "fields": {
+    "question": 134,
+    "text": "D) Uppercase letters only",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 537,
+  "fields": {
+    "question": 135,
+    "text": "A) Properties used to pass data to components",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 538,
+  "fields": {
+    "question": 135,
+    "text": "B) CSS styles only",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 539,
+  "fields": {
+    "question": 135,
+    "text": "C) Variables that must be global",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 540,
+  "fields": {
+    "question": 135,
+    "text": "D) Database connections",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 541,
+  "fields": {
+    "question": 136,
+    "text": "A) Yes, at any time",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 542,
+  "fields": {
+    "question": 136,
+    "text": "B) No, props should be treated as read-only",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 543,
+  "fields": {
+    "question": 136,
+    "text": "C) Only inside CSS",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 544,
+  "fields": {
+    "question": 136,
+    "text": "D) Only when using useEffect",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 545,
+  "fields": {
+    "question": 137,
+    "text": "A) Data that a component can manage and update",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 546,
+  "fields": {
+    "question": 137,
+    "text": "B) A CSS animation",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 547,
+  "fields": {
+    "question": 137,
+    "text": "C) A fixed HTML attribute",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 548,
+  "fields": {
+    "question": 137,
+    "text": "D) A database relationship",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 549,
+  "fields": {
+    "question": 138,
+    "text": "A) Using square brackets []",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 550,
+  "fields": {
+    "question": 138,
+    "text": "B) Using curly braces {}",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 551,
+  "fields": {
+    "question": 138,
+    "text": "C) Using parentheses ()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 552,
+  "fields": {
+    "question": 138,
+    "text": "D) Using quotation marks only",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 553,
+  "fields": {
+    "question": 139,
+    "text": "A) cssClass",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 554,
+  "fields": {
+    "question": 139,
+    "text": "B) className",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 555,
+  "fields": {
+    "question": 139,
+    "text": "C) classText",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 556,
+  "fields": {
+    "question": 139,
+    "text": "D) styleClass",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 557,
+  "fields": {
+    "question": 140,
+    "text": "A) onclick=\"handleClick()\"",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 558,
+  "fields": {
+    "question": 140,
+    "text": "B) click=\"handleClick()\"",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 559,
+  "fields": {
+    "question": 140,
+    "text": "C) onClick={handleClick}",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 560,
+  "fields": {
+    "question": 140,
+    "text": "D) on-click=\"handleClick\"",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 561,
+  "fields": {
+    "question": 141,
+    "text": "A) map()",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 562,
+  "fields": {
+    "question": 141,
+    "text": "B) filterHTML()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 563,
+  "fields": {
+    "question": 141,
+    "text": "C) renderListOnly()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 564,
+  "fields": {
+    "question": 141,
+    "text": "D) repeat()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 565,
+  "fields": {
+    "question": 142,
+    "text": "A) To add CSS colors",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 566,
+  "fields": {
+    "question": 142,
+    "text": "B) To help React identify list items between renders",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 567,
+  "fields": {
+    "question": 142,
+    "text": "C) To create a database",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 568,
+  "fields": {
+    "question": 142,
+    "text": "D) To make text bold",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 569,
+  "fields": {
+    "question": 143,
+    "text": "A) <fragment></fragment>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 570,
+  "fields": {
+    "question": 143,
+    "text": "B) <React></React>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 571,
+  "fields": {
+    "question": 143,
+    "text": "C) <>...</>",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 572,
+  "fields": {
+    "question": 143,
+    "text": "D) <div fragment>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 573,
+  "fields": {
+    "question": 144,
+    "text": "A) React state",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 574,
+  "fields": {
+    "question": 144,
+    "text": "B) CSS only",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 575,
+  "fields": {
+    "question": 144,
+    "text": "C) A database table only",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 576,
+  "fields": {
+    "question": 144,
+    "text": "D) A browser bookmark",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 577,
+  "fields": {
+    "question": 145,
+    "text": "A) Only a number",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 578,
+  "fields": {
+    "question": 145,
+    "text": "B) An object containing props",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 579,
+  "fields": {
+    "question": 145,
+    "text": "C) An array containing the current state and a setter function",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 580,
+  "fields": {
+    "question": 145,
+    "text": "D) A DOM element",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 581,
+  "fields": {
+    "question": 146,
+    "text": "A) To share values through React's context system",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 582,
+  "fields": {
+    "question": 146,
+    "text": "B) To create CSS files",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 583,
+  "fields": {
+    "question": 146,
+    "text": "C) To fetch images only",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 584,
+  "fields": {
+    "question": 146,
+    "text": "D) To define HTML tags",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 585,
+  "fields": {
+    "question": 147,
+    "text": "A) To store a mutable reference that persists across renders",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 586,
+  "fields": {
+    "question": 147,
+    "text": "B) To automatically change every component's state",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 587,
+  "fields": {
+    "question": 147,
+    "text": "C) To replace all props",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 588,
+  "fields": {
+    "question": 147,
+    "text": "D) To create a CSS class",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 589,
+  "fields": {
+    "question": 148,
+    "text": "A) Rendering UI based on a condition",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 590,
+  "fields": {
+    "question": 148,
+    "text": "B) Rendering every component twice",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 591,
+  "fields": {
+    "question": 148,
+    "text": "C) Styling only images",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 592,
+  "fields": {
+    "question": 148,
+    "text": "D) Creating database conditions",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 593,
+  "fields": {
+    "question": 149,
+    "text": "A) &&",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 594,
+  "fields": {
+    "question": 149,
+    "text": "B) **",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 595,
+  "fields": {
+    "question": 149,
+    "text": "C) =",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 596,
+  "fields": {
+    "question": 149,
+    "text": "D) typeof",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 597,
+  "fields": {
+    "question": 150,
+    "text": "A) To memoize a calculated value between renders when dependencies have not changed",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 598,
+  "fields": {
+    "question": 150,
+    "text": "B) To navigate between pages",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 599,
+  "fields": {
+    "question": 150,
+    "text": "C) To create a new HTML element every second",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 600,
+  "fields": {
+    "question": 150,
+    "text": "D) To update CSS automatically",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 601,
+  "fields": {
+    "question": 151,
+    "text": "A) .java",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 602,
+  "fields": {
+    "question": 151,
+    "text": "B) .html",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 603,
+  "fields": {
+    "question": 151,
+    "text": "C) .py",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 604,
+  "fields": {
+    "question": 151,
+    "text": "D) .css",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 605,
+  "fields": {
+    "question": 152,
+    "text": "A) 2name",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 606,
+  "fields": {
+    "question": 152,
+    "text": "B) my-name",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 607,
+  "fields": {
+    "question": 152,
+    "text": "C) my_name",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 608,
+  "fields": {
+    "question": 152,
+    "text": "D) class",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 609,
+  "fields": {
+    "question": 153,
+    "text": "A) str",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 610,
+  "fields": {
+    "question": 153,
+    "text": "B) int",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 611,
+  "fields": {
+    "question": 153,
+    "text": "C) list",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 612,
+  "fields": {
+    "question": 153,
+    "text": "D) bool",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 613,
+  "fields": {
+    "question": 154,
+    "text": "A) int",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 614,
+  "fields": {
+    "question": 154,
+    "text": "B) float",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 615,
+  "fields": {
+    "question": 154,
+    "text": "C) str",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 616,
+  "fields": {
+    "question": 154,
+    "text": "D) bool",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 617,
+  "fields": {
+    "question": 155,
+    "text": "A) 3.33",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 618,
+  "fields": {
+    "question": 155,
+    "text": "B) 3",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 619,
+  "fields": {
+    "question": 155,
+    "text": "C) 1",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 620,
+  "fields": {
+    "question": 155,
+    "text": "D) 4",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 621,
+  "fields": {
+    "question": 156,
+    "text": "A) /",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 622,
+  "fields": {
+    "question": 156,
+    "text": "B) //",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 623,
+  "fields": {
+    "question": 156,
+    "text": "C) %",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 624,
+  "fields": {
+    "question": 156,
+    "text": "D) **",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 625,
+  "fields": {
+    "question": 157,
+    "text": "A) 5",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 626,
+  "fields": {
+    "question": 157,
+    "text": "B) 6",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 627,
+  "fields": {
+    "question": 157,
+    "text": "C) 8",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 628,
+  "fields": {
+    "question": 157,
+    "text": "D) 9",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 629,
+  "fields": {
+    "question": 158,
+    "text": "A) print",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 630,
+  "fields": {
+    "question": 158,
+    "text": "B) break",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 631,
+  "fields": {
+    "question": 158,
+    "text": "C) return",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 632,
+  "fields": {
+    "question": 158,
+    "text": "D) yield_value",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 633,
+  "fields": {
+    "question": 159,
+    "text": "A) ()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 634,
+  "fields": {
+    "question": 159,
+    "text": "B) {}",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 635,
+  "fields": {
+    "question": 159,
+    "text": "C) []",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 636,
+  "fields": {
+    "question": 159,
+    "text": "D) <>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 637,
+  "fields": {
+    "question": 160,
+    "text": "A) []",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 638,
+  "fields": {
+    "question": 160,
+    "text": "B) ()",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 639,
+  "fields": {
+    "question": 160,
+    "text": "C) <>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 640,
+  "fields": {
+    "question": 160,
+    "text": "D) ||",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 641,
+  "fields": {
+    "question": 161,
+    "text": "A) List",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 642,
+  "fields": {
+    "question": 161,
+    "text": "B) Tuple",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 643,
+  "fields": {
+    "question": 161,
+    "text": "C) Dictionary",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 644,
+  "fields": {
+    "question": 161,
+    "text": "D) Set",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 645,
+  "fields": {
+    "question": 162,
+    "text": "A) add()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 646,
+  "fields": {
+    "question": 162,
+    "text": "B) append()",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 647,
+  "fields": {
+    "question": 162,
+    "text": "C) insertEnd()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 648,
+  "fields": {
+    "question": 162,
+    "text": "D) push_back()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 649,
+  "fields": {
+    "question": 163,
+    "text": "A) repeat",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 650,
+  "fields": {
+    "question": 163,
+    "text": "B) loop",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 651,
+  "fields": {
+    "question": 163,
+    "text": "C) for",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 652,
+  "fields": {
+    "question": 163,
+    "text": "D) iterate",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 653,
+  "fields": {
+    "question": 164,
+    "text": "A) stop",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 654,
+  "fields": {
+    "question": 164,
+    "text": "B) break",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 655,
+  "fields": {
+    "question": 164,
+    "text": "C) continue",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 656,
+  "fields": {
+    "question": 164,
+    "text": "D) pass",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 657,
+  "fields": {
+    "question": 165,
+    "text": "A) skip",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 658,
+  "fields": {
+    "question": 165,
+    "text": "B) break",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 659,
+  "fields": {
+    "question": 165,
+    "text": "C) continue",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 660,
+  "fields": {
+    "question": 165,
+    "text": "D) return",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 661,
+  "fields": {
+    "question": 166,
+    "text": "A) 5",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 662,
+  "fields": {
+    "question": 166,
+    "text": "B) 6",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 663,
+  "fields": {
+    "question": 166,
+    "text": "C) 7",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 664,
+  "fields": {
+    "question": 166,
+    "text": "D) 8",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 665,
+  "fields": {
+    "question": 167,
+    "text": "A) <class 'int'>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 666,
+  "fields": {
+    "question": 167,
+    "text": "B) <class 'str'>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 667,
+  "fields": {
+    "question": 167,
+    "text": "C) <class 'float'>",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 668,
+  "fields": {
+    "question": 167,
+    "text": "D) <class 'decimal'>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 669,
+  "fields": {
+    "question": 168,
+    "text": "A) if",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 670,
+  "fields": {
+    "question": 168,
+    "text": "B) when",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 671,
+  "fields": {
+    "question": 168,
+    "text": "C) check",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 672,
+  "fields": {
+    "question": 168,
+    "text": "D) switch",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 673,
+  "fields": {
+    "question": 169,
+    "text": "A) False",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 674,
+  "fields": {
+    "question": 169,
+    "text": "B) None",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 675,
+  "fields": {
+    "question": 169,
+    "text": "C) True",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 676,
+  "fields": {
+    "question": 169,
+    "text": "D) 0",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 677,
+  "fields": {
+    "question": 170,
+    "text": "A) try",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 678,
+  "fields": {
+    "question": 170,
+    "text": "B) check",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 679,
+  "fields": {
+    "question": 170,
+    "text": "C) error",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 680,
+  "fields": {
+    "question": 170,
+    "text": "D) catch",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 681,
+  "fields": {
+    "question": 171,
+    "text": "A) npm install django",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 682,
+  "fields": {
+    "question": 171,
+    "text": "B) pip install django",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 683,
+  "fields": {
+    "question": 171,
+    "text": "C) python install django",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 684,
+  "fields": {
+    "question": 171,
+    "text": "D) git install django",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 685,
+  "fields": {
+    "question": 172,
+    "text": "A) python manage.py startproject app",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 686,
+  "fields": {
+    "question": 172,
+    "text": "B) python manage.py startapp app",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 687,
+  "fields": {
+    "question": 172,
+    "text": "C) django-admin createapp app",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 688,
+  "fields": {
+    "question": 172,
+    "text": "D) pip startapp app",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 689,
+  "fields": {
+    "question": 173,
+    "text": "A) Model View Template",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 690,
+  "fields": {
+    "question": 173,
+    "text": "B) Main View Tool",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 691,
+  "fields": {
+    "question": 173,
+    "text": "C) Model Version Test",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 692,
+  "fields": {
+    "question": 173,
+    "text": "D) Multiple View Technology",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 693,
+  "fields": {
+    "question": 174,
+    "text": "A) views.py",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 694,
+  "fields": {
+    "question": 174,
+    "text": "B) models.py",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 695,
+  "fields": {
+    "question": 174,
+    "text": "C) urls.py",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 696,
+  "fields": {
+    "question": 174,
+    "text": "D) admin.py",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 697,
+  "fields": {
+    "question": 175,
+    "text": "A) views.py",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 698,
+  "fields": {
+    "question": 175,
+    "text": "B) models.py",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 699,
+  "fields": {
+    "question": 175,
+    "text": "C) settings.py",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 700,
+  "fields": {
+    "question": 175,
+    "text": "D) apps.py",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 701,
+  "fields": {
+    "question": 176,
+    "text": "A) forms.py",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 702,
+  "fields": {
+    "question": 176,
+    "text": "B) urls.py",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 703,
+  "fields": {
+    "question": 176,
+    "text": "C) admin.py",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 704,
+  "fields": {
+    "question": 176,
+    "text": "D) tests.py",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 705,
+  "fields": {
+    "question": 177,
+    "text": "A) MySQL",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 706,
+  "fields": {
+    "question": 177,
+    "text": "B) PostgreSQL",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 707,
+  "fields": {
+    "question": 177,
+    "text": "C) SQLite",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 708,
+  "fields": {
+    "question": 177,
+    "text": "D) MongoDB",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 709,
+  "fields": {
+    "question": 178,
+    "text": "A) views.py",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 710,
+  "fields": {
+    "question": 178,
+    "text": "B) settings.py",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 711,
+  "fields": {
+    "question": 178,
+    "text": "C) models.py",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 712,
+  "fields": {
+    "question": 178,
+    "text": "D) manage.py",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 713,
+  "fields": {
+    "question": 179,
+    "text": "A) render()",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 714,
+  "fields": {
+    "question": 179,
+    "text": "B) redirect_html()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 715,
+  "fields": {
+    "question": 179,
+    "text": "C) template()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 716,
+  "fields": {
+    "question": 179,
+    "text": "D) show()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 717,
+  "fields": {
+    "question": 180,
+    "text": "A) { variable }",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 718,
+  "fields": {
+    "question": 180,
+    "text": "B) {{ variable }}",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 719,
+  "fields": {
+    "question": 180,
+    "text": "C) <% variable %>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 720,
+  "fields": {
+    "question": 180,
+    "text": "D) [[ variable ]]",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 721,
+  "fields": {
+    "question": 181,
+    "text": "A) {{ if condition }}",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 722,
+  "fields": {
+    "question": 181,
+    "text": "B) {% if condition %}",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 723,
+  "fields": {
+    "question": 181,
+    "text": "C) <if condition>",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 724,
+  "fields": {
+    "question": 181,
+    "text": "D) #if condition",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 725,
+  "fields": {
+    "question": 182,
+    "text": "A) {% repeat item %}",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 726,
+  "fields": {
+    "question": 182,
+    "text": "B) {% loop items %}",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 727,
+  "fields": {
+    "question": 182,
+    "text": "C) {% for item in items %}",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 728,
+  "fields": {
+    "question": 182,
+    "text": "D) {{ for items }}",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 729,
+  "fields": {
+    "question": 183,
+    "text": "A) {% include \"header.html\" %}",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 730,
+  "fields": {
+    "question": 183,
+    "text": "B) {{ import \"header.html\" }}",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 731,
+  "fields": {
+    "question": 183,
+    "text": "C) {% add \"header.html\" %}",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 732,
+  "fields": {
+    "question": 183,
+    "text": "D) <include src=\"header.html\">",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 733,
+  "fields": {
+    "question": 184,
+    "text": "A) Model.objects.all()",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 734,
+  "fields": {
+    "question": 184,
+    "text": "B) Model.objects.first_all()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 735,
+  "fields": {
+    "question": 184,
+    "text": "C) Model.get_all()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 736,
+  "fields": {
+    "question": 184,
+    "text": "D) Model.select()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 737,
+  "fields": {
+    "question": 185,
+    "text": "A) exclude_all()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 738,
+  "fields": {
+    "question": 185,
+    "text": "B) filter()",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 739,
+  "fields": {
+    "question": 185,
+    "text": "C) select_all()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 740,
+  "fields": {
+    "question": 185,
+    "text": "D) search_only()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 741,
+  "fields": {
+    "question": 186,
+    "text": "A) filter()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 742,
+  "fields": {
+    "question": 186,
+    "text": "B) all()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 743,
+  "fields": {
+    "question": 186,
+    "text": "C) get()",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 744,
+  "fields": {
+    "question": 186,
+    "text": "D) first()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 745,
+  "fields": {
+    "question": 187,
+    "text": "A) CharField",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 746,
+  "fields": {
+    "question": 187,
+    "text": "B) TextField",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 747,
+  "fields": {
+    "question": 187,
+    "text": "C) IntegerField",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 748,
+  "fields": {
+    "question": 187,
+    "text": "D) BooleanField",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 749,
+  "fields": {
+    "question": 188,
+    "text": "A) CharField",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 750,
+  "fields": {
+    "question": 188,
+    "text": "B) TextField",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 751,
+  "fields": {
+    "question": 188,
+    "text": "C) DateField",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 752,
+  "fields": {
+    "question": 188,
+    "text": "D) FloatField",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 753,
+  "fields": {
+    "question": 189,
+    "text": "A) To configure models for the Django admin site",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 754,
+  "fields": {
+    "question": 189,
+    "text": "B) To store all HTML templates",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 755,
+  "fields": {
+    "question": 189,
+    "text": "C) To define database settings only",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 756,
+  "fields": {
+    "question": 189,
+    "text": "D) To start the server",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 757,
+  "fields": {
+    "question": 190,
+    "text": "A) MIDDLEWARE",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 758,
+  "fields": {
+    "question": 190,
+    "text": "B) INSTALLED_APPS",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 759,
+  "fields": {
+    "question": 190,
+    "text": "C) ALLOWED_HOSTS",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 760,
+  "fields": {
+    "question": 190,
+    "text": "D) DATABASES",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 765,
+  "fields": {
+    "question": 192,
+    "text": "A) MAKE DATABASE",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 766,
+  "fields": {
+    "question": 192,
+    "text": "B) NEW DATABASE",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 767,
+  "fields": {
+    "question": 192,
+    "text": "C) CREATE DATABASE",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 768,
+  "fields": {
+    "question": 192,
+    "text": "D) ADD DATABASE",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 769,
+  "fields": {
+    "question": 193,
+    "text": "A) ORDER BY",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 770,
+  "fields": {
+    "question": 193,
+    "text": "B) GROUP BY",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 771,
+  "fields": {
+    "question": 193,
+    "text": "C) WHERE",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 772,
+  "fields": {
+    "question": 193,
+    "text": "D) SELECT",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 773,
+  "fields": {
+    "question": 194,
+    "text": "A) ADD",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 774,
+  "fields": {
+    "question": 194,
+    "text": "B) INSERT INTO",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 775,
+  "fields": {
+    "question": 194,
+    "text": "C) UPDATE",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 776,
+  "fields": {
+    "question": 194,
+    "text": "D) CREATE ROW",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 777,
+  "fields": {
+    "question": 195,
+    "text": "A) CHANGE",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 778,
+  "fields": {
+    "question": 195,
+    "text": "B) MODIFY ROW",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 779,
+  "fields": {
+    "question": 195,
+    "text": "C) UPDATE",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 780,
+  "fields": {
+    "question": 195,
+    "text": "D) ALTER DATABASE",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 781,
+  "fields": {
+    "question": 196,
+    "text": "A) REMOVE",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 782,
+  "fields": {
+    "question": 196,
+    "text": "B) DELETE",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 783,
+  "fields": {
+    "question": 196,
+    "text": "C) DROP ROW",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 784,
+  "fields": {
+    "question": 196,
+    "text": "D) ERASE",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 785,
+  "fields": {
+    "question": 197,
+    "text": "A) DELETE TABLE",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 786,
+  "fields": {
+    "question": 197,
+    "text": "B) REMOVE TABLE",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 787,
+  "fields": {
+    "question": 197,
+    "text": "C) DROP TABLE",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 788,
+  "fields": {
+    "question": 197,
+    "text": "D) CLEAR TABLE",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 789,
+  "fields": {
+    "question": 198,
+    "text": "A) SORT",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 790,
+  "fields": {
+    "question": 198,
+    "text": "B) ORDER BY",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 791,
+  "fields": {
+    "question": 198,
+    "text": "C) GROUP BY",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 792,
+  "fields": {
+    "question": 198,
+    "text": "D) ARRANGE",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 793,
+  "fields": {
+    "question": 199,
+    "text": "A) UNIQUE",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 794,
+  "fields": {
+    "question": 199,
+    "text": "B) REMOVE",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 795,
+  "fields": {
+    "question": 199,
+    "text": "C) DISTINCT",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 796,
+  "fields": {
+    "question": 199,
+    "text": "D) DIFFERENT",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 797,
+  "fields": {
+    "question": 200,
+    "text": "A) SUM()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 798,
+  "fields": {
+    "question": 200,
+    "text": "B) COUNT()",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 799,
+  "fields": {
+    "question": 200,
+    "text": "C) TOTAL()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 800,
+  "fields": {
+    "question": 200,
+    "text": "D) NUMBER()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 801,
+  "fields": {
+    "question": 201,
+    "text": "A) SUM()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 802,
+  "fields": {
+    "question": 201,
+    "text": "B) MEAN()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 803,
+  "fields": {
+    "question": 201,
+    "text": "C) AVG()",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 804,
+  "fields": {
+    "question": 201,
+    "text": "D) AVERAGE()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 805,
+  "fields": {
+    "question": 202,
+    "text": "A) HIGH()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 806,
+  "fields": {
+    "question": 202,
+    "text": "B) MAX()",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 807,
+  "fields": {
+    "question": 202,
+    "text": "C) TOP()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 808,
+  "fields": {
+    "question": 202,
+    "text": "D) LARGEST()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 809,
+  "fields": {
+    "question": 203,
+    "text": "A) ADD()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 810,
+  "fields": {
+    "question": 203,
+    "text": "B) COUNT()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 811,
+  "fields": {
+    "question": 203,
+    "text": "C) SUM()",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 812,
+  "fields": {
+    "question": 203,
+    "text": "D) TOTAL()",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 813,
+  "fields": {
+    "question": 204,
+    "text": "A) UNIQUE",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 814,
+  "fields": {
+    "question": 204,
+    "text": "B) NOT NULL",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 815,
+  "fields": {
+    "question": 204,
+    "text": "C) DEFAULT",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 816,
+  "fields": {
+    "question": 204,
+    "text": "D) CHECK",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 817,
+  "fields": {
+    "question": 205,
+    "text": "A) To allow duplicate records",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 818,
+  "fields": {
+    "question": 205,
+    "text": "B) To uniquely identify each row in a table",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 819,
+  "fields": {
+    "question": 205,
+    "text": "C) To sort every table automatically",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 820,
+  "fields": {
+    "question": 205,
+    "text": "D) To store only text",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 821,
+  "fields": {
+    "question": 206,
+    "text": "A) To encrypt a database",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 822,
+  "fields": {
+    "question": 206,
+    "text": "B) To link related tables and enforce referential integrity",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 823,
+  "fields": {
+    "question": 206,
+    "text": "C) To delete duplicate columns",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 824,
+  "fields": {
+    "question": 206,
+    "text": "D) To create a backup",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 825,
+  "fields": {
+    "question": 207,
+    "text": "A) NOT NULL",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 826,
+  "fields": {
+    "question": 207,
+    "text": "B) DEFAULT",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 827,
+  "fields": {
+    "question": 207,
+    "text": "C) UNIQUE",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 828,
+  "fields": {
+    "question": 207,
+    "text": "D) AUTO_INCREMENT",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 829,
+  "fields": {
+    "question": 208,
+    "text": "A) AUTO_NUMBER",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 830,
+  "fields": {
+    "question": 208,
+    "text": "B) AUTO_INCREMENT",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 831,
+  "fields": {
+    "question": 208,
+    "text": "C) SEQUENCE",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 832,
+  "fields": {
+    "question": 208,
+    "text": "D) NEXT_VALUE",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 833,
+  "fields": {
+    "question": 209,
+    "text": "A) BETWEEN",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 834,
+  "fields": {
+    "question": 209,
+    "text": "B) LIKE",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 835,
+  "fields": {
+    "question": 209,
+    "text": "C) IN",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 836,
+  "fields": {
+    "question": 209,
+    "text": "D) IS",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 837,
+  "fields": {
+    "question": 210,
+    "text": "A) LIKE",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 838,
+  "fields": {
+    "question": 210,
+    "text": "B) MATCHES",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 839,
+  "fields": {
+    "question": 210,
+    "text": "C) FIND",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 840,
+  "fields": {
+    "question": 210,
+    "text": "D) SEARCH",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 841,
+  "fields": {
+    "question": 211,
+    "text": "A) _",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 842,
+  "fields": {
+    "question": 211,
+    "text": "B) %",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 843,
+  "fields": {
+    "question": 211,
+    "text": "C) *",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 844,
+  "fields": {
+    "question": 211,
+    "text": "D) ?",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 845,
+  "fields": {
+    "question": 212,
+    "text": "A) LEFT JOIN",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 846,
+  "fields": {
+    "question": 212,
+    "text": "B) RIGHT JOIN",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 847,
+  "fields": {
+    "question": 212,
+    "text": "C) INNER JOIN",
+    "is_correct": true
+  }
+},
+{
+  "model": "quiz_app.choice",
+  "pk": 848,
+  "fields": {
+    "question": 212,
+    "text": "D) CROSS JOIN",
+    "is_correct": false
+  }
+},
+{
+  "model": "quiz_app.attempt",
+  "pk": 16,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "quiz": 1,
+    "start_at": "2026-10-22T05:23:32.137Z",
+    "finished_at": null,
+    "score": 0,
+    "total": 10
+  }
+},
+{
+  "model": "quiz_app.attempt",
+  "pk": 17,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "quiz": 1,
+    "start_at": "2026-10-22T05:23:39.733Z",
+    "finished_at": null,
+    "score": 0,
+    "total": 0
+  }
+},
+{
+  "model": "quiz_app.attempt",
+  "pk": 18,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "quiz": 2,
+    "start_at": "2026-10-22T05:23:46.492Z",
+    "finished_at": null,
+    "score": 0,
+    "total": 10
+  }
+},
+{
+  "model": "quiz_app.attempt",
+  "pk": 19,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "quiz": 2,
+    "start_at": "2026-10-22T05:23:56.840Z",
+    "finished_at": null,
+    "score": 1,
+    "total": 0
+  }
+},
+{
+  "model": "quiz_app.attempt",
+  "pk": 20,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "quiz": 2,
+    "start_at": "2026-10-22T14:34:45.366Z",
+    "finished_at": "2026-10-22T14:34:56.456Z",
+    "score": 1,
+    "total": 10
+  }
+},
+{
+  "model": "quiz_app.attempt",
+  "pk": 21,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "quiz": 5,
+    "start_at": "2026-10-22T14:52:25.663Z",
+    "finished_at": "2026-10-22T14:53:16.398Z",
+    "score": 4,
+    "total": 10
+  }
+},
+{
+  "model": "quiz_app.attempt",
+  "pk": 22,
+  "fields": {
+    "user": [
+      "tannu"
+    ],
+    "quiz": 1,
+    "start_at": "2026-10-22T15:01:41.981Z",
+    "finished_at": "2026-10-22T15:02:41.648Z",
+    "score": 7,
+    "total": 10
+  }
+},
+{
+  "model": "quiz_app.attempt",
+  "pk": 23,
+  "fields": {
+    "user": [
+      "tannu"
+    ],
+    "quiz": 2,
+    "start_at": "2026-10-22T15:09:55.167Z",
+    "finished_at": "2026-10-22T15:10:49.743Z",
+    "score": 9,
+    "total": 10
+  }
+},
+{
+  "model": "quiz_app.attempt",
+  "pk": 24,
+  "fields": {
+    "user": [
+      "tannu"
+    ],
+    "quiz": 2,
+    "start_at": "2026-10-22T15:14:22.710Z",
+    "finished_at": "2026-10-22T15:14:33.549Z",
+    "score": 1,
+    "total": 10
+  }
+},
+{
+  "model": "quiz_app.attempt",
+  "pk": 25,
+  "fields": {
+    "user": [
+      "Vivek1"
+    ],
+    "quiz": 1,
+    "start_at": "2026-10-22T15:21:05.800Z",
+    "finished_at": "2026-10-22T15:29:46.485Z",
+    "score": 1,
+    "total": 10
+  }
+},
+{
+  "model": "quiz_app.attempt",
+  "pk": 26,
+  "fields": {
+    "user": [
+      "Vivek1"
+    ],
+    "quiz": 2,
+    "start_at": "2026-10-22T15:24:16.041Z",
+    "finished_at": "2026-10-22T15:32:34.473Z",
+    "score": 10,
+    "total": 10
+  }
+},
+{
+  "model": "quiz_app.attempt",
+  "pk": 27,
+  "fields": {
+    "user": [
+      "Vivek1"
+    ],
+    "quiz": 1,
+    "start_at": "2026-10-22T15:30:39.380Z",
+    "finished_at": "2026-10-22T15:31:37.076Z",
+    "score": 7,
+    "total": 10
+  }
+},
+{
+  "model": "quiz_app.attempt",
+  "pk": 28,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "quiz": 1,
+    "start_at": "2026-10-22T15:38:38.997Z",
+    "finished_at": null,
+    "score": 0,
+    "total": 10
+  }
+},
+{
+  "model": "quiz_app.attempt",
+  "pk": 29,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "quiz": 2,
+    "start_at": "2026-10-22T15:46:52.723Z",
+    "finished_at": "2026-10-22T15:47:30.193Z",
+    "score": 8,
+    "total": 10
+  }
+},
+{
+  "model": "quiz_app.attempt",
+  "pk": 30,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "quiz": 2,
+    "start_at": "2026-10-22T15:47:54.418Z",
+    "finished_at": "2026-10-22T15:48:36.161Z",
+    "score": 9,
+    "total": 10
+  }
+},
+{
+  "model": "quiz_app.attempt",
+  "pk": 31,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "quiz": 6,
+    "start_at": "2026-10-23T02:25:21.832Z",
+    "finished_at": "2026-10-23T02:26:06.517Z",
+    "score": 4,
+    "total": 10
+  }
+},
+{
+  "model": "quiz_app.attempt",
+  "pk": 32,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "quiz": 1,
+    "start_at": "2026-10-23T02:34:23.505Z",
+    "finished_at": "2026-10-23T08:26:26.856Z",
+    "score": 10,
+    "total": 30
+  }
+},
+{
+  "model": "quiz_app.attempt",
+  "pk": 33,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "quiz": 1,
+    "start_at": "2026-10-23T08:26:57.363Z",
+    "finished_at": "2026-10-23T10:27:06.515Z",
+    "score": 10,
+    "total": 30
+  }
+},
+{
+  "model": "quiz_app.attempt",
+  "pk": 34,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "quiz": 2,
+    "start_at": "2026-10-23T08:29:39.128Z",
+    "finished_at": "2026-10-23T08:30:47.490Z",
+    "score": 10,
+    "total": 30
+  }
+},
+{
+  "model": "quiz_app.attempt",
+  "pk": 35,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "quiz": 2,
+    "start_at": "2026-10-23T08:33:24.091Z",
+    "finished_at": "2026-10-23T08:33:36.547Z",
+    "score": 1,
+    "total": 30
+  }
+},
+{
+  "model": "quiz_app.attempt",
+  "pk": 36,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "quiz": 1,
+    "start_at": "2026-10-23T10:28:18.282Z",
+    "finished_at": "2026-10-23T10:29:09.624Z",
+    "score": 10,
+    "total": 30
+  }
+},
+{
+  "model": "quiz_app.attempt",
+  "pk": 37,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "quiz": 1,
+    "start_at": "2026-10-23T10:31:22.117Z",
+    "finished_at": "2026-10-23T10:32:27.664Z",
+    "score": 10,
+    "total": 30
+  }
+},
+{
+  "model": "quiz_app.attempt",
+  "pk": 45,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "quiz": 1,
+    "start_at": "2026-10-23T11:44:41.779Z",
+    "finished_at": "2026-10-23T11:45:29.086Z",
+    "score": 10,
+    "total": 10
+  }
+},
+{
+  "model": "quiz_app.attempt",
+  "pk": 46,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "quiz": 1,
+    "start_at": "2026-10-23T12:09:47.202Z",
+    "finished_at": "2026-10-23T12:09:58.168Z",
+    "score": 1,
+    "total": 10
+  }
+},
+{
+  "model": "quiz_app.attempt",
+  "pk": 47,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "quiz": 1,
+    "start_at": "2026-10-23T13:36:53.939Z",
+    "finished_at": "2026-10-23T13:37:12.293Z",
+    "score": 1,
+    "total": 10
+  }
+},
+{
+  "model": "quiz_app.attempt",
+  "pk": 48,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "quiz": 2,
+    "start_at": "2026-10-24T05:36:09.502Z",
+    "finished_at": null,
+    "score": 0,
+    "total": 10
+  }
+},
+{
+  "model": "quiz_app.attempt",
+  "pk": 49,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "quiz": 1,
+    "start_at": "2026-10-24T05:43:30.370Z",
+    "finished_at": "2026-10-24T05:43:41.076Z",
+    "score": 0,
+    "total": 10
+  }
+},
+{
+  "model": "quiz_app.attempt",
+  "pk": 50,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "quiz": 3,
+    "start_at": "2026-10-26T10:42:50.722Z",
+    "finished_at": "2026-10-26T10:43:58.008Z",
+    "score": 9,
+    "total": 10
+  }
+},
+{
+  "model": "quiz_app.attempt",
+  "pk": 51,
+  "fields": {
+    "user": [
+      "veteran_0811"
+    ],
+    "quiz": 1,
+    "start_at": "2026-10-27T05:41:11.087Z",
+    "finished_at": "2026-10-27T05:43:19.325Z",
+    "score": 10,
+    "total": 10
+  }
+}
+]
