@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/6.1/ref/settings/
 """
 
 import os
+
 from pathlib import Path
 ROOT_URLCONF = 'quiz.urls'
 
@@ -27,7 +28,7 @@ SECRET_KEY = 'django-insecure-#y4cimq(l6kz+jx5ew9+4x8haih2l4hgx&oy-g5_hp$4tbhqoq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["quiz-app-tlgp.onrender.com"]
+ALLOWED_HOSTS = ["quiz-app-tlgp.onrender.com",'localhost','127.0.0.1',]
 
 
 CSRF_TRUSTED_ORIGINS = [
@@ -85,14 +86,19 @@ WSGI_APPLICATION = 'quiz.wsgi.application'
 import os
 import dj_database_url
 from pathlib import Path
+from dotenv import load_dotenv
+
+# Yeh line .env file ke variables ko load karegi
+load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 if os.environ.get("DATABASE_URL"):
     DATABASES = {
-        "default": dj_database_url.parse(
-            os.environ["DATABASE_URL"],
-            conn_max_age=600,
+     'default': dj_database_url.config(
+        default=os.getenv('postgresql://quiz_db_aroo_user:pCxTxffIJgvoVwwPSVc8vheon2svfx32@dpg-dbgndc1srm7s73eas7vg-a.oregon-postgres.render.com/quiz_db_aroo'),
+        conn_max_age=600,
+        ssl_require=True
         )
     }
 else:
@@ -102,8 +108,8 @@ else:
             "NAME": BASE_DIR / "db.sqlite3",
         }
     }
-print("DATABASE ENGINE:", DATABASES["default"]["ENGINE"])
-print("DATABASE URL SET:", bool(os.environ.get("DATABASE_URL")))
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/6.1/ref/settings/#auth-password-validators
