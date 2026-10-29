@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/6.1/ref/settings/
 """
 
 import os
-
 from pathlib import Path
 ROOT_URLCONF = 'quiz.urls'
 
@@ -86,19 +85,14 @@ WSGI_APPLICATION = 'quiz.wsgi.application'
 import os
 import dj_database_url
 from pathlib import Path
-from dotenv import load_dotenv
-
-# Yeh line .env file ke variables ko load karegi
-load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 if os.environ.get("DATABASE_URL"):
     DATABASES = {
-     'default': dj_database_url.config(
-        default=os.getenv('postgresql://quiz_db_aroo_user:pCxTxffIJgvoVwwPSVc8vheon2svfx32@dpg-dbgndc1srm7s73eas7vg-a.oregon-postgres.render.com/quiz_db_aroo'),
-        conn_max_age=600,
-        ssl_require=True
+        "default": dj_database_url.parse(
+            os.environ["DATABASE_URL"],
+            conn_max_age=600,
         )
     }
 else:
