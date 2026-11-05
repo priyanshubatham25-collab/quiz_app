@@ -86,6 +86,12 @@ import os
 import dj_database_url
 from pathlib import Path
 
+# DATABASES = {
+#     'default': dj_database_url.config(
+#         default='sqlite:///' + str(BASE_DIR / 'db.sqlite3'),
+#         conn_max_age=600,
+#     )
+# }
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 if os.environ.get("DATABASE_URL"):
